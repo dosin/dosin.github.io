@@ -1,0 +1,39 @@
+header h2 {
+	text-align: center;
+}
+
+#blog {
+	width: 80%;
+	margin: 0 auto;
+	-webkit-user-select: text;
+	-moz-user-select: text;
+	-ms-user-select: text;
+	-o-user-select: text;
+	user-select: text;
+}
+
+#blog article {
+	padding: 10px;
+}
+
+#blog h3 {
+	margin: 10px 0;
+}
+
+#blog h3 a {
+	color: #333;
+	font-size: 2rem;
+}
+
+#blog time {
+	font-size: 1.4rem;
+	color: #999;
+}
+
+#blog p {
+	line-height: 2rem;
+}
+
+#blog p a {
+	color: #666;
+}

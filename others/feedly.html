@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>feedly</title>
+        <style>
+
+            #processBarContent {
+                position:absolute;
+                top:50%;
+                left:0;
+                transform:translateX(0)translateY(-50%);
+                font-size:44px;
+                color:#333;
+                font-weight:bold;
+                font-family:helvetica,sans-serif;
+                letter-spacing:-0.04em;
+                text-align:center;
+                width:100%;
+            }
+
+            #processBar {
+                position:absolute;
+                top:0;
+                left:0;
+                width:1px;
+                height:3px;
+                background-color:#333;
+                text-align:center;
+            }
+
+        </style>
+        <script>
+        var blockedElemend = document.getElementById( "body-wrap" );
+        if( blockedElemend != null ){
+            blockedElemend.style.opacity = 1;
+            document.getElementById( "ProgressBar" ).style.display = "none";
+            document.getElementById( "processBarContent" ).style.display = "none";
+        }
+
+        var progressCounter  = 0;
+        var progressDuration = 1000;
+        var progressSteps    = 50;
+        var progressInterval = window.setInterval( function(){
+            var processBar = document.getElementById( "processBar" );
+            var pB = document.getElementById( "processBar" );
+            if( window.location.pathname.indexOf( "/pro" ) == 2 ){
+                    window.clearInterval( progressInterval );
+                    return;
+                }
+                progressCounter++;
+
+                if( progressCounter == 1 ){
+                if( pB != null ){
+                    pB.style.display = "block";
+                }
+                if( processBar != null ){
+                 processBar.style.display = "block";
+                }
+            }
+
+            if( progressCounter > progressSteps ){
+                window.clearInterval( progressInterval );
+                return;
+            }
+            if( pB == null ){
+                window.clearInterval( progressInterval );
+            }
+            else{ 
+                pB.style.width = parseInt ( progressCounter / progressSteps * window.innerWidth ) + "px";
+            }
+        },parseInt( progressDuration / progressSteps ))
+
+        </script>
+    </head>
+    <body>
+        <div id="processBar"></div>
+        <div id="processBarContent">feedly</div>
+    </body>
+</html>
