@@ -1,41 +1,39 @@
-﻿
-html,
+﻿html,
 body {
-	height:100%;
+	height: 100%;
 }
 
-#entry,
-#blocked {
-	width:100%;
-	height:100%;
-	display:none;
+#progressbar,
+#homepage {
+	width: 100%;
+	height: 100%;
+	display: none;
 }
 
-#entry {
-	background:#fff;
+#progressbar {
+	background: #fff;
 }
 
-#process-bar {
-	position:absolute;
-	top:0;
-	left:0;
-	width:1px;
-	height:3px;
-	background-color:#333;
+#progressbar .progress {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1px;
+	height: 3px;
+	background-color: #333;
 }
 
-#process-content {
-	position:relative;
-	top:50%;
-	margin-top:-17px;
-	font-size:2.4rem;
-	letter-spacing:-0.03rem;
-	color:#333;
-	text-align:center;
+#progressbar .tip {
+	position: relative;
+	top: 50%;
+	margin-top: -17px;
+	font-size: 2.4rem;
+	letter-spacing: -0.03rem;
+	color: #333;
+	text-align: center;
 }
 
 /* wallpaper */
-
 #wallpaper,
 #wallpaper-filter {
 	position: absolute;
@@ -50,7 +48,6 @@ body {
 	-ms-transition: all 1s linear;
 	-o-transition: all 1s linear;
 	transition: all 1s linear;
-	
 }
 
 #wallpaper-filter {
@@ -77,8 +74,7 @@ body {
 	right: 3px;
 }
 
-@media screen and (min-width: 700px) {
-
+@media screen and (min-width:700px) {
 	#wallpaper-mode:hover,
 	#wallpaper-random:hover {
 		color: #fff;
@@ -86,9 +82,7 @@ body {
 
 }
 
-
-@media screen and (max-width: 700px) {
-
+@media screen and (max-width:700px) {
 	#wallpaper-mode:active,
 	#wallpaper-random:active {
 		color: #fff;
@@ -97,7 +91,6 @@ body {
 }
 
 /* search-bar */
-
 #search-bar {
 	width: 300px;
 	height: 40px;
@@ -153,7 +146,7 @@ body {
 	display: none;
 }
 
-#search-sub-menu ul{
+#search-sub-menu ul {
 	position: relative;
 	top: 40px;
 }
@@ -165,12 +158,11 @@ body {
 	background: #fff;
 }
 
-@media screen and (max-height: 660px) {
-
+@media screen and (max-height:660px) {
 	#search-sub-menu li {
 		float: left;
 	}
-	
+
 }
 
 #search-sub-menu a {
@@ -185,14 +177,13 @@ body {
 .ripple-ink {
 	display: block;
 	position: absolute;
-	background: rgba(0,0,0,0.618);
+	background: rgba(0, 0, 0, 0.618);
 	border-radius: 100%;
 	-webkit-transform: scale(0);
 	-moz-transform: scale(0);
 	-ms-transform: scale(0);
 	-o-transform: scale(0);
 	transform: scale(0);
-	
 }
 
 .ripple-ink.ripple-animate {
@@ -203,17 +194,33 @@ body {
 }
 
 @-moz-keyframes ripple {
-	100%{opacity: 0;transform: scale(2.5);}
+	100% {
+		opacity: 0;
+		transform: scale(2.5);
+	}
+
 }
 
 @-o-keyframes ripple {
-	100%{opacity: 0;transform: scale(2.5);}
+	100% {
+		opacity: 0;
+		transform: scale(2.5);
+	}
+
 }
 
 @-webkit-keyframes ripple {
-	100%{opacity: 0;transform: scale(2.5);}
+	100% {
+		opacity: 0;
+		transform: scale(2.5);
+	}
+
 }
 
 @keyframes ripple {
-	100%{opacity: 0;transform: scale(2.5);}
+	100% {
+		opacity: 0;
+		transform: scale(2.5);
+	}
+
 }
