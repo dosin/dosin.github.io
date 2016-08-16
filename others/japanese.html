@@ -1,603 +1,603 @@
 ﻿<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta name="viewport" content="width=device-width,initial-scale=1">
-		<title>日语</title>
-		<style>
-		html,
-		body,
-		div,
-		input,
-		table,th,tr,td {
-			margin:0;
-			padding:0;
-		}
-		
-		body{
-			display:none;
-		}
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <title>日语</title>
+  <style>
+  html,
+  body,
+  div,
+  input,
+  table,th,tr,td {
+    margin:0;
+    padding:0;
+  }
+  
+  body{
+    display:none;
+  }
 
-		section{
-			text-align:center;
-			margin:20px 0 20px;
-		}
+  section{
+    text-align:center;
+    margin:20px 0 20px;
+  }
 
-		section p{
-			margin:10px 0;
-		}
-		
-		main table{
-			margin:0 auto;
-			text-align:center;
-		}
+  section p{
+    margin:10px 0;
+  }
+  
+  main table{
+    margin:0 auto;
+    text-align:center;
+  }
 
-		@media screen and (min-width:900px){
-			main table{
-				width:900px;
-				font-size:44px;
-			}
-			main caption{
-				font-size:66px;
-				margin:10px 0;
-			}
-			.hiragana{
-				padding-left:20px;
-			}
-			.katakana{
-				padding-right:20px;
-			}
-		}
+  @media screen and (min-width:900px){
+    main table{
+      width:900px;
+      font-size:44px;
+    }
+    main caption{
+      font-size:66px;
+      margin:10px 0;
+    }
+    .hiragana{
+      padding-left:20px;
+    }
+    .katakana{
+      padding-right:20px;
+    }
+  }
 
-		@media screen and (max-width:900px){
-			main table{
-				width:300px;
-				font-size:1em;
-			}
-			main caption{
-				font-size:3em;
-			}
-			.hiragana{
-				padding-left:5px;
-			}
-			.katakana{
-				padding-right:5px;
-			}
-		}
+  @media screen and (max-width:900px){
+    main table{
+      width:300px;
+      font-size:1em;
+    }
+    main caption{
+      font-size:3em;
+    }
+    .hiragana{
+      padding-left:5px;
+    }
+    .katakana{
+      padding-right:5px;
+    }
+  }
 
-		.hiragana{
-			float:left;
-		}
+  .hiragana{
+    float:left;
+  }
 
-		.katakana{
-			float:right;
-		}
+  .katakana{
+    float:right;
+  }
 
-		.red{
-			color:red;
-			padding:0;
-		}
+  .red{
+    color:red;
+    padding:0;
+  }
 
-		.links{
-			height:30px;
-			margin:20px 0 50px;
-			text-align:center;
-		}
+  .links{
+    height:30px;
+    margin:20px 0 50px;
+    text-align:center;
+  }
 
-		.links a{
-			color:#999;
-		}
+  .links a{
+    color:#999;
+  }
 
-		.copyright{
-			color:#999;
-			width:100%;
-			text-align:center;
-			font:0.8em/2.4em "Microsoft Yahei";
-		}
-		</style>
-		<script>
-			vowel={
-				a:"a",
-				i:"i",
-				u:"u",
-				e:"e",
-				o:"o"
-			}
-			romaji={
-				a:"a",
-				k:"k",
-				s:"s",
-				t:"t",
-				n:"n",
-				h:"h",
-				m:"m",
-				y:"y",
-				r:"r",
-				w:"w"
-			}
-			hiragana={
-				aa:"あ",
-				ai:"い",
-				au:"う",
-				ae:"え",
-				ao:"お",
-				ka:"か",
-				ki:"き",
-				ku:"く",
-				ke:"け",
-				ko:"こ",
-				sa:"さ",
-				si:"し",
-				su:"す",
-				se:"せ",
-				so:"そ",
-				ta:"た",
-				ti:"ち",
-				tu:"つ",
-				te:"て",
-				to:"と",
-				na:"な",
-				ni:"に",
-				nu:"ぬ",
-				ne:"ね",
-				no:"の",
-				ha:"は",
-				hi:"ひ",
-				hu:"ふ",
-				he:"へ",
-				ho:"ほ",
-				ma:"ま",
-				mi:"み",
-				mu:"む",
-				me:"め",
-				mo:"も",
-				ya:"や",
-				yi:"い",
-				yu:"ゆ",
-				ye:"え",
-				yo:"よ",
-				ra:"ら",
-				ri:"り",
-				ru:"る",
-				re:"れ",
-				ro:"ろ",
-				wa:"わ",
-				wi:"い",
-				wu:"う",
-				we:"え",
-				wo:"を",
-				nn:"ん"
-			}
-			katakana={
-				aa:"ア",
-				ai:"イ",
-				au:"ウ",
-				ae:"エ",
-				ao:"オ",
-				ka:"カ",
-				ki:"キ",
-				ku:"ク",
-				ke:"ケ",
-				ko:"コ",
-				sa:"サ",
-				si:"シ",
-				su:"ス",
-				se:"セ",
-				so:"ソ",
-				ta:"タ",
-				ti:"チ",
-				tu:"ツ",
-				te:"テ",
-				to:"ト",
-				na:"ナ",
-				ni:"ニ",
-				nu:"ヌ",
-				ne:"ネ",
-				no:"ノ",
-				ha:"ハ",
-				hi:"ヒ",
-				hu:"フ",
-				he:"ヘ",
-				ho:"ホ",
-				ma:"マ",
-				mi:"ミ",
-				mu:"ム",
-				me:"メ",
-				mo:"モ",
-				ya:"ヤ",
-				yi:"イ",
-				yu:"ユ",
-				ye:"エ",
-				yo:"ヨ",
-				ra:"ラ",
-				ri:"リ",
-				ru:"ル",
-				re:"レ",
-				ro:"ロ",
-				wa:"ワ",
-				wi:"イ",
-				wu:"ウ",
-				we:"エ",
-				wo:"ヲ",
-				nn:"ン"
-			}
-		</script>
-	</head>
-	<body>
-		<section>
-			<p>字体</p>
-			<label><input type="radio" checked>宋体</label>
-			<label><input type="radio">仿宋</label>
-			<label><input type="radio">黑体</label>
-			<label><input type="radio">楷体</label>
-			<label><input type="radio">隶书</label>
-			<label><input type="radio">微软雅黑</label>
-			<label><input type="radio">Arial</label>
-		</section>
-		<main>
-			<table border="1" cellspacing="0">
-			<caption>五十音图</caption>
-				<tr>
-					<td> </td>
-					<td><span class="vowel a"></span></td>
-					<td><span class="vowel i"></span></td>
-					<td><span class="vowel u"></span></td>
-					<td><span class="vowel e"></span></td>
-					<td><span class="vowel o"></span></td>
-				</tr>
-				<tr>
-					<td rowspan="2"><span class="romaji A"></span></td>
-					<td><span class="hiragana A a"></span><span class="katakana A a"></span></td>
-					<td><span class="hiragana A i"></span><span class="katakana A i"></span></td>
-					<td><span class="hiragana A u"></span><span class="katakana A u"></span></td>
-					<td><span class="hiragana A e"></span><span class="katakana A e"></span></td>
-					<td><span class="hiragana A o"></span><span class="katakana A o"></span></td>
-				</tr>
-				<tr>
-					<td><span class="romaji A a"></span></td>
-					<td><span class="romaji A i"></span></td>
-					<td><span class="romaji A u"></span></td>
-					<td><span class="romaji A e"></span></td>
-					<td><span class="romaji A o"></span></td>
-				</tr>
-				<tr>
-					<td rowspan="2"><span class="romaji K"></span></td>
-					<td><span class="hiragana K a"></span><span class="katakana K a"></span></td>
-					<td><span class="hiragana K i"></span><span class="katakana K i"></span></td>
-					<td><span class="hiragana K u"></span><span class="katakana K u"></span></td>
-					<td><span class="hiragana K e"></span><span class="katakana K e"></span></td>
-					<td><span class="hiragana K o"></span><span class="katakana K o"></span></td>
-				</tr>
-				<tr>
-					<td><span class="romaji K a"></span></td>
-					<td><span class="romaji K i"></span></td>
-					<td><span class="romaji K u"></span></td>
-					<td><span class="romaji K e"></span></td>
-					<td><span class="romaji K o"></span></td>
-				</tr>
-				<tr>
-					<td rowspan="2"><span class="romaji S"></span></td>
-					<td><span class="hiragana S a"></span><span class="katakana S a"></span></td>
-					<td><span class="hiragana S i"></span><span class="katakana S i"></span></td>
-					<td><span class="hiragana S u"></span><span class="katakana S u"></span></td>
-					<td><span class="hiragana S e"></span><span class="katakana S e"></span></td>
-					<td><span class="hiragana S o"></span><span class="katakana S o"></span></td>
-				</tr>
-				<tr>
-					<td><span class="romaji S a"></span></td>
-					<td><span class="romaji S i"></span></td>
-					<td><span class="romaji S u"></span></td>
-					<td><span class="romaji S e"></span></td>
-					<td><span class="romaji S o"></span></td>
-				</tr>
-				<tr>
-					<td rowspan="2"><span class="romaji T"></span></td>
-					<td><span class="hiragana T a"></span><span class="katakana T a"></span></td>
-					<td><span class="hiragana T i"></span><span class="katakana T i"></span></td>
-					<td><span class="hiragana T u"></span><span class="katakana T u"></span></td>
-					<td><span class="hiragana T e"></span><span class="katakana T e"></span></td>
-					<td><span class="hiragana T o"></span><span class="katakana T o"></span></td>
-				</tr>
-				<tr>
-					<td><span class="romaji T a"></span></td>
-					<td><span class="romaji T i"></span></td>
-					<td><span class="romaji T u"></span></td>
-					<td><span class="romaji T e"></span></td>
-					<td><span class="romaji T o"></span></td>
-				</tr>
-				<tr>
-					<td rowspan="2"><span class="romaji N"></span></td>
-					<td><span class="hiragana N a"></span><span class="katakana N a"></span></td>
-					<td><span class="hiragana N i"></span><span class="katakana N i"></span></td>
-					<td><span class="hiragana N u"></span><span class="katakana N u"></span></td>
-					<td><span class="hiragana N e"></span><span class="katakana N e"></span></td>
-					<td><span class="hiragana N o"></span><span class="katakana N o"></span></td>
-				</tr>
-				<tr>
-					<td><span class="romaji N a"></span></td>
-					<td><span class="romaji N i"></span></td>
-					<td><span class="romaji N u"></span></td>
-					<td><span class="romaji N e"></span></td>
-					<td><span class="romaji N o"></span></td>
-				</tr>
-				<tr>
-					<td rowspan="2"><span class="romaji H"></span></td>
-					<td><span class="hiragana H a"></span><span class="katakana H a"></span></td>
-					<td><span class="hiragana H i"></span><span class="katakana H i"></span></td>
-					<td><span class="hiragana H u"></span><span class="katakana H u"></span></td>
-					<td><span class="hiragana H e"></span><span class="katakana H e"></span></td>
-					<td><span class="hiragana H o"></span><span class="katakana H o"></span></td>
-				</tr>
-				<tr>
-					<td><span class="romaji H a"></span></td>
-					<td><span class="romaji H i"></span></td>
-					<td><span class="romaji H u"></span></td>
-					<td><span class="romaji H e"></span></td>
-					<td><span class="romaji H o"></span></td>
-				</tr>
-				<tr>
-					<td rowspan="2"><span class="romaji M"></span></td>
-					<td><span class="hiragana M a"></span><span class="katakana M a"></span></td>
-					<td><span class="hiragana M i"></span><span class="katakana M i"></span></td>
-					<td><span class="hiragana M u"></span><span class="katakana M u"></span></td>
-					<td><span class="hiragana M e"></span><span class="katakana M e"></span></td>
-					<td><span class="hiragana M o"></span><span class="katakana M o"></span></td>
-				</tr>
-				<tr>
-					<td><span class="romaji M a"></span></td>
-					<td><span class="romaji M i"></span></td>
-					<td><span class="romaji M u"></span></td>
-					<td><span class="romaji M e"></span></td>
-					<td><span class="romaji M o"></span></td>
-				</tr>
-				<tr>
-					<td rowspan="2"><span class="romaji Y"></span></td>
-					<td><span class="hiragana Y a"></span><span class="katakana Y a"></span></td>
-					<td><span class="hiragana Y i"></span><span class="katakana Y i"></span></td>
-					<td><span class="hiragana Y u"></span><span class="katakana Y u"></span></td>
-					<td><span class="hiragana Y e"></span><span class="katakana Y e"></span></td>
-					<td><span class="hiragana Y o"></span><span class="katakana Y o"></span></td>
-				</tr>
-				<tr>
-					<td><span class="romaji Y a"></span></td>
-					<td><span class="romaji Y i"></span></td>
-					<td><span class="romaji Y u"></span></td>
-					<td><span class="romaji Y e"></span></td>
-					<td><span class="romaji Y o"></span></td>
-				</tr>
-				<tr>
-					<td rowspan="2"><span class="romaji R"></span></td>
-					<td><span class="hiragana R a"></span><span class="katakana R a"></span></td>
-					<td><span class="hiragana R i"></span><span class="katakana R i"></span></td>
-					<td><span class="hiragana R u"></span><span class="katakana R u"></span></td>
-					<td><span class="hiragana R e"></span><span class="katakana R e"></span></td>
-					<td><span class="hiragana R o"></span><span class="katakana R o"></span></td>
-				</tr>
-				<tr>
-					<td><span class="romaji R a"></span></td>
-					<td><span class="romaji R i"></span></td>
-					<td><span class="romaji R u"></span></td>
-					<td><span class="romaji R e"></span></td>
-					<td><span class="romaji R o"></span></td>
-				</tr>
-				<tr>
-					<td rowspan="2"><span class="romaji W"></span></td>
-					<td><span class="hiragana W a"></span><span class="katakana W a"></span></td>
-					<td><span class="hiragana W i"></span><span class="katakana W i"></span></td>
-					<td><span class="hiragana W u"></span><span class="katakana W u"></span></td>
-					<td><span class="hiragana W e"></span><span class="katakana W e"></span></td>
-					<td><span class="hiragana W o"></span><span class="katakana W o"></span></td>
-				</tr>
-				<tr>
-					<td><span class="romaji W a"></span></td>
-					<td><span class="romaji W i"></span></td>
-					<td><span class="romaji W u"></span></td>
-					<td><span class="romaji W e"></span></td>
-					<td><span class="romaji W o"></span></td>
-				</tr>
-				<tr>
-					<td rowspan="2"><span class="romaji N"></span></td>
-					<td><span class="hiragana N n"></span><span class="katakana N n"></span></td>
-				</tr>
-				<tr>
-					<td><span class="romaji N n"></span></td>
-				</tr>
-			</table>
-		</main>
-		<div class="links">
-			<p>友情链接</p>
-			<a href="http://www.japanese-lesson.com/characters/romaji/" target="_blank">Romaji</a>
-		</div>
-		<div class="copyright">
-			<p>Powered by Dosin</p>
-		</div>
-		<script src="../scripts/jquery-2.1.4.min.js"></script>
-		<script>
-		$(document).ready(function(){
-			$("section input").each(function(){
-				$(this).attr("name","font")
-			}).each(function(){
-				$(this).click(function(){
-					$("main").css("font-family",$(this).parent().text())
-				})
-			})
-			$("section label").each(function(){
-				$(this).css("font-family",$(this).text())
-			})
-			$("body").show(300)
-			$(".vowel.a").html(vowel.a)
-			$(".vowel.i").html(vowel.i)
-			$(".vowel.u").html(vowel.u)
-			$(".vowel.e").html(vowel.e)
-			$(".vowel.o").html(vowel.o)
-			$(".romaji.A").html(romaji.a)
-			$(".romaji.K").html(romaji.k)
-			$(".romaji.S").html(romaji.s)
-			$(".romaji.T").html(romaji.t)
-			$(".romaji.N").html(romaji.n)
-			$(".romaji.H").html(romaji.h)
-			$(".romaji.M").html(romaji.m)
-			$(".romaji.Y").html(romaji.y)
-			$(".romaji.R").html(romaji.r)
-			$(".romaji.W").html(romaji.w)
-			$(".romaji.n").html(romaji.n)
-			$(".romaji.A.a").html(vowel.a)
-			$(".romaji.K.a").html(romaji.k+vowel.a)
-			$(".romaji.S.a").html(romaji.s+vowel.a)
-			$(".romaji.T.a").html(romaji.t+vowel.a)
-			$(".romaji.N.a").html(romaji.n+vowel.a)
-			$(".romaji.H.a").html(romaji.h+vowel.a)
-			$(".romaji.M.a").html(romaji.m+vowel.a)
-			$(".romaji.Y.a").html(romaji.y+vowel.a)
-			$(".romaji.R.a").html(romaji.r+vowel.a)
-			$(".romaji.W.a").html(romaji.w+vowel.a)
-			$(".romaji.A.i").html(vowel.i)
-			$(".romaji.K.i").html(romaji.k+vowel.i)
-			$(".romaji.S.i").html(romaji.s+"<span class='red'>h</span>"+vowel.i)
-			$(".romaji.T.i").html("<span class='red'>ch</span>"+vowel.i)
-			$(".romaji.N.i").html(romaji.n+vowel.i)
-			$(".romaji.H.i").html(romaji.h+vowel.i)
-			$(".romaji.M.i").html(romaji.m+vowel.i)
-			$(".romaji.Y.i").html("("+vowel.i+")")
-			$(".romaji.R.i").html(romaji.r+vowel.i)
-			$(".romaji.W.i").html("("+vowel.i+")")
-			$(".romaji.A.u").html(vowel.u)
-			$(".romaji.K.u").html(romaji.k+vowel.u)
-			$(".romaji.S.u").html(romaji.s+vowel.u)
-			$(".romaji.T.u").html(romaji.t+"<span class='red'>s</span>"+vowel.u)
-			$(".romaji.N.u").html(romaji.n+vowel.u)
-			$(".romaji.H.u").html("<span class='red'>f</span>"+vowel.u)
-			$(".romaji.M.u").html(romaji.m+vowel.u)
-			$(".romaji.Y.u").html(romaji.y+vowel.u)
-			$(".romaji.R.u").html(romaji.r+vowel.u)
-			$(".romaji.W.u").html("("+vowel.u+")")
-			$(".romaji.A.e").html(vowel.e)
-			$(".romaji.K.e").html(romaji.k+vowel.e)
-			$(".romaji.S.e").html(romaji.s+vowel.e)
-			$(".romaji.T.e").html(romaji.t+vowel.e)
-			$(".romaji.N.e").html(romaji.n+vowel.e)
-			$(".romaji.H.e").html(romaji.h+vowel.e)
-			$(".romaji.M.e").html(romaji.m+vowel.e)
-			$(".romaji.Y.e").html("("+vowel.e+")")
-			$(".romaji.R.e").html(romaji.r+vowel.e)
-			$(".romaji.W.e").html("("+vowel.e+")")
-			$(".romaji.A.o").html(vowel.o)
-			$(".romaji.K.o").html(romaji.k+vowel.o)
-			$(".romaji.S.o").html(romaji.s+vowel.o)
-			$(".romaji.T.o").html(romaji.t+vowel.o)
-			$(".romaji.N.o").html(romaji.n+vowel.o)
-			$(".romaji.H.o").html(romaji.h+vowel.o)
-			$(".romaji.M.o").html(romaji.m+vowel.o)
-			$(".romaji.Y.o").html(romaji.y+vowel.o)
-			$(".romaji.R.o").html(romaji.r+vowel.o)
-			$(".romaji.W.o").html(romaji.w+vowel.o)
-			$(".hiragana.A.a").html(hiragana.aa)
-			$(".hiragana.K.a").html(hiragana.ka)
-			$(".hiragana.S.a").html(hiragana.sa)
-			$(".hiragana.T.a").html(hiragana.ta)
-			$(".hiragana.N.a").html(hiragana.na)
-			$(".hiragana.H.a").html(hiragana.ha)
-			$(".hiragana.M.a").html(hiragana.ma)
-			$(".hiragana.Y.a").html(hiragana.ya)
-			$(".hiragana.R.a").html(hiragana.ra)
-			$(".hiragana.W.a").html(hiragana.wa)
-			$(".hiragana.A.i").html(hiragana.ai)
-			$(".hiragana.K.i").html(hiragana.ki)
-			$(".hiragana.S.i").html(hiragana.si)
-			$(".hiragana.T.i").html(hiragana.ti)
-			$(".hiragana.N.i").html(hiragana.ni)
-			$(".hiragana.H.i").html(hiragana.hi)
-			$(".hiragana.M.i").html(hiragana.mi)
-			$(".hiragana.Y.i").html(hiragana.yi)
-			$(".hiragana.R.i").html(hiragana.ri)
-			$(".hiragana.W.i").html(hiragana.wi)
-			$(".hiragana.A.u").html(hiragana.au)
-			$(".hiragana.K.u").html(hiragana.ku)
-			$(".hiragana.S.u").html(hiragana.su)
-			$(".hiragana.T.u").html(hiragana.tu)
-			$(".hiragana.N.u").html(hiragana.nu)
-			$(".hiragana.H.u").html(hiragana.hu)
-			$(".hiragana.M.u").html(hiragana.mu)
-			$(".hiragana.Y.u").html(hiragana.yu)
-			$(".hiragana.R.u").html(hiragana.ru)
-			$(".hiragana.W.u").html(hiragana.wu)
-			$(".hiragana.A.e").html(hiragana.ae)
-			$(".hiragana.K.e").html(hiragana.ke)
-			$(".hiragana.S.e").html(hiragana.se)
-			$(".hiragana.T.e").html(hiragana.te)
-			$(".hiragana.N.e").html(hiragana.ne)
-			$(".hiragana.H.e").html(hiragana.he)
-			$(".hiragana.M.e").html(hiragana.me)
-			$(".hiragana.Y.e").html(hiragana.ye)
-			$(".hiragana.R.e").html(hiragana.re)
-			$(".hiragana.W.e").html(hiragana.we)
-			$(".hiragana.A.o").html(hiragana.ao)
-			$(".hiragana.K.o").html(hiragana.ko)
-			$(".hiragana.S.o").html(hiragana.so)
-			$(".hiragana.T.o").html(hiragana.to)
-			$(".hiragana.N.o").html(hiragana.no)
-			$(".hiragana.H.o").html(hiragana.ho)
-			$(".hiragana.M.o").html(hiragana.mo)
-			$(".hiragana.Y.o").html(hiragana.yo)
-			$(".hiragana.R.o").html(hiragana.ro)
-			$(".hiragana.W.o").html(hiragana.wo)
-			$(".hiragana.N.n").html(hiragana.nn)
-			$(".katakana.A.a").html(katakana.aa)
-			$(".katakana.K.a").html(katakana.ka)
-			$(".katakana.S.a").html(katakana.sa)
-			$(".katakana.T.a").html(katakana.ta)
-			$(".katakana.N.a").html(katakana.na)
-			$(".katakana.H.a").html(katakana.ha)
-			$(".katakana.M.a").html(katakana.ma)
-			$(".katakana.Y.a").html(katakana.ya)
-			$(".katakana.R.a").html(katakana.ra)
-			$(".katakana.W.a").html(katakana.wa)
-			$(".katakana.A.i").html(katakana.ai)
-			$(".katakana.K.i").html(katakana.ki)
-			$(".katakana.S.i").html(katakana.si)
-			$(".katakana.T.i").html(katakana.ti)
-			$(".katakana.N.i").html(katakana.ni)
-			$(".katakana.H.i").html(katakana.hi)
-			$(".katakana.M.i").html(katakana.mi)
-			$(".katakana.Y.i").html(katakana.yi)
-			$(".katakana.R.i").html(katakana.ri)
-			$(".katakana.W.i").html(katakana.wi)
-			$(".katakana.A.u").html(katakana.au)
-			$(".katakana.K.u").html(katakana.ku)
-			$(".katakana.S.u").html(katakana.su)
-			$(".katakana.T.u").html(katakana.tu)
-			$(".katakana.N.u").html(katakana.nu)
-			$(".katakana.H.u").html(katakana.hu)
-			$(".katakana.M.u").html(katakana.mu)
-			$(".katakana.Y.u").html(katakana.yu)
-			$(".katakana.R.u").html(katakana.ru)
-			$(".katakana.W.u").html(katakana.wu)
-			$(".katakana.A.e").html(katakana.ae)
-			$(".katakana.K.e").html(katakana.ke)
-			$(".katakana.S.e").html(katakana.se)
-			$(".katakana.T.e").html(katakana.te)
-			$(".katakana.N.e").html(katakana.ne)
-			$(".katakana.H.e").html(katakana.he)
-			$(".katakana.M.e").html(katakana.me)
-			$(".katakana.Y.e").html(katakana.ye)
-			$(".katakana.R.e").html(katakana.re)
-			$(".katakana.W.e").html(katakana.we)
-			$(".katakana.A.o").html(katakana.ao)
-			$(".katakana.K.o").html(katakana.ko)
-			$(".katakana.S.o").html(katakana.so)
-			$(".katakana.T.o").html(katakana.to)
-			$(".katakana.N.o").html(katakana.no)
-			$(".katakana.H.o").html(katakana.ho)
-			$(".katakana.M.o").html(katakana.mo)
-			$(".katakana.Y.o").html(katakana.yo)
-			$(".katakana.R.o").html(katakana.ro)
-			$(".katakana.W.o").html(katakana.wo)
-			$(".katakana.N.n").html(katakana.nn)
-			$(".hiragana").parent().css("background","lightgreen")
-			$(".romaji").parent().css("background","lightpink")
-			$(".romaji.a,.romaji.i,.romaji.u,.romaji.e,.romaji.o,.romaji.n").parent().css("background","white")
-		})
-		</script>
-	</body>
+  .copyright{
+    color:#999;
+    width:100%;
+    text-align:center;
+    font:0.8em/2.4em "Microsoft Yahei";
+  }
+  </style>
+  <script>
+    vowel={
+      a:"a",
+      i:"i",
+      u:"u",
+      e:"e",
+      o:"o"
+    }
+    romaji={
+      a:"a",
+      k:"k",
+      s:"s",
+      t:"t",
+      n:"n",
+      h:"h",
+      m:"m",
+      y:"y",
+      r:"r",
+      w:"w"
+    }
+    hiragana={
+      aa:"あ",
+      ai:"い",
+      au:"う",
+      ae:"え",
+      ao:"お",
+      ka:"か",
+      ki:"き",
+      ku:"く",
+      ke:"け",
+      ko:"こ",
+      sa:"さ",
+      si:"し",
+      su:"す",
+      se:"せ",
+      so:"そ",
+      ta:"た",
+      ti:"ち",
+      tu:"つ",
+      te:"て",
+      to:"と",
+      na:"な",
+      ni:"に",
+      nu:"ぬ",
+      ne:"ね",
+      no:"の",
+      ha:"は",
+      hi:"ひ",
+      hu:"ふ",
+      he:"へ",
+      ho:"ほ",
+      ma:"ま",
+      mi:"み",
+      mu:"む",
+      me:"め",
+      mo:"も",
+      ya:"や",
+      yi:"い",
+      yu:"ゆ",
+      ye:"え",
+      yo:"よ",
+      ra:"ら",
+      ri:"り",
+      ru:"る",
+      re:"れ",
+      ro:"ろ",
+      wa:"わ",
+      wi:"い",
+      wu:"う",
+      we:"え",
+      wo:"を",
+      nn:"ん"
+    }
+    katakana={
+      aa:"ア",
+      ai:"イ",
+      au:"ウ",
+      ae:"エ",
+      ao:"オ",
+      ka:"カ",
+      ki:"キ",
+      ku:"ク",
+      ke:"ケ",
+      ko:"コ",
+      sa:"サ",
+      si:"シ",
+      su:"ス",
+      se:"セ",
+      so:"ソ",
+      ta:"タ",
+      ti:"チ",
+      tu:"ツ",
+      te:"テ",
+      to:"ト",
+      na:"ナ",
+      ni:"ニ",
+      nu:"ヌ",
+      ne:"ネ",
+      no:"ノ",
+      ha:"ハ",
+      hi:"ヒ",
+      hu:"フ",
+      he:"ヘ",
+      ho:"ホ",
+      ma:"マ",
+      mi:"ミ",
+      mu:"ム",
+      me:"メ",
+      mo:"モ",
+      ya:"ヤ",
+      yi:"イ",
+      yu:"ユ",
+      ye:"エ",
+      yo:"ヨ",
+      ra:"ラ",
+      ri:"リ",
+      ru:"ル",
+      re:"レ",
+      ro:"ロ",
+      wa:"ワ",
+      wi:"イ",
+      wu:"ウ",
+      we:"エ",
+      wo:"ヲ",
+      nn:"ン"
+    }
+  </script>
+</head>
+<body>
+  <section>
+    <p>字体</p>
+    <label><input type="radio" checked>宋体</label>
+    <label><input type="radio">仿宋</label>
+    <label><input type="radio">黑体</label>
+    <label><input type="radio">楷体</label>
+    <label><input type="radio">隶书</label>
+    <label><input type="radio">微软雅黑</label>
+    <label><input type="radio">Arial</label>
+  </section>
+  <main>
+    <table border="1" cellspacing="0">
+    <caption>五十音图</caption>
+      <tr>
+        <td> </td>
+        <td><span class="vowel a"></span></td>
+        <td><span class="vowel i"></span></td>
+        <td><span class="vowel u"></span></td>
+        <td><span class="vowel e"></span></td>
+        <td><span class="vowel o"></span></td>
+      </tr>
+      <tr>
+        <td rowspan="2"><span class="romaji A"></span></td>
+        <td><span class="hiragana A a"></span><span class="katakana A a"></span></td>
+        <td><span class="hiragana A i"></span><span class="katakana A i"></span></td>
+        <td><span class="hiragana A u"></span><span class="katakana A u"></span></td>
+        <td><span class="hiragana A e"></span><span class="katakana A e"></span></td>
+        <td><span class="hiragana A o"></span><span class="katakana A o"></span></td>
+      </tr>
+      <tr>
+        <td><span class="romaji A a"></span></td>
+        <td><span class="romaji A i"></span></td>
+        <td><span class="romaji A u"></span></td>
+        <td><span class="romaji A e"></span></td>
+        <td><span class="romaji A o"></span></td>
+      </tr>
+      <tr>
+        <td rowspan="2"><span class="romaji K"></span></td>
+        <td><span class="hiragana K a"></span><span class="katakana K a"></span></td>
+        <td><span class="hiragana K i"></span><span class="katakana K i"></span></td>
+        <td><span class="hiragana K u"></span><span class="katakana K u"></span></td>
+        <td><span class="hiragana K e"></span><span class="katakana K e"></span></td>
+        <td><span class="hiragana K o"></span><span class="katakana K o"></span></td>
+      </tr>
+      <tr>
+        <td><span class="romaji K a"></span></td>
+        <td><span class="romaji K i"></span></td>
+        <td><span class="romaji K u"></span></td>
+        <td><span class="romaji K e"></span></td>
+        <td><span class="romaji K o"></span></td>
+      </tr>
+      <tr>
+        <td rowspan="2"><span class="romaji S"></span></td>
+        <td><span class="hiragana S a"></span><span class="katakana S a"></span></td>
+        <td><span class="hiragana S i"></span><span class="katakana S i"></span></td>
+        <td><span class="hiragana S u"></span><span class="katakana S u"></span></td>
+        <td><span class="hiragana S e"></span><span class="katakana S e"></span></td>
+        <td><span class="hiragana S o"></span><span class="katakana S o"></span></td>
+      </tr>
+      <tr>
+        <td><span class="romaji S a"></span></td>
+        <td><span class="romaji S i"></span></td>
+        <td><span class="romaji S u"></span></td>
+        <td><span class="romaji S e"></span></td>
+        <td><span class="romaji S o"></span></td>
+      </tr>
+      <tr>
+        <td rowspan="2"><span class="romaji T"></span></td>
+        <td><span class="hiragana T a"></span><span class="katakana T a"></span></td>
+        <td><span class="hiragana T i"></span><span class="katakana T i"></span></td>
+        <td><span class="hiragana T u"></span><span class="katakana T u"></span></td>
+        <td><span class="hiragana T e"></span><span class="katakana T e"></span></td>
+        <td><span class="hiragana T o"></span><span class="katakana T o"></span></td>
+      </tr>
+      <tr>
+        <td><span class="romaji T a"></span></td>
+        <td><span class="romaji T i"></span></td>
+        <td><span class="romaji T u"></span></td>
+        <td><span class="romaji T e"></span></td>
+        <td><span class="romaji T o"></span></td>
+      </tr>
+      <tr>
+        <td rowspan="2"><span class="romaji N"></span></td>
+        <td><span class="hiragana N a"></span><span class="katakana N a"></span></td>
+        <td><span class="hiragana N i"></span><span class="katakana N i"></span></td>
+        <td><span class="hiragana N u"></span><span class="katakana N u"></span></td>
+        <td><span class="hiragana N e"></span><span class="katakana N e"></span></td>
+        <td><span class="hiragana N o"></span><span class="katakana N o"></span></td>
+      </tr>
+      <tr>
+        <td><span class="romaji N a"></span></td>
+        <td><span class="romaji N i"></span></td>
+        <td><span class="romaji N u"></span></td>
+        <td><span class="romaji N e"></span></td>
+        <td><span class="romaji N o"></span></td>
+      </tr>
+      <tr>
+        <td rowspan="2"><span class="romaji H"></span></td>
+        <td><span class="hiragana H a"></span><span class="katakana H a"></span></td>
+        <td><span class="hiragana H i"></span><span class="katakana H i"></span></td>
+        <td><span class="hiragana H u"></span><span class="katakana H u"></span></td>
+        <td><span class="hiragana H e"></span><span class="katakana H e"></span></td>
+        <td><span class="hiragana H o"></span><span class="katakana H o"></span></td>
+      </tr>
+      <tr>
+        <td><span class="romaji H a"></span></td>
+        <td><span class="romaji H i"></span></td>
+        <td><span class="romaji H u"></span></td>
+        <td><span class="romaji H e"></span></td>
+        <td><span class="romaji H o"></span></td>
+      </tr>
+      <tr>
+        <td rowspan="2"><span class="romaji M"></span></td>
+        <td><span class="hiragana M a"></span><span class="katakana M a"></span></td>
+        <td><span class="hiragana M i"></span><span class="katakana M i"></span></td>
+        <td><span class="hiragana M u"></span><span class="katakana M u"></span></td>
+        <td><span class="hiragana M e"></span><span class="katakana M e"></span></td>
+        <td><span class="hiragana M o"></span><span class="katakana M o"></span></td>
+      </tr>
+      <tr>
+        <td><span class="romaji M a"></span></td>
+        <td><span class="romaji M i"></span></td>
+        <td><span class="romaji M u"></span></td>
+        <td><span class="romaji M e"></span></td>
+        <td><span class="romaji M o"></span></td>
+      </tr>
+      <tr>
+        <td rowspan="2"><span class="romaji Y"></span></td>
+        <td><span class="hiragana Y a"></span><span class="katakana Y a"></span></td>
+        <td><span class="hiragana Y i"></span><span class="katakana Y i"></span></td>
+        <td><span class="hiragana Y u"></span><span class="katakana Y u"></span></td>
+        <td><span class="hiragana Y e"></span><span class="katakana Y e"></span></td>
+        <td><span class="hiragana Y o"></span><span class="katakana Y o"></span></td>
+      </tr>
+      <tr>
+        <td><span class="romaji Y a"></span></td>
+        <td><span class="romaji Y i"></span></td>
+        <td><span class="romaji Y u"></span></td>
+        <td><span class="romaji Y e"></span></td>
+        <td><span class="romaji Y o"></span></td>
+      </tr>
+      <tr>
+        <td rowspan="2"><span class="romaji R"></span></td>
+        <td><span class="hiragana R a"></span><span class="katakana R a"></span></td>
+        <td><span class="hiragana R i"></span><span class="katakana R i"></span></td>
+        <td><span class="hiragana R u"></span><span class="katakana R u"></span></td>
+        <td><span class="hiragana R e"></span><span class="katakana R e"></span></td>
+        <td><span class="hiragana R o"></span><span class="katakana R o"></span></td>
+      </tr>
+      <tr>
+        <td><span class="romaji R a"></span></td>
+        <td><span class="romaji R i"></span></td>
+        <td><span class="romaji R u"></span></td>
+        <td><span class="romaji R e"></span></td>
+        <td><span class="romaji R o"></span></td>
+      </tr>
+      <tr>
+        <td rowspan="2"><span class="romaji W"></span></td>
+        <td><span class="hiragana W a"></span><span class="katakana W a"></span></td>
+        <td><span class="hiragana W i"></span><span class="katakana W i"></span></td>
+        <td><span class="hiragana W u"></span><span class="katakana W u"></span></td>
+        <td><span class="hiragana W e"></span><span class="katakana W e"></span></td>
+        <td><span class="hiragana W o"></span><span class="katakana W o"></span></td>
+      </tr>
+      <tr>
+        <td><span class="romaji W a"></span></td>
+        <td><span class="romaji W i"></span></td>
+        <td><span class="romaji W u"></span></td>
+        <td><span class="romaji W e"></span></td>
+        <td><span class="romaji W o"></span></td>
+      </tr>
+      <tr>
+        <td rowspan="2"><span class="romaji N"></span></td>
+        <td><span class="hiragana N n"></span><span class="katakana N n"></span></td>
+      </tr>
+      <tr>
+        <td><span class="romaji N n"></span></td>
+      </tr>
+    </table>
+  </main>
+  <div class="links">
+    <p>友情链接</p>
+    <a href="http://www.japanese-lesson.com/characters/romaji/" target="_blank">Romaji</a>
+  </div>
+  <div class="copyright">
+    <p>Powered by Dosin</p>
+  </div>
+  <script src="../scripts/jquery-2.1.4.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    $("section input").each(function(){
+      $(this).attr("name","font")
+    }).each(function(){
+      $(this).click(function(){
+        $("main").css("font-family",$(this).parent().text())
+      })
+    })
+    $("section label").each(function(){
+      $(this).css("font-family",$(this).text())
+    })
+    $("body").show(300)
+    $(".vowel.a").html(vowel.a)
+    $(".vowel.i").html(vowel.i)
+    $(".vowel.u").html(vowel.u)
+    $(".vowel.e").html(vowel.e)
+    $(".vowel.o").html(vowel.o)
+    $(".romaji.A").html(romaji.a)
+    $(".romaji.K").html(romaji.k)
+    $(".romaji.S").html(romaji.s)
+    $(".romaji.T").html(romaji.t)
+    $(".romaji.N").html(romaji.n)
+    $(".romaji.H").html(romaji.h)
+    $(".romaji.M").html(romaji.m)
+    $(".romaji.Y").html(romaji.y)
+    $(".romaji.R").html(romaji.r)
+    $(".romaji.W").html(romaji.w)
+    $(".romaji.n").html(romaji.n)
+    $(".romaji.A.a").html(vowel.a)
+    $(".romaji.K.a").html(romaji.k+vowel.a)
+    $(".romaji.S.a").html(romaji.s+vowel.a)
+    $(".romaji.T.a").html(romaji.t+vowel.a)
+    $(".romaji.N.a").html(romaji.n+vowel.a)
+    $(".romaji.H.a").html(romaji.h+vowel.a)
+    $(".romaji.M.a").html(romaji.m+vowel.a)
+    $(".romaji.Y.a").html(romaji.y+vowel.a)
+    $(".romaji.R.a").html(romaji.r+vowel.a)
+    $(".romaji.W.a").html(romaji.w+vowel.a)
+    $(".romaji.A.i").html(vowel.i)
+    $(".romaji.K.i").html(romaji.k+vowel.i)
+    $(".romaji.S.i").html(romaji.s+"<span class='red'>h</span>"+vowel.i)
+    $(".romaji.T.i").html("<span class='red'>ch</span>"+vowel.i)
+    $(".romaji.N.i").html(romaji.n+vowel.i)
+    $(".romaji.H.i").html(romaji.h+vowel.i)
+    $(".romaji.M.i").html(romaji.m+vowel.i)
+    $(".romaji.Y.i").html("("+vowel.i+")")
+    $(".romaji.R.i").html(romaji.r+vowel.i)
+    $(".romaji.W.i").html("("+vowel.i+")")
+    $(".romaji.A.u").html(vowel.u)
+    $(".romaji.K.u").html(romaji.k+vowel.u)
+    $(".romaji.S.u").html(romaji.s+vowel.u)
+    $(".romaji.T.u").html(romaji.t+"<span class='red'>s</span>"+vowel.u)
+    $(".romaji.N.u").html(romaji.n+vowel.u)
+    $(".romaji.H.u").html("<span class='red'>f</span>"+vowel.u)
+    $(".romaji.M.u").html(romaji.m+vowel.u)
+    $(".romaji.Y.u").html(romaji.y+vowel.u)
+    $(".romaji.R.u").html(romaji.r+vowel.u)
+    $(".romaji.W.u").html("("+vowel.u+")")
+    $(".romaji.A.e").html(vowel.e)
+    $(".romaji.K.e").html(romaji.k+vowel.e)
+    $(".romaji.S.e").html(romaji.s+vowel.e)
+    $(".romaji.T.e").html(romaji.t+vowel.e)
+    $(".romaji.N.e").html(romaji.n+vowel.e)
+    $(".romaji.H.e").html(romaji.h+vowel.e)
+    $(".romaji.M.e").html(romaji.m+vowel.e)
+    $(".romaji.Y.e").html("("+vowel.e+")")
+    $(".romaji.R.e").html(romaji.r+vowel.e)
+    $(".romaji.W.e").html("("+vowel.e+")")
+    $(".romaji.A.o").html(vowel.o)
+    $(".romaji.K.o").html(romaji.k+vowel.o)
+    $(".romaji.S.o").html(romaji.s+vowel.o)
+    $(".romaji.T.o").html(romaji.t+vowel.o)
+    $(".romaji.N.o").html(romaji.n+vowel.o)
+    $(".romaji.H.o").html(romaji.h+vowel.o)
+    $(".romaji.M.o").html(romaji.m+vowel.o)
+    $(".romaji.Y.o").html(romaji.y+vowel.o)
+    $(".romaji.R.o").html(romaji.r+vowel.o)
+    $(".romaji.W.o").html(romaji.w+vowel.o)
+    $(".hiragana.A.a").html(hiragana.aa)
+    $(".hiragana.K.a").html(hiragana.ka)
+    $(".hiragana.S.a").html(hiragana.sa)
+    $(".hiragana.T.a").html(hiragana.ta)
+    $(".hiragana.N.a").html(hiragana.na)
+    $(".hiragana.H.a").html(hiragana.ha)
+    $(".hiragana.M.a").html(hiragana.ma)
+    $(".hiragana.Y.a").html(hiragana.ya)
+    $(".hiragana.R.a").html(hiragana.ra)
+    $(".hiragana.W.a").html(hiragana.wa)
+    $(".hiragana.A.i").html(hiragana.ai)
+    $(".hiragana.K.i").html(hiragana.ki)
+    $(".hiragana.S.i").html(hiragana.si)
+    $(".hiragana.T.i").html(hiragana.ti)
+    $(".hiragana.N.i").html(hiragana.ni)
+    $(".hiragana.H.i").html(hiragana.hi)
+    $(".hiragana.M.i").html(hiragana.mi)
+    $(".hiragana.Y.i").html(hiragana.yi)
+    $(".hiragana.R.i").html(hiragana.ri)
+    $(".hiragana.W.i").html(hiragana.wi)
+    $(".hiragana.A.u").html(hiragana.au)
+    $(".hiragana.K.u").html(hiragana.ku)
+    $(".hiragana.S.u").html(hiragana.su)
+    $(".hiragana.T.u").html(hiragana.tu)
+    $(".hiragana.N.u").html(hiragana.nu)
+    $(".hiragana.H.u").html(hiragana.hu)
+    $(".hiragana.M.u").html(hiragana.mu)
+    $(".hiragana.Y.u").html(hiragana.yu)
+    $(".hiragana.R.u").html(hiragana.ru)
+    $(".hiragana.W.u").html(hiragana.wu)
+    $(".hiragana.A.e").html(hiragana.ae)
+    $(".hiragana.K.e").html(hiragana.ke)
+    $(".hiragana.S.e").html(hiragana.se)
+    $(".hiragana.T.e").html(hiragana.te)
+    $(".hiragana.N.e").html(hiragana.ne)
+    $(".hiragana.H.e").html(hiragana.he)
+    $(".hiragana.M.e").html(hiragana.me)
+    $(".hiragana.Y.e").html(hiragana.ye)
+    $(".hiragana.R.e").html(hiragana.re)
+    $(".hiragana.W.e").html(hiragana.we)
+    $(".hiragana.A.o").html(hiragana.ao)
+    $(".hiragana.K.o").html(hiragana.ko)
+    $(".hiragana.S.o").html(hiragana.so)
+    $(".hiragana.T.o").html(hiragana.to)
+    $(".hiragana.N.o").html(hiragana.no)
+    $(".hiragana.H.o").html(hiragana.ho)
+    $(".hiragana.M.o").html(hiragana.mo)
+    $(".hiragana.Y.o").html(hiragana.yo)
+    $(".hiragana.R.o").html(hiragana.ro)
+    $(".hiragana.W.o").html(hiragana.wo)
+    $(".hiragana.N.n").html(hiragana.nn)
+    $(".katakana.A.a").html(katakana.aa)
+    $(".katakana.K.a").html(katakana.ka)
+    $(".katakana.S.a").html(katakana.sa)
+    $(".katakana.T.a").html(katakana.ta)
+    $(".katakana.N.a").html(katakana.na)
+    $(".katakana.H.a").html(katakana.ha)
+    $(".katakana.M.a").html(katakana.ma)
+    $(".katakana.Y.a").html(katakana.ya)
+    $(".katakana.R.a").html(katakana.ra)
+    $(".katakana.W.a").html(katakana.wa)
+    $(".katakana.A.i").html(katakana.ai)
+    $(".katakana.K.i").html(katakana.ki)
+    $(".katakana.S.i").html(katakana.si)
+    $(".katakana.T.i").html(katakana.ti)
+    $(".katakana.N.i").html(katakana.ni)
+    $(".katakana.H.i").html(katakana.hi)
+    $(".katakana.M.i").html(katakana.mi)
+    $(".katakana.Y.i").html(katakana.yi)
+    $(".katakana.R.i").html(katakana.ri)
+    $(".katakana.W.i").html(katakana.wi)
+    $(".katakana.A.u").html(katakana.au)
+    $(".katakana.K.u").html(katakana.ku)
+    $(".katakana.S.u").html(katakana.su)
+    $(".katakana.T.u").html(katakana.tu)
+    $(".katakana.N.u").html(katakana.nu)
+    $(".katakana.H.u").html(katakana.hu)
+    $(".katakana.M.u").html(katakana.mu)
+    $(".katakana.Y.u").html(katakana.yu)
+    $(".katakana.R.u").html(katakana.ru)
+    $(".katakana.W.u").html(katakana.wu)
+    $(".katakana.A.e").html(katakana.ae)
+    $(".katakana.K.e").html(katakana.ke)
+    $(".katakana.S.e").html(katakana.se)
+    $(".katakana.T.e").html(katakana.te)
+    $(".katakana.N.e").html(katakana.ne)
+    $(".katakana.H.e").html(katakana.he)
+    $(".katakana.M.e").html(katakana.me)
+    $(".katakana.Y.e").html(katakana.ye)
+    $(".katakana.R.e").html(katakana.re)
+    $(".katakana.W.e").html(katakana.we)
+    $(".katakana.A.o").html(katakana.ao)
+    $(".katakana.K.o").html(katakana.ko)
+    $(".katakana.S.o").html(katakana.so)
+    $(".katakana.T.o").html(katakana.to)
+    $(".katakana.N.o").html(katakana.no)
+    $(".katakana.H.o").html(katakana.ho)
+    $(".katakana.M.o").html(katakana.mo)
+    $(".katakana.Y.o").html(katakana.yo)
+    $(".katakana.R.o").html(katakana.ro)
+    $(".katakana.W.o").html(katakana.wo)
+    $(".katakana.N.n").html(katakana.nn)
+    $(".hiragana").parent().css("background","lightgreen")
+    $(".romaji").parent().css("background","lightpink")
+    $(".romaji.a,.romaji.i,.romaji.u,.romaji.e,.romaji.o,.romaji.n").parent().css("background","white")
+  })
+  </script>
+</body>
 </html>

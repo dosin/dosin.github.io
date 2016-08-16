@@ -1,41 +1,38 @@
-
 /* main */
-
 main figure {
-	float: left;
-	width: 230px;
-	min-height: 300px;
-	margin: 10px;
-	line-height: 2rem;
+  float: left;
+  width: 230px;
+  min-height: 300px;
+  margin: 10px;
+  line-height: 2rem;
 }
 
-@media screen and (min-width: 700px) {
-
-	main figure:first-of-type {
-		width: 480px;
-	}
+@media screen and (min-width:700px) {
+  main figure:first-of-type {
+    width: 480px;
+  }
 
 }
 
 main figcaption {
-	font-weight: bold;
-	text-align: center;
-	padding: 15px;
-	border: 1px solid currentColor;
-	border-radius: 3px;
-	background: #333;
-	color: #fff;
-	text-shadow: 1px 1px 0 #000;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px;
+  border: 1px solid currentColor;
+  border-radius: 3px;
+  background: #333;
+  color: #fff;
+  text-shadow: 1px 1px 0 #000;
 }
 
 main figure > ul {
-	padding:5px;
+  padding: 5px;
 }
 
 main figure > ul ul {
-	text-indent: 2rem;
+  text-indent: 2rem;
 }
 
 main figure > ul ul ul {
-	text-indent: 4rem;
+  text-indent: 4rem;
 }

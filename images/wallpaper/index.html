@@ -1,37 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<title>Wallpaper</title>
+  <meta charset="UTF-8">
+  <title>Wallpaper</title>
 </head>
 <body>
-	<script src="../scripts/wallpaper.js"></script>
-	<script>
+  <script src="../scripts/wallpaper.js"></script>
+  <script>
 
-	var res = ["360x480","480x640","480x800","768x1024","768x1366","1366x768","1920x1080"];
-	var arr = [
-		"http://s.cn.bing.net/az/hprichbg/rb/Kestrel_ZH-CN10242518763_1920x1080.jpg",
-		"http://s.cn.bing.net/az/hprichbg/rb/Plumeria_ZH-CN10955138144_1920x1080.jpg",
-		"http://s.cn.bing.net/az/hprichbg/rb/Taghit_ZH-CN10846599174_1920x1080.jpg",
-		"http://s.cn.bing.net/az/hprichbg/rb/LongTailedGlossy_ZH-CN13193173719_1920x1080.jpg",
-		"http://s.cn.bing.net/az/hprichbg/rb/VolcanoesNP_ZH-CN11778388181_1920x1080.jpg",
-		"http://s.cn.bing.net/az/hprichbg/rb/BlackSea_ZH-CN9772885358_1920x1080.jpg",
-		"http://s.cn.bing.net/az/hprichbg/rb/TorontoJoggers_ZH-CN13754389918_1920x1080.jpg",
-		"http://s.cn.bing.net/az/hprichbg/rb/BigHornSheep_ZH-CN6358178150_1920x1080.jpg"
-	];
-	for (var i = 0; i < arr.length; i++) {
-		arr[i] = arr[i].slice(arr[i].lastIndexOf('/') + 1, arr[i].lastIndexOf('_'));
-	}
+  var res = ["360x480","480x640","480x800","768x1024","768x1366","1366x768","1920x1080"];
+  var arr = [
+    "http://s.cn.bing.net/az/hprichbg/rb/Kestrel_ZH-CN10242518763_1920x1080.jpg",
+    "http://s.cn.bing.net/az/hprichbg/rb/Plumeria_ZH-CN10955138144_1920x1080.jpg",
+    "http://s.cn.bing.net/az/hprichbg/rb/Taghit_ZH-CN10846599174_1920x1080.jpg",
+    "http://s.cn.bing.net/az/hprichbg/rb/LongTailedGlossy_ZH-CN13193173719_1920x1080.jpg",
+    "http://s.cn.bing.net/az/hprichbg/rb/VolcanoesNP_ZH-CN11778388181_1920x1080.jpg",
+    "http://s.cn.bing.net/az/hprichbg/rb/BlackSea_ZH-CN9772885358_1920x1080.jpg",
+    "http://s.cn.bing.net/az/hprichbg/rb/TorontoJoggers_ZH-CN13754389918_1920x1080.jpg",
+    "http://s.cn.bing.net/az/hprichbg/rb/BigHornSheep_ZH-CN6358178150_1920x1080.jpg"
+  ];
+  for (var i = 0; i < arr.length; i++) {
+    arr[i] = arr[i].slice(arr[i].lastIndexOf('/') + 1, arr[i].lastIndexOf('_'));
+  }
 
-	for (var i = 0; i < res.length; i++) {
-		for (var j = 0; j < arr.length; j++) {
-			var img = document.createElement("img");
-			img.src = "http://cn.bing.com/az/hprichbg/rb/" + arr[j] + "_" + res[i] + ".jpg";
-			img.width = 20;
-			document.body.appendChild(img);
-		}
-	}
+  for (var i = 0; i < res.length; i++) {
+    for (var j = 0; j < arr.length; j++) {
+      var img = document.createElement("img");
+      img.src = "http://cn.bing.com/az/hprichbg/rb/" + arr[j] + "_" + res[i] + ".jpg";
+      img.width = 20;
+      document.body.appendChild(img);
+    }
+  }
 
-	</script>
+  </script>
 </body>
 </html>

@@ -1,2679 +1,2679 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
+  <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-	<script src="jquery-2.1.4.min.js"></script>
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-	<title>Bootstrap 3</title>
-	<style>
-	.grid-system [class^=col-] {
-		border: 2px solid #fff;
-		text-align: center;
-	}
-	</style>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="jquery-2.1.4.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <title>Bootstrap 3</title>
+  <style>
+  .grid-system [class^=col-] {
+    border: 2px solid #fff;
+    text-align: center;
+  }
+  </style>
 </head>
 <body>
-	<div class="jumbotron text-center">
-		<div class="container">
-			<h1>Bootstrap 3</h1>
-			<p class="small">
-				<a href="https://github.com/dosin/" target="_blank">Dosin</a>
-			</p>
-		</div>
-	</div>
-	<div class="container grid-system">
-		<div class="jumbotron">
-			<h1>Grid System</h1>
-		</div>
-		<p>
-			<code>.row > .col-xs/sm/md/lg-*</code>
-		</p>
-		<div class="row">
-			<div class="col-sm-1 bg-primary">span1</div>
-			<div class="col-sm-1 bg-primary">span1</div>
-			<div class="col-sm-1 bg-primary">span1</div>
-			<div class="col-sm-1 bg-primary">span1</div>
-			<div class="col-sm-1 bg-primary">span1</div>
-			<div class="col-sm-1 bg-primary">span1</div>
-			<div class="col-sm-1 bg-primary">span1</div>
-			<div class="col-sm-1 bg-primary">span1</div>
-			<div class="col-sm-1 bg-primary">span1</div>
-			<div class="col-sm-1 bg-primary">span1</div>
-			<div class="col-sm-1 bg-primary">span1</div>
-			<div class="col-sm-1 bg-primary">span1</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-2 bg-success">span2</div>
-			<div class="col-sm-2 bg-success">span2</div>
-			<div class="col-sm-2 bg-success">span2</div>
-			<div class="col-sm-2 bg-success">span2</div>
-			<div class="col-sm-2 bg-success">span2</div>
-			<div class="col-sm-2 bg-success">span2</div>
-			
-		</div>
-		<div class="row">
-			<div class="col-sm-3 bg-info">span3</div>
-			<div class="col-sm-3 bg-info">span3</div>
-			<div class="col-sm-3 bg-info">span3</div>
-			<div class="col-sm-3 bg-info">span3</div>
-			
-		</div>
-		<div class="row">
-			<div class="col-sm-4 bg-warning">span4</div>
-			<div class="col-sm-4 bg-warning">span4</div>
-			<div class="col-sm-4 bg-warning">span4</div>
-			
-		</div>
-		<div class="row">
-			<div class="col-sm-6 bg-danger">span6</div>
-			<div class="col-sm-6 bg-danger">span6</div>
-		</div>
-		<h2>Grid Classes</h2>
-		<ul>
-			<li>xs < 768px</li>
-			<li>sm >= 768px</li>
-			<li>md >= 992px</li>
-			<li>lg >= 1200px</li>
-		</ul>
-	</div>
-	<div class="container">
-		<div class="jumbotron">
-			<h1>Typography</h1>
-		</div>
-		<h2>Headings</h2>
-		<p>
-			<code>&lt;h1&gt;</code>
-			<code>&lt;h2&gt;</code>
-			<code>&lt;h3&gt;</code>
-			<code>&lt;h4&gt;</code>
-			<code>&lt;h5&gt;</code>
-			<code>&lt;h6&gt;</code>
-			<h1>h1 heading (36px) <small>secondary text</small></h1>
-			<h2>h2 heading (30px) <small>secondary text</small></h2>
-			<h3>h3 heading (24px) <small>secondary text</small></h3>
-			<h4>h4 heading (18px) <small>secondary text</small></h4>
-			<h5>h5 heading (14px) <small>secondary text</small></h5>
-			<h6>h6 heading (12px) <small>secondary text</small></h6>
-		</p>
-		<h2>Text</h2>
-		<p>
-			<code>&lt;small&gt;</code> creates a lighter, secondary text in any heading
-		</p>
-		<p>
-			<code>.small</code> indicates a <span class="small">small text</span>
-		</p>
-		<p>
-			<code>.lead</code> makes a text <span class="lead">stand out</span>
-		</p>
-		<p>
-			<code>&lt;mark&gt;</code> or <code>.mark</code> <mark>hightlights </mark><span class="mark">text</span>
-		</p>
-		<p>
-			<code>&lt;del&gt;</code> indicates <del>deleted text</del>
-		</p>
-		<p>
-			<code>&lt;s&gt;</code> indicates <s>no longer relevant text</s>
-		</p>
-		<p>
-			<code>&lt;ins&gt;</code> indicates <ins>inserted text</ins>
-		</p>
-		<p>
-			<code>&lt;u&gt;</code> indicates <u>underlined text</u>
-		</p>
-		<p>
-			<code>&lt;strong&gt;</code> indicates text you think it's <strong>important</strong>
-		</p>
-		<p>
-			<code>&lt;em&gt;</code> indicates text you want to <em>emphasize</em>
-		</p>
-		<p>
-		</p>
-		<p>
-			<code>.text-left</code>
-		</p>
-		<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-		<p>
-			<code>.text-center</code>
-			<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-		</p>
-		<p>
-			<code>.text-right</code>
-			<p class="text-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-		</p>
-		<p>
-			<code>.text-justify</code>
-			<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-		</p>
-		<p>
-			<code>.text-nowrap</code>
-			<p class="text-nowrap">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-		</p>
-		<p>
-			<code>.text-lowercase</code>
-			<p class="text-lowercase">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-		</p>
-		<p>
-			<code class="text-lowercase">.text-uppercase</code>
-			<p class="text-uppercase">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-		</p>
-		<p>
-			<code class="text-lowercase">.text-capitalize</code>
-			<p class="text-capitalize">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-		</p>
-		<p>
-			<code>&lt;abbr&gt;</code>
-			<abbr title="Cascading Style Sheets">css</abbr>
-		</p>
-		<p>
-			<code>abbr.initialism</code>
-			<abbr title="Cascading Style Sheets" class="initialism">css</abbr>
-		</p>
-		<p>
-			<code>&lt;address&gt;</code>
-			<address>
-				<strong>Dosin</strong><br>
-				Shenzhen city<br>
-				Guangdong Province<br>
-				China
-			</address>
-		</p>
-		<p>
-			<code>&lt;blockquote&gt;</code>
-			<blockquote>
-				<p>A simple yes would've sufficed.</p>
-				<footer>Dosin</footer>
-			</blockquote>
-		</p>
-		<p>
-			<code>blockquote.blockquote-reverse</code>
-			<blockquote class="blockquote-reverse">
-				<p>A simple yes would've sufficed.</p>
-				<footer>Dosin</footer>
-			</blockquote>
-		</p>
-		<h2>Lists</h2>
-		<div class="row">
-			<div class="col-md-4">
-				<p>
-					<code>&lt;ol&gt;</code>
-					<ul>
-						<li>1</li>
-						<li>2</li>
-						<li>3</li>
-						<li>4</li>
-					</ul>
-				</p>
-			</div>
-			<div class="col-md-4">
-				<p>
-					<code>&lt;ul&gt;</code>
-					<ol>
-						<li>1</li>
-						<li>2</li>
-						<li>3</li>
-						<li>4</li>
-					</ol>
-				</p>
-			</div>
-			<div class="col-md-4">
-				<p>
-					<code>&lt;dl&gt;</code>
-					<dl>
-						<dt>1</dt>
-						<dd>2</dd>
-						<dt>3</dt>
-						<dd>4</dd>
-					</dl>
-				</p>
-			</div>
-		</div>
-		<p>
-			<code>.list-inline</code>
-			<ol class="list-inline">
-				<li>1</li>
-				<li>2</li>
-				<li>3</li>
-				<li>4</li>
-			</ol>
-		</p>
-		<p>
-			<code>.list-unstyled</code> only applies to immediate children list items
-			<ol class="list-unstyled">
-				<li>1</li>
-				<li>2</li>
-				<li>3</li>
-				<li>4</li>
-			</ol>
-		</p>
-		<p>
-			<code>.dl-horizontal</code>
-			<dl class="dl-horizontal">
-				<dt>1</dt>
-				<dd>2</dd>
-				<dt>3</dt>
-				<dd>4</dd>
-			</dl>
-		</p>
-		<h2>Code</h2>
-		<p>
-			<code>&lt;var&gt;</code>
-			<var>y = ax + b</var>
-		</p>
-		<p>
-			<code>&lt;kbd&gt;</code>
-			<kbd>Widows + R</kbd>
-		</p>
-		<p>
-			<code>&lt;samp&gt;</code>
-			<samp>Sample output</samp>
-		</p>
-		<p>
-			<code>&lt;code&gt;</code>
-			<code>&lt;!DOCTYPE html&gt;</code>
-		</p>
-		<p>
-			<code>&lt;pre&gt;</code>
-			<pre>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque voluptatum natus, rerum, commodi iusto praesentium! Facere, illum? Dolore accusamus quam provident blanditiis labore. Minus nostrum dolorem minima repellat assumenda animi.</pre>
-		</p>
-		<p>
-			<code>.pre-scrollable</code>
-			<pre class="pre-scrollable">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque voluptatum natus, rerum, commodi iusto praesentium! Facere, illum? Dolore accusamus quam provident blanditiis labore. Minus nostrum dolorem minima repellat assumenda animi.</pre>
-		</p>
-	</div>
-	<div class="container">
-		<div class="jumbotron">
-			<h1>Buttons</h1>
-		</div>
-		<p>
-			<code>.btn + .btn-default .btn-primary .btn-success .btn-info .btn-warning .btn-danger .btn-link</code>
-		</p>
-		<p>The button classes can be used on an <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, or <code>&lt;input&gt;</code> element</p>
-		<p>
-			<button type="button" class="btn btn-default">Default</button>
-			<button type="button" class="btn btn-primary">Primary</button>
-			<button type="button" class="btn btn-success">Success</button>
-			<button type="button" class="btn btn-info">Info</button>
-			<button type="button" class="btn btn-warning">Warning</button>
-			<button type="button" class="btn btn-danger">Danger</button>
-			<button type="button" class="btn btn-link">Link</button>
-		</p>
-		<p>
-			<code>.btn .btn-xs/sm/md/lg</code>
-		</p>
-		<p>
-			<button type="button" class="btn btn-default btn-xs">Extra Small</button>
-			<button type="button" class="btn btn-default btn-sm">Small</button>
-			<button type="button" class="btn btn-default btn-md">Medium</button>
-			<button type="button" class="btn btn-default btn-lg">Large</button>
-		</p>
-		<p>
-			<code>.btn .btn-block</code>
-		</p>
-		<p>
-			<button type="button" class="btn btn-default btn-block">Block</button>
-		</p>
-		<p>
-			<code>.active</code>
-			<code>.disabled</code>
-		</p>	
-		<p>
-			<button type="button" class="btn btn-default active">Active</button>
-			<button type="button" class="btn btn-default disabled">Disabled</button>
-		</p>
-		<h2>Button groups</h2>
-		<p>
-			<code>div.btn-group</code>
-		</p>
-		<div class="btn-group">
-			<button type="button" class="btn btn-default">Default</button>
-			<button type="button" class="btn btn-primary">Primary</button>
-			<button type="button" class="btn btn-success">Success</button>
-			<button type="button" class="btn btn-info">Info</button>
-			<button type="button" class="btn btn-warning">Warning</button>
-			<button type="button" class="btn btn-danger">danger</button>
-			<button type="button" class="btn btn-link">Link</button>
-		</div>
-		<p>
-			<code>div.btn-group-vertical</code>
-		</p>
-		<div class="btn-group-vertical">
-			<button type="button" class="btn btn-default">Default</button>
-			<button type="button" class="btn btn-primary">Primary</button>
-			<button type="button" class="btn btn-success">Success</button>
-			<button type="button" class="btn btn-info">Info</button>
-			<button type="button" class="btn btn-warning">Warning</button>
-			<button type="button" class="btn btn-danger">danger</button>
-			<button type="button" class="btn btn-link">Link</button>
-		</div>
-		<p>
-			<code>div.btn-group .btn-group-justified</code>
-		</p>
-		<p>Use <code>&lt;a&gt;</code> elements as buttons</p>
-		<div class="btn-group btn-group-justified">
-			<a href="javascript:;" class="btn btn-default">Default</a>
-			<a href="javascript:;" class="btn btn-primary">Primary</a>
-			<a href="javascript:;" class="btn btn-success">Success</a>
-			<a href="javascript:;" class="btn btn-info">Info</a>
-			<a href="javascript:;" class="btn btn-warning">Warning</a>
-			<a href="javascript:;" class="btn btn-danger">danger</a>
-			<a href="javascript:;" class="btn btn-link">Link</a>
-		</div>
-		<p>
-			<code>div.btn-group .btn-group-xs/sm/lg</code>
-		</p>
-		<div class="btn-group btn-group-xs">
-			<button type="button" class="btn btn-default">Default</button>
-			<button type="button" class="btn btn-primary">Primary</button>
-			<button type="button" class="btn btn-success">Success</button>
-			<button type="button" class="btn btn-info">Info</button>
-			<button type="button" class="btn btn-warning">Warning</button>
-			<button type="button" class="btn btn-danger">danger</button>
-			<button type="button" class="btn btn-link">Link</button>
-		</div>
-		<br>
-		<div class="btn-group btn-group-sm">
-			<button type="button" class="btn btn-default">Default</button>
-			<button type="button" class="btn btn-primary">Primary</button>
-			<button type="button" class="btn btn-success">Success</button>
-			<button type="button" class="btn btn-info">Info</button>
-			<button type="button" class="btn btn-warning">Warning</button>
-			<button type="button" class="btn btn-danger">danger</button>
-			<button type="button" class="btn btn-link">Link</button>
-		</div>
-		<br>
-		<div class="btn-group btn-group-lg">
-			<button type="button" class="btn btn-default">Default</button>
-			<button type="button" class="btn btn-primary">Primary</button>
-			<button type="button" class="btn btn-success">Success</button>
-			<button type="button" class="btn btn-info">Info</button>
-			<button type="button" class="btn btn-warning">Warning</button>
-			<button type="button" class="btn btn-danger">danger</button>
-			<button type="button" class="btn btn-link">Link</button>
-		</div>
-		<h2>Nesting button groups and dropdown menus</h2>
-		<p>
-			<code>div.btn-group > (button[data-toggle=dropdown] + ul.dropdown-menu)</code>
-		</p>
-		<div class="btn-group">
-			<button type="button" class="btn btn-default">A</button>
-			<button type="button" class="btn btn-default">B</button>
-			<div class="btn-group">
-				<button type="button" class="btn btn-default" data-toggle="dropdown">C <span class="caret"></span></button>
-				<ul class="dropdown-menu">
-					<li><a href="javascript:;">C1</a></li>
-					<li><a href="javascript:;">C2</a></li>
-				</ul>
-			</div>
-		</div>
-		<h2>Split button dropdown</h2>
-		<p>
-			<code>button[data-toggle=dropdown] + ul.dropdown-menu</code>
-		</p>
-		<div class="btn-group">
-			<button class="btn btn-primary" type="button">A</button>
-			<button class="btn btn-primary" type="button">B</button>
-			<button class="btn btn-primary" type="button">C</button>
-			<button class="btn btn-primary" type="button" data-toggle="dropdown"><span class="caret"></span></button>
-			<ul class="dropdown-menu">
-				<li><a href="javascript:;">C1</a></li>
-				<li><a href="javascript:;">C2</a></li>
-			</ul>
-		</div>
-	</div>
-	<div class="container">
-		<div class="jumbotron">
-			<h1>Forms</h1>
-		</div>
-		<h2>Basic form</h2>
-		<p>All <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>, and <code>&lt;select&gt;</code> elements with class <code>.form-control</code> have a with of 100%</p>
-		<p>
-			<code>form > ((div.form-group > (label + input.form-control)) + (div.checkbox > label > input.checkbox))</code>
-		</p>
-		<form>
-			<div class="form-group">
-				<label for="email">Email:</label>
-				<input type="email" id="email" class="form-control" placeholder="Enter email">
-			</div>
-			<div class="form-group">
-				<label for="pwd">Password:</label>
-				<input type="password" id="pwd" class="form-control" placeholder="Enter password">
-			</div>
-			<div class="checkbox">
-				<label><input type="checkbox">Remember me</label>
-			</div>
-			<button type="button" class="btn btn-default" type="submit">submit</button>
-		</form>
-		<h2>Inline form</h2>
-		<p>
-			<code>form.form-inline</code>
-		</p>
-		<p>Make the viewport larger than 768px wide to see that all of the form elements are inline, left aligned, and the labels are alongside</p>
-		<form class="form-inline">
-			<div class="form-group">
-				<label for="email">Email:</label>
-				<input type="email" id="email" class="form-control" placeholder="Enter email">
-			</div>
-			<div class="form-group">
-				<label for="pwd">Password:</label>
-				<input type="password" id="pwd" class="form-control" placeholder="Enter password">
-			</div>
-			<div class="checkbox">
-				<label><input type="checkbox">Remember me</label>
-			</div>
-			<button type="button" class="btn btn-default" type="submit">submit</button>
-		</form>
-		<h2>Horizontal form</h2>
-		<p>
-			<code>form.form-horizontal > div.form-group > (label.control-label.col-xs/sm/md/lg-* + (.col-xs/sm/md/lg-* > input))</code>
-		</p>
-		<p>Make the viewport larger than 768px wide to see that all of the form elements are inline, left aligned, and the labels are alongside</p>
-		<form class="form-horizontal">
-			<div class="form-group">
-				<label for="email" class="control-label col-sm-2">Email:</label>
-				<div class="col-sm-10">
-					<input type="email" id="email" class="form-control" placeholder="Enter email">
-				</div>
-			</div>
-			<div class="form-group">
-				<label for="pwd" class="control-label col-sm-2">Password:</label>
-				<div class="col-sm-10">
-					<input type="password" id="pwd" class="form-control" placeholder="Enter password">
-				</div>
-			</div>
-			<div class="form-group">
-				<div class="col-sm-offset-2 col-sm-10">
-					<div class="checkbox">
-						<label><input type="checkbox">Remember me</label>
-					</div>
-				</div>
-			</div>
-			<div class="form-group">
-				<div class="col-sm-offset-2 col-sm-10">
-					<button type="button" class="btn btn-default" type="submit">submit</button>
-				</div>
-			</div>
-		</form>
-		<p>
-			<code>label.checkbox-inline</code>
-			<form>
-				<label class="checkbox-inline"><input type="checkbox">Option1</label>
-				<label class="checkbox-inline"><input type="checkbox">Option2</label>
-				<label class="checkbox-inline"><input type="checkbox">Option3</label>
-			</form>
-		</p>
-		<p>
-			<code>label.radio-inline</code>
-			<form>
-				<label class="radio-inline"><input type="radio" name="radioInline">Option1</label>
-				<label class="radio-inline"><input type="radio" name="radioInline">Option2</label>
-				<label class="radio-inline"><input type="radio" name="radioInline">Option3</label>
-			</form>
-		</p>
-		<p>
-			Set the heights of input elements using classes like <code>.input-sm</code> and <code>.input-lg</code>
-			<form>
-				<input type="text" class="input-sm form-control" placeholder="input-sm">
-				<input type="text" class="form-control" placeholder="default">
-				<input type="text" class="input-lg form-control" placeholder="input-lg">
-			</form>
-		</p>
-		<p>
-			<code>.help-block</code>
-			<form>
-				<div class="form-group">
-					<input type="text" placeholder="Enter Email" class="form-control">
-					<span class="help-block">If you don't have an Email, get one.</span>
-				</div>
-			</form>
-			<button type="submit" class="btn btn-default">Submit</button>
-		</p>
-	</div>
-	<div class="container">
-		<div class="jumbotron">
-			<h1>Helpers</h1>
-		</div>
-		<h2>Contextual Colors</h2>
-		<p>
-			<code>.text-muted</code>
-			<code>.text-primary</code>
-			<code>.text-success</code>
-			<code>.text-info</code>
-			<code>.text-warning</code>
-			<code>.text-danger</code>
-			<p class="text-muted">This text is muted</p>
-			<p class="text-primary">This text is important</p>
-			<p class="text-success">This text indicates success</p>
-			<p class="text-info">This text represents some information</p>
-			<p class="text-warning">This text represents a warning</p>
-			<p class="text-danger">This text represents danger</p>
-		</p>
-		<h2>Contextual Backgrounds</h2>
-		<p>
-			<code>.bg-primary</code>
-			<code>.bg-success</code>
-			<code>.bg-info</code>
-			<code>.bg-warning</code>
-			<code>.bg-danger</code>
-			<p class="bg-primary">This text is important</p>
-			<p class="bg-success">This text indicates success</p>
-			<p class="bg-info">This text represents some information</p>
-			<p class="bg-warning">This text represents a warning</p>
-			<p class="bg-danger">This text represents danger</p>
-		</p>
-		<h2>Others</h2>
-		<div class="clearfix">
-			<p class="pull-left">
-				<code>.pull-left</code> floats an element to the left
-			</p>
-			<p class="pull-right">
-				<code>.pull-right</code> floats an elment to the right
-			</p>
-		</div>
-		<p>
-			<code>.clearfix</code> clear floats
-		</p>
-		<p>
-			<code>.center-block</code> sets an element to display block and margin-left/right auto
-		</p>
-		<div class="center-block" style="width: 200px; text-align: center;">This <code>&lt;div&gt;</code> is centered</div>
-		<p>
-			<code>.show</code> forces an element to be show
-		</p>
-		<p>
-			<code>.hidden</code> forces an element to be hidden
-		</p>
-		<p>
-			<code>.sr-only</code> hides an element to all devices except screen readers
-		</p>
-		<p>
-			<code>.sr-only-focusable</code> combine with <code>.sr-only</code> to show the element again when it is focused
-		</p>
-		<p>
-			<code>.text-hide</code> helps replace an element's text content with a background image
-		</p>
-		<p>
-			<code>.close</code> indicates a close icon <button type="button" class="close">&times;</button>
-		</p>
-		<p>
-			<code>.caret</code> indicates dropdown functionality <button type="button" class="btn btn-default">Button <span class="caret"></span></button>
-		</p>
-		<h2>Responsive Utilities</h2>
-		<p>
-			<code>.visible-xs/sm/md/lg-block/inline/inline-block</code>
-			<p class="visible-xs-block">This text only shows on an EXTRA SMALL screen</p>
-			<p class="visible-sm-block">This text only shows on a SMALL screen</p>
-			<p class="visible-md-block">This text only shows on a MEDIUM screen</p>
-			<p class="visible-lg-block">This text only shows on a LARGE screen</p>
-		</p>
-		<p>
-			<code>.hidden-xs/sm/md/lg</code>
-			<p class="hidden-xs">This text won't show on an EXTRA SMALL screen</p>
-			<p class="hidden-sm">This text won't show on a SMALL screen</p>
-			<p class="hidden-md">This text won't show on a MEDIUM screen</p>
-			<p class="hidden-lg">This text won't show on a LARGE screen</p>
-		</p>
-	</div>
-	<div class="container">
-		<div class="jumbotron">
-			<h1>Images</h1>
-		</div>
-		<p>
-			<code>img.img-rounded</code>
-			<img src="http://dosin.github.io/website/images/logo.jpg" alt="" class="img-rounded">
-			<code>img.img-circle</code>
-			<img src="http://dosin.github.io/website/images/logo.jpg" alt="" class="img-circle">
-			<code>img.img-thumbnail</code>
-			<img src="http://dosin.github.io/website/images/logo.jpg" alt="" class="img-thumbnail">
-		</p>
-		<h2>Responsive Images</h2>
-		<p>
-			<code>img.img-responsive</code>
-			<img src="http://cn.bing.com/az/hprichbg/rb/CatumboLightning_ZH-CN12441529580_1920x1080.jpg" alt="" class="img-responsive">
-		</p>
-		<h2>Responsive Embed</h2>
-		<p>
-			<code>div.embed-responsive .embed-responsive-16by9/4by3 > iframe.embed-responsive-item</code>
-			<div class="embed-responsive embed-responsive-16by9">
-				<iframe class="embed-responsive-item" src="http://player.youku.com/player.php/sid/XMTM1ODUyMzA0MA==/v.swf" allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></iframe>
-			</div>
-		</p>
-	</div>
-	<div class="container">
-		<div class="jumbotron">
-			<h1>Tables</h1>
-		</div>
-		<p>
-			<code>table.table</code>
-			<table class="table">
-				<thead>
-					<tr>
-						<td>A</td>
-						<td>B</td>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>1</td>
-						<td>4</td>
-					</tr>
-					<tr>
-						<td>2</td>
-						<td>5</td>
-					</tr>
-					<tr>
-						<td>3</td>
-						<td>6</td>
-					</tr>
-				</tbody>
-			</table>
-		</p>
-		<p>
-			<code>table.table .table-striped</code>
-			<table class="table table-striped">
-				<thead>
-					<tr>
-						<td>A</td>
-						<td>B</td>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>1</td>
-						<td>4</td>
-					</tr>
-					<tr>
-						<td>2</td>
-						<td>5</td>
-					</tr>
-					<tr>
-						<td>3</td>
-						<td>6</td>
-					</tr>
-				</tbody>
-			</table>
-		</p>
-		<p>
-			<code>table.table .table-bordered</code>
-			<table class="table table-bordered">
-				<thead>
-					<tr>
-						<td>A</td>
-						<td>B</td>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>1</td>
-						<td>1</td>
-					</tr>
-					<tr>
-						<td>2</td>
-						<td>2</td>
-					</tr>
-					<tr>
-						<td>3</td>
-						<td>3</td>
-					</tr>
-				</tbody>
-			</table>
-		</p>
-		<p>
-			<code>table.table .table-hover</code>
-			<table class="table table-hover">
-				<thead>
-					<tr>
-						<td>A</td>
-						<td>B</td>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>1</td>
-						<td>1</td>
-					</tr>
-					<tr>
-						<td>2</td>
-						<td>2</td>
-					</tr>
-					<tr>
-						<td>3</td>
-						<td>3</td>
-					</tr>
-				</tbody>
-			</table>
-		</p>
-		<p>
-			<code>table.table .table-condensed</code>
-			<table class="table table-condensed">
-				<thead>
-					<tr>
-						<td>A</td>
-						<td>B</td>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>1</td>
-						<td>1</td>
-					</tr>
-					<tr>
-						<td>2</td>
-						<td>2</td>
-					</tr>
-					<tr>
-						<td>3</td>
-						<td>3</td>
-					</tr>
-				</tbody>
-			</table>
-		</p>
-		<p>
-			<code>table.table .table-striped .table-bordered .table-hover .table-condensed</code>
-			<table class="table table-striped table-bordered table-hover table-condensed">
-				<thead>
-					<tr>
-						<td>A</td>
-						<td>B</td>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>1</td>
-						<td>1</td>
-					</tr>
-					<tr>
-						<td>2</td>
-						<td>2</td>
-					</tr>
-					<tr>
-						<td>3</td>
-						<td>3</td>
-					</tr>
-				</tbody>
-			</table>
-		</p>
-		<p>
-			<code>tr.active tr.success tr.info tr.warning tr.danger</code>
-			<table class="table table-hover">
-				<thead>
-					<tr>
-						<td>A</td>
-						<td>B</td>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>1</td>
-						<td>1</td>
-					</tr>
-					<tr class="active">
-						<td>2</td>
-						<td>2</td>
-					</tr>
-					<tr class="success">
-						<td>3</td>
-						<td>3</td>
-					</tr>
-					<tr class="info">
-						<td>4</td>
-						<td>4</td>
-					</tr>
-					<tr class="warning">
-						<td>5</td>
-						<td>5</td>
-					</tr>
-					<tr class="danger">
-						<td>6</td>
-						<td>6</td>
-					</tr>
-				</tbody>
-			</table>
-		</p>
-		<p>
-			<code>div.table-responsive > table</code>
-			<div class="table-responsive">
-				<table class="table">
-					<thead>
-						<tr>
-							<td>A</td>
-							<td>B</td>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>1</td>
-							<td>4</td>
-						</tr>
-						<tr>
-							<td>2</td>
-							<td>5</td>
-						</tr>
-						<tr>
-							<td>3</td>
-							<td>6</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-		</p>
-	</div>
-	<div class="container">
-		<div class="jumbotron">
-			<h1>Dropdowns</h1>
-		</div>
-		<p>
-			<code>div.dropdown > (button[data-toggle=dropdown] + ul.dropdown-menu) > li.dropdown-header + li.divider + li.disabled</code>
-			<div class="dropdown">
-				<button type="button" data-toggle="dropdown">Boot <span class="caret"></span></button>
-				<ul class="dropdown-menu">
-					<li class="dropdown-header">The rest letters</li>
-					<li><a href="javascript:;">s</a></li>
-					<li><a href="javascript:;">t</a></li>
-					<li><a href="javascript:;">r</a></li>
-					<li><a href="javascript:;">a</a></li>
-					<li class="divider"></li>
-					<li class="disabled"><a href="javascript:;">p</a></li>
-				</ul>
-			</div>
-		</p>
-		<p>
-			<code>div.dropdown > (button[data-toggle=dropdown] + ul.dropdown-menu .dropdown-menu-right)</code>
-			<div class="dropdown">
-				<button type="button" data-toggle="dropdown">Boot <span class="caret"></span></button>
-				<ul class="dropdown-menu dropdown-menu-right">
-					<li class="dropdown-header">The rest letters</li>
-					<li><a href="javascript:;">s</a></li>
-					<li><a href="javascript:;">t</a></li>
-					<li><a href="javascript:;">r</a></li>
-					<li><a href="javascript:;">a</a></li>
-					<li class="divider"></li>
-					<li class="disabled"><a href="javascript:;">p</a></li>
-				</ul>
-			</div>
-		</p>
-		<p>
-			<code>div.dropup > (button[data-toggle=dropdown] + ul.dropdown-menu)</code>
-			<div class="dropup">
-				<button type="button" data-toggle="dropdown">Boot <span class="caret"></span></button>
-				<ul class="dropdown-menu">
-					<li class="dropdown-header">The rest letters</li>
-					<li><a href="javascript:;">s</a></li>
-					<li><a href="javascript:;">t</a></li>
-					<li><a href="javascript:;">r</a></li>
-					<li><a href="javascript:;">a</a></li>
-					<li class="divider"></li>
-					<li class="disabled"><a href="javascript:;">p</a></li>
-				</ul>
-			</div>
-		</p>
-	</div>
-	<div class="container">
-		<div class="jumbotron">
-			<h1>Navs</h1>
-		</div>
-		<h2>Tabs and Pills</h2>
-		<p>
-			<code>ul.nav .nav-tabs</code>
-			<ul class="nav nav-tabs">
-				<li class="active"><a href="javascript:;">A</a></li>
-				<li><a href="javascript:;">B</a></li>
-				<li><a href="javascript:;">C</a></li>
-				<li><a href="javascript:;">D</a></li>
-			</ul>
-		</p>
-		<p>
-			<code>ul.nav .nav-tabs .nav-justified</code>
-			<ul class="nav nav-tabs nav-justified">
-				<li class="active"><a href="javascript:;">A</a></li>
-				<li><a href="javascript:;">B</a></li>
-				<li><a href="javascript:;">C</a></li>
-				<li><a href="javascript:;">D</a></li>
-			</ul>
-		</p>
-		<p>
-			<code>ul.nav .nav-pills</code>
-			<ul class="nav nav-pills">
-				<li class="active"><a href="javascript:;">A</a></li>
-				<li><a href="javascript:;">B</a></li>
-				<li><a href="javascript:;">C</a></li>
-				<li><a href="javascript:;">D</a></li>
-			</ul>
-		</p>
-		<p>
-			<code>ul.nav .nav-pills .nav-stacked</code>
-			<ul class="nav nav-pills nav-stacked">
-				<li class="active"><a href="javascript:;">A</a></li>
-				<li><a href="javascript:;">B</a></li>
-				<li><a href="javascript:;">C</a></li>
-				<li><a href="javascript:;">D</a></li>
-			</ul>
-		</p>
-		<p>
-			<code>li.active li.disabled</code>
-			<ul class="nav nav-tabs">
-				<li class="active"><a href="javascript:;">A</a></li>
-				<li class="disabled"><a href="javascript:;">B</a></li>
-				<li><a href="javascript:;">C</a></li>
-				<li><a href="javascript:;">D</a></li>
-			</ul>
-		</p>
-		<h2>Dynamic Tabs</h2>
-		<p>
-			<code>(ul.nav-tabs > li > a[data-toggle=tab,href=#id]) + (div.tab-content > div.tab-pane .fade .in .active )</code>
-			<ul class="nav nav-tabs">
-				<li class="active"><a data-toggle="tab" href="#tabsA">A</a></li>
-				<li><a data-toggle="tab" href="#tabsB">B</a></li>
-				<li><a data-toggle="tab" href="#tabsC">C</a></li>
-				<li><a data-toggle="tab" href="#tabsD">D</a></li>
-			</ul>
-			<div class="tab-content">
-				<div id="tabsA" class="tab-pane fade in active">
-					<p>The A pane</p>
-				</div>
-				<div id="tabsB" class="tab-pane fade">
-					<p>The B pane</p>
-				</div>
-				<div id="tabsC" class="tab-pane fade">
-					<p>The C pane</p>
-				</div>
-				<div id="tabsD" class="tab-pane fade">
-					<p>The D pane</p>
-				</div>
-			</div>
-		</p>
-		<h2>Dynamic Pills</h2>
-		<p>
-			<code>(ul.nav-pills > li > a[data-toggle=tab,href=#id]) + (div.tab-content > div.tab-pane .fade .in .active )</code>
-			<ul class="nav nav-pills">
-				<li class="active"><a data-toggle="tab" href="#pillsA">A</a></li>
-				<li><a data-toggle="tab" href="#pillsB">B</a></li>
-				<li><a data-toggle="tab" href="#pillsC">C</a></li>
-				<li><a data-toggle="tab" href="#pillsD">D</a></li>
-			</ul>
-			<div class="tab-content">
-				<div id="pillsA" class="tab-pane fade in active">
-					<p>The A pane</p>
-				</div>
-				<div id="pillsB" class="tab-pane fade">
-					<p>The B pane</p>
-				</div>
-				<div id="pillsC" class="tab-pane fade">
-					<p>The C pane</p>
-				</div>
-				<div id="pillsD" class="tab-pane fade">
-					<p>The D pane</p>
-				</div>
-			</div>
-		</p>
-		<h2>Breadcrumb and Pagination</h2>
-		<p>
-			<code>ol.breadcrumb > li.active</code>
-			<ol class="breadcrumb">
-				<li><a href="javascript:;">1</a></li>
-				<li><a href="javascript:;">2</a></li>
-				<li><a href="javascript:;">3</a></li>
-				<li class="active">4</li>
-			</ol>
-		</p>
-		<p>
-			<code>ul.pager</code>
-			<ul class="pager">
-				<li><a href="javascript:;">Previous</a></li>
-				<li><a href="javascript:;">Next</a></li>
-			</ul>
-		</p>
-		<p>
-			<code>ul.pager > li.previous li.next</code>
-			<ul class="pager">
-				<li class="previous"><a href="javascript:;">Previous</a></li>
-				<li class="next"><a href="javascript:;">Next</a></li>
-			</ul>
-		</p>
-		<p>
-			<code>li.disabled</code>
-			<ul class="pager">
-				<li class="previous disabled"><a href="javascript:;">Previous</a></li>
-				<li class="next"><a href="javascript:;">Next</a></li>
-			</ul>
-		</p>
-		<p>
-			<code>ul.pagination</code>
-			<ul class="pagination">
-				<li><a href="javascript:;">«</a></li>
-				<li><a href="javascript:;">1</a></li>
-				<li><a href="javascript:;">2</a></li>
-				<li><a href="javascript:;">3</a></li>
-				<li><a href="javascript:;">4</a></li>
-				<li><a href="javascript:;">»</a></li>
-			</ul>
-		</p>
-		<p>
-			<code>ul.pagination .pagination-sm/lg</code>
-			<ul class="pagination pagination-sm">
-				<li><a href="javascript:;">«</a></li>
-				<li><a href="javascript:;">1</a></li>
-				<li><a href="javascript:;">2</a></li>
-				<li><a href="javascript:;">3</a></li>
-				<li><a href="javascript:;">4</a></li>
-				<li><a href="javascript:;">»</a></li>
-			</ul>
-			<br>
-			<ul class="pagination pagination-lg">
-				<li><a href="javascript:;">«</a></li>
-				<li><a href="javascript:;">1</a></li>
-				<li><a href="javascript:;">2</a></li>
-				<li><a href="javascript:;">3</a></li>
-				<li><a href="javascript:;">4</a></li>
-				<li><a href="javascript:;">»</a></li>
-			</ul>
-		</p>
-		<p>
-			<code>ul.pagination > li.active + li.disabled</code>
-			<ul class="pagination">
-				<li><a href="javascript:;">«</a></li>
-				<li><a href="javascript:;">1</a></li>
-				<li class="active"><a href="javascript:;">2</a></li>
-				<li class="disabled"><a href="javascript:;">3</a></li>
-				<li><a href="javascript:;">4</a></li>
-				<li><a href="javascript:;">»</a></li>
-			</ul>
-		</p>
-		<p>
-			<code>.label + .label-default .label-primary .label-success .label-info .label-warning .label-danger</code>
-			<p>
-				<span class="label label-default">What the Hell</span>
-				<span class="label label-primary">What the Hell</span>
-				<span class="label label-success">What the Hell</span>
-				<span class="label label-info">What the Hell</span>
-				<span class="label label-warning">What the Hell</span>
-				<span class="label label-danger">What the Hell</span>
-			</p>
-		</p>
-		<p>
-			<code>.badge</code>
-			<p>
-				New <span class="badge">23</span>
-			</p>
-		</p>
-	</div>
-	<div class="jumbotron">
-		<div class="container">
-			<h1>hello world</h1>
-			<p>
-				<code>.jumbotron > .container</code>
-			</p>
-		</div>
-	</div>
-	<div class="container">
-		<div class="jumbotron">
-			<h1>hello world</h1>
-			<p>
-				<code>.container > .jumbotron</code>
-			</p>
-		</div>
-	</div>
-	<div class="container">
-		<p>
-			<code>.pager-header</code>
-			<div class="page-header">
-				<h1>hello world</h1>
-			</div>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse dolorum pariatur dolores repudiandae consectetur iste eos voluptates, libero voluptatem fugiat, incidunt id quibusdam quis odit, expedita molestiae dolorem animi. Provident.</p>
-		</p>
-	</div>
-	<div class="container">
-		<div class="jumbotron">
-			<h1>Glyphicons</h1>
-		</div>
-		<p>
-			<code>.glyphicon .glyphicon-*</code>
-		</p>
-		<table class="table table-striped table-hover">
-			<tbody>
-				<tr>
-					<td><span class="glyphicon glyphicon-asterisk"></span></td>
-					<td>asterisk</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-plus"></span></td>
-					<td>plus</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-minus"></span></td>
-					<td>minus</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-euro"></span></td>
-					<td>euro</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-usd"></span></td>
-					<td>usd</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-gbp"></span></td>
-					<td>gbp</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-yen"></span></td>
-					<td>yen</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-ruble"></span></td>
-					<td>ruble</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-cloud"></span></td>
-					<td>cloud</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-envelope"></span></td>
-					<td>envelope</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-pencil"></span></td>
-					<td>pencil</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-erase"></span></td>
-					<td>erase</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-glass"></span></td>
-					<td>glass</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-music"></span></td>
-					<td>music</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-search"></span></td>
-					<td>search</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-heart"></span></td>
-					<td>heart</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-heart-empty"></span></td>
-					<td>heart-empty</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-star"></span></td>
-					<td>star</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-star-empty"></span></td>
-					<td>star-empty</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-user"></span></td>
-					<td>user</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-th"></span></td>
-					<td>th</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-th-large"></span></td>
-					<td>th-large</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-th-list"></span></td>
-					<td>th-list</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-ok"></span></td>
-					<td>ok</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-remove"></span></td>
-					<td>remove</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-zoom-in"></span></td>
-					<td>zoom-in</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-zoom-out"></span></td>
-					<td>zoom-out</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-off"></span></td>
-					<td>off</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-signal"></span></td>
-					<td>signal</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-cog"></span></td>
-					<td>cog</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-trash"></span></td>
-					<td>trash</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-home"></span></td>
-					<td>home</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-file"></span></td>
-					<td>file</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-time"></span></td>
-					<td>time</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-road"></span></td>
-					<td>road</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-download"></span></td>
-					<td>download</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-upload"></span></td>
-					<td>upload</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-download-alt"></span></td>
-					<td>download-alt</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-inbox"></span></td>
-					<td>inbox</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-repeat"></span></td>
-					<td>repeat</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-refresh"></span></td>
-					<td>refresh</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-list"></span></td>
-					<td>list</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-list-alt"></span></td>
-					<td>list-alt</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-lock"></span></td>
-					<td>lock</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-flag"></span></td>
-					<td>flag</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-headphones"></span></td>
-					<td>headphones</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-earphone"></span></td>
-					<td>earphone</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-volume-off"></span></td>
-					<td>volume-off</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-volume-down"></span></td>
-					<td>volume-down</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-volume-up"></span></td>
-					<td>volume-up</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-qrcode"></span></td>
-					<td>qrcode</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-barcode"></span></td>
-					<td>barcode</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-tag"></span></td>
-					<td>tag</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-tags"></span></td>
-					<td>tags</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-book"></span></td>
-					<td>book</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-bookmark"></span></td>
-					<td>bookmark</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-print"></span></td>
-					<td>print</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-camera"></span></td>
-					<td>camera</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-facetime-video"></span></td>
-					<td>facetime-video</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-picture"></span></td>
-					<td>picture</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-font"></span></td>
-					<td>font</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-bold"></span></td>
-					<td>bold</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-italic"></span></td>
-					<td>italic</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-text-height"></span></td>
-					<td>text-height</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-text-width"></span></td>
-					<td>text-width</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-text-size"></span></td>
-					<td>text-size</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-text-color"></span></td>
-					<td>text-color</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-text-background"></span></td>
-					<td>text-background</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-superscript"></span></td>
-					<td>superscript</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-subscript"></span></td>
-					<td>subscript</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-align-left"></span></td>
-					<td>align-left</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-align-center"></span></td>
-					<td>align-center</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-align-right"></span></td>
-					<td>align-right</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-align-justify"></span></td>
-					<td>align-justify</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-indent-left"></span></td>
-					<td>indent-left</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-indent-right"></span></td>
-					<td>indent-right</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-object-align-left"></span></td>
-					<td>object-align-left</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-object-align-horizontal"></span></td>
-					<td>object-align-horizontal</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-object-align-right"></span></td>
-					<td>object-align-right</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-object-align-top"></span></td>
-					<td>object-align-top</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-object-align-vertical"></span></td>
-					<td>object-align-vertical</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-object-align-bottom"></span></td>
-					<td>object-align-bottom</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-map-marker"></span></td>
-					<td>map-marker</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-adjust"></span></td>
-					<td>adjust</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-tint"></span></td>
-					<td>tint</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-edit"></span></td>
-					<td>edit</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-share"></span></td>
-					<td>share</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-check"></span></td>
-					<td>check</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-unchecked"></span></td>
-					<td>unchecked</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-move"></span></td>
-					<td>move</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-backward"></span></td>
-					<td>backward</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-step-backward"></span></td>
-					<td>step-backward</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-fast-backward"></span></td>
-					<td>fast-backward</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-play"></span></td>
-					<td>play</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-play-circle"></span></td>x
-					<td>play-circle</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-pause"></span></td>
-					<td>pause</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-stop"></span></td>
-					<td>stop</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-forward"></span></td>
-					<td>forward</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-step-forward"></span></td>
-					<td>step-forward</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-fast-forward"></span></td>
-					<td>fast-forward</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-eject"></span></td>
-					<td>eject</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-chevron-left"></span></td>
-					<td>chevron-left</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-chevron-right"></span></td>
-					<td>chevron-right</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-chevron-up"></span></td>
-					<td>chevron-up</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-chevron-down"></span></td>
-					<td>chevron-down</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-plus-sign"></span></td>
-					<td>plus-sign</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-minus-sign"></span></td>
-					<td>minus-sign</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-ok-sign"></span></td>
-					<td>ok-sign</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-remove-sign"></span></td>
-					<td>remove-sign</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-question-sign"></span></td>
-					<td>question-sign</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-exclamation-sign"></span></td>
-					<td>exclamation-sign</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-info-sign"></span></td>
-					<td>info-sign</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-warning-sign"></span></td>
-					<td>warning-sign</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-screenshot"></span></td>
-					<td>screenshot</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-ok-circle"></span></td>
-					<td>ok-circle</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-remove-circle"></span></td>
-					<td>remove-circle</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-ban-circle"></span></td>
-					<td>ban-circle</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-arrow-left"></span></td>
-					<td>arrow-left</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-arrow-right"></span></td>
-					<td>arrow-right</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-arrow-up"></span></td>
-					<td>arrow-up</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-arrow-down"></span></td>
-					<td>arrow-down</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-circle-arrow-left"></span></td>
-					<td>circle-arrow-left</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-circle-arrow-right"></span></td>
-					<td>circle-arrow-right</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-circle-arrow-up"></span></td>
-					<td>circle-arrow-up</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-circle-arrow-down"></span></td>
-					<td>circle-arrow-down</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-share-alt"></span></td>
-					<td>share-alt</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-resize-full"></span></td>
-					<td>resize-full</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-resize-small"></span></td>
-					<td>resize-small</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-resize-vertical"></span></td>
-					<td>resize-vertical</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-resize-horizontal"></span></td>
-					<td>resize-horizontal</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-gift"></span></td>
-					<td>gift</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-leaf"></span></td>
-					<td>leaf</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-fire"></span></td>
-					<td>fire</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-eye-open"></span></td>
-					<td>eye-open</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-eye-close"></span></td>
-					<td>eye-close</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-plane"></span></td>
-					<td>plane</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-calendar"></span></td>
-					<td>calendar</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-random"></span></td>
-					<td>random</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-comment"></span></td>
-					<td>comment</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-retweet"></span></td>
-					<td>retweet</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-magnet"></span></td>
-					<td>magnet</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-shopping-cart"></span></td>
-					<td>shopping-cart</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-folder-close"></span></td>
-					<td>folder-close</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-folder-open"></span></td>
-					<td>folder-open</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-hdd"></span></td>
-					<td>hdd</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-bullhorn"></span></td>
-					<td>bullhorn</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-bell"></span></td>
-					<td>bell</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-certificate"></span></td>
-					<td>certificate</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-thumbs-up"></span></td>
-					<td>thumbs-up</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-thumbs-down"></span></td>
-					<td>thumbs-down</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-hand-left"></span></td>
-					<td>hand-left</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-hand-right"></span></td>
-					<td>hand-right</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-hand-up"></span></td>
-					<td>hand-up</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-hand-down"></span></td>
-					<td>hand-down</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-globe"></span></td>
-					<td>globe</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-wrench"></span></td>
-					<td>wrench</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-tasks"></span></td>
-					<td>tasks</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-filter"></span></td>
-					<td>filter</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-briefcase"></span></td>
-					<td>briefcase</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-fullscreen"></span></td>
-					<td>fullscreen</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-dashboard"></span></td>
-					<td>dashboard</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-paperclip"></span></td>
-					<td>paperclip</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-link"></span></td>
-					<td>link</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-phone"></span></td>
-					<td>phone</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-phone-alt"></span></td>
-					<td>phone-alt</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-pushpin"></span></td>
-					<td>pushpin</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-sort"></span></td>
-					<td>sort</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-sort-by-alphabet"></span></td>
-					<td>sort-by-alphabet</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-sort-by-alphabet-alt"></span></td>
-					<td>sort-by-alphabet-alt</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-sort-by-order"></span></td>
-					<td>sort-by-order</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-sort-by-order-alt"></span></td>
-					<td>sort-by-order-alt</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-sort-by-attributes"></span></td>
-					<td>sort-by-attributes</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-sort-by-attributes-alt"></span></td>
-					<td>sort-by-attributes-alt</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-expand"></span></td>
-					<td>expand</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-collapse-down"></span></td>
-					<td>collapse-down</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-collapse-up"></span></td>
-					<td>collapse-up</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-log-in"></span></td>
-					<td>log-in</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-log-out"></span></td>
-					<td>log-out</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-new-window"></span></td>
-					<td>new-window</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-flash"></span></td>
-					<td>flash</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-save"></span></td>
-					<td>save</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-open"></span></td>
-					<td>open</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-saved"></span></td>
-					<td>saved</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-import"></span></td>
-					<td>import</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-export"></span></td>
-					<td>export</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-send"></span></td>
-					<td>send</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-floppy-disk"></span></td>
-					<td>floppy-disk</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-floppy-save"></span></td>
-					<td>floppy-save</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-floppy-open"></span></td>
-					<td>floppy-open</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-floppy-saved"></span></td>
-					<td>floppy-saved</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-floppy-remove"></span></td>
-					<td>floppy-remove</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-credit-card"></span></td>
-					<td>credit-card</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-transfer"></span></td>
-					<td>transfer</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-cutlery"></span></td>
-					<td>cutlery</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-header"></span></td>
-					<td>header</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-compressed"></span></td>
-					<td>compressed</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-stats"></span></td>
-					<td>stats</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-tower"></span></td>
-					<td>tower</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-sd-video"></span></td>
-					<td>sd-video</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-hd-video"></span></td>
-					<td>hd-video</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-subtitles"></span></td>
-					<td>subtitles</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-sound-stereo"></span></td>
-					<td>sound-stereo</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-sound-dolby"></span></td>
-					<td>sound-dolby</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-sound-5-1"></span></td>
-					<td>sound-5-1</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-sound-6-1"></span></td>
-					<td>sound-6-1</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-sound-7-1"></span></td>
-					<td>sound-7-1</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-copyright-mark"></span></td>
-					<td>copyright-mark</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-registration-mark"></span></td>
-					<td>registration-mark</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-cloud-download"></span></td>
-					<td>cloud-download</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-cloud-upload"></span></td>
-					<td>cloud-upload</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-tree-conifer"></span></td>
-					<td>tree-conifer</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-tree-deciduous"></span></td>
-					<td>tree-deciduous</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-save-file"></span></td>
-					<td>save-file</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-open-file"></span></td>
-					<td>open-file</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-level-up"></span></td>
-					<td>level-up</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-cd"></span></td>
-					<td>cd</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-copy"></span></td>
-					<td>copy</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-paste"></span></td>
-					<td>paste</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-alert"></span></td>
-					<td>alert</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-king"></span></td>
-					<td>king</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-queen"></span></td>
-					<td>queen</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-pawn"></span></td>
-					<td>pawn</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-bishop"></span></td>
-					<td>bishop</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-knight"></span></td>
-					<td>knight</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-baby-formula"></span></td>
-					<td>baby-formula</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-tent"></span></td>
-					<td>tent</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-blackboard"></span></td>
-					<td>blackboard</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-bed"></span></td>
-					<td>bed</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-apple"></span></td>
-					<td>apple</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-hourglass"></span></td>
-					<td>hourglass</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-lamp"></span></td>
-					<td>lamp</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-duplicate"></span></td>
-					<td>duplicate</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-piggy-bank"></span></td>
-					<td>piggy-bank</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-scissors"></span></td>
-					<td>scissors</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-bitcoin"></span></td>
-					<td>bitcoin</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-scale"></span></td>
-					<td>scale</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-ice-lolly"></span></td>
-					<td>ice-lolly</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-ice-lolly-tasted"></span></td>
-					<td>ice-lolly-tasted</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-education"></span></td>
-					<td>education</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-option-horizontal"></span></td>
-					<td>option-horizontal</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-option-vertical"></span></td>
-					<td>option-vertical</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-menu-hamburger"></span></td>
-					<td>menu-hamburger</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-modal-window"></span></td>
-					<td>modal-window</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-oil"></span></td>
-					<td>oil</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-grain"></span></td>
-					<td>grain</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-sunglasses"></span></td>
-					<td>sunglasses</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-triangle-top"></span></td>
-					<td>triangle-top</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-triangle-right"></span></td>
-					<td>triangle-right</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-triangle-bottom"></span></td>
-					<td>triangle-bottom</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-triangle-left"></span></td>
-					<td>triangle-left</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-menu-left"></span></td>
-					<td>menu-left</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-menu-right"></span></td>
-					<td>menu-right</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-menu-up"></span></td>
-					<td>menu-up</td>
-				</tr>
-				<tr>
-					<td><span class="glyphicon glyphicon-menu-down"></span></td>
-					<td>menu-down</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-	<div class="container">
-		<div class="jumbotron">
-			<h1>Wells</h1>
-		</div>
-		<p>
-			<code>.well</code>
-			<p class="well">Lorem ipsum dolor sit amet.</p>
-		</p>
-		<p>
-			<code>.well .well-sm/lg</code>
-			<p class="well well-sm">Lorem ipsum dolor sit amet.</p>
-			<p class="well well-lg">Lorem ipsum dolor sit amet.</p>
-		</p>
-	</div>
-	<div class="container">
-		<div class="jumbotron">
-			<h1>Alerts</h1>
-		</div>
-		<p>
-			<code>.alert + .alert-success .alert-info .alert-warning .alert-danger</code>
-			<p class="alert alert-success">Lorem ipsum dolor sit amet.</p>
-			<p class="alert alert-info">Lorem ipsum dolor sit amet.</p>
-			<p class="alert alert-warning">Lorem ipsum dolor sit amet.</p>
-			<p class="alert alert-danger">Lorem ipsum dolor sit amet.</p>
-		</p>
-		<p>
-			<code>div.alert .alert-success > a.close [data-dismiss=alert]</code>
-			<div class="alert alert-success">
-				<a class="close" data-dismiss="alert" href="#">&times;</a>
-				Lorem ipsum dolor sit amet.
-			</div>
-		</p>
-		<p>
-			<code>div.alert .alert-success <strong>.fade .in</strong> > a.close [data-dismiss=alert]</code>
-			<div class="alert alert-success fade in">
-				<a class="close" data-dismiss="alert" href="#">&times;</a>
-				Lorem ipsum dolor sit amet.
-			</div>
-		</p>
-	</div>
-	<div class="container">	
-		<div class="jumbotron">
-			<h1>Progress Bars</h1>
-		</div>
-		<p>
-			<code>div.progress > div.progress-bar</code>
-			<div class="progress">
-				<div class="progress-bar" style="width: 68%;">68%</div>
-			</div>
-		</p>
-		<p>
-			<code>div.progress-bar + .progress-bar-success/.progress-bar-info/.progress-bar-warning/.progress-bar-danger</code>
-			<div class="progress">
-				<div class="progress-bar progress-bar-success" style="width: 58%">Success</div>
-			</div>
-			<div class="progress">
-				<div class="progress-bar progress-bar-info" style="width: 68%">Info</div>
-			</div>
-			<div class="progress">
-				<div class="progress-bar progress-bar-warning" style="width: 78%">Warning</div>
-			</div>
-			<div class="progress">
-				<div class="progress-bar progress-bar-danger" style="width: 88%">Danger</div>
-			</div>
-		</p>
-		<p>
-			<code>div.progress-bar .progress-bar-striped</code>
-			<div class="progress">
-				<div class="progress-bar progress-bar-striped" style="width: 68%">68%</div>
-			</div>
-		</p>
-		<p>
-			<code>div.progress-bar .progress-bar-striped .active</code>
-			<div class="progress">
-				<div class="progress-bar progress-bar-striped active" style="width: 68%">68%</div>
-			</div>
-		</p>
-		<p>
-			<code>div.progress > div.progress-bar*3</code>
-			<div class="progress">
-				<div class="progress-bar progress-bar-info" style="width:48%">Info</div>
-				<div class="progress-bar progress-bar-warning" style="width:24%">Warning</div>
-				<div class="progress-bar progress-bar-danger" style="width:12%">Danger</div>
-			</div>
-		</p>
-	</div>
-	<div class="container">
-		<div class="jumbotron">
-			<h1>List Groups</h1>
-		</div>
-		<p>
-			<code>ul.list-group > li.list-group-item</code>
-			<ul class="list-group">
-				<li class="list-group-item">First</li>
-				<li class="list-group-item">Second</li>
-				<li class="list-group-item">Third</li>
-			</ul>
-		</p>
-		<p>
-			<code>ul.list-group > (li.list-group-item + .badge)</code>
-			<ul class="list-group">
-				<li class="list-group-item">First <span class="badge">23</span></li>
-				<li class="list-group-item">Second <span class="badge">12</span></li>
-				<li class="list-group-item">Third <span class="badge">2</span></li>
-			</ul>
-		</p>
-		<p>
-			<code>div.list-group > a.list-group-item</code>
-			<div class="list-group">
-				<a href="javascript:;" class="list-group-item">First</a>
-				<a href="javascript:;" class="list-group-item">Second</a>
-				<a href="javascript:;" class="list-group-item">Third</a>
-			</div>
-		</p>
-		<p>
-			<code>.active .disabled</code>
-			<div class="list-group">
-				<a href="javascript:;" class="list-group-item active">First</a>
-				<a href="javascript:;" class="list-group-item disabled">Second</a>
-				<a href="javascript:;" class="list-group-item">Third</a>
-			</div>
-		</p>
-		<p>
-			<code>.list-group-item + .list-group-item-success/.list-group-item-info/.list-group-item-warning/.list-group-item-danger</code>
-			<div class="list-group">
-				<a href="javascript:;" class="list-group-item list-group-item-success">Success</a>
-				<a href="javascript:;" class="list-group-item list-group-item-info">Info</a>
-				<a href="javascript:;" class="list-group-item list-group-item-warning">Warning</a>
-				<a href="javascript:;" class="list-group-item list-group-item-danger">Danger</a>
-			</div>
-		</p>
-		<p>
-			<code>div.list-group > a.list-group-item > (h4.list-group-item-heading + p.list-group-item-text)</code>
-			<div class="list-group">
-				<a href="javascript:;" class="list-group-item">
-					<h4 class="list-group-item-heading">Heading</h4>
-					<p class="list-group-item-text">Lorem ipsum dolor sit amet.</p>
-				</a>
-				<a href="javascript:;" class="list-group-item">
-					<h4 class="list-group-item-heading">Heading</h4>
-					<p class="list-group-item-text">Lorem ipsum dolor sit amet.</p>
-				</a>
-				<a href="javascript:;" class="list-group-item">
-					<h4 class="list-group-item-heading">Heading</h4>
-					<p class="list-group-item-text">Lorem ipsum dolor sit amet.</p>
-				</a>
-			</div>
-		</p>
-	</div>
-	<div class="container">
-		<div class="jumbotron">
-			<h1>Panels</h1>
-		</div>
-		<p>
-			<code>div.panel .panel-default > (div.panel-heading + div.panel-body + div.panel-footer)</code>
-			<div class="panel panel-default">
-				<div class="panel-heading">Heading</div>
-				<div class="panel-body">Body</div>
-				<div class="panel-footer">Footer</div>
-			</div>
-		</p>
-		<p>
-			<code>div.panel-group > (div.panel .panel-default)*2</code>
-			<div class="panel-group">
-				<div class="panel panel-default">
-					<div class="panel-heading">Heading</div>
-					<div class="panel-body">Body</div>
-				</div>
-				<div class="panel panel-default">
-					<div class="panel-heading">Heading</div>
-					<div class="panel-body">Body</div>
-				</div>
-			</div>
-		</p>
-		<p>
-			<code>div.panel + .panel-default/.panel-primary/.panel-success/.panel-info/.panel-warning/.panel-danger</code>
-			<div class="panel-group">
-				<div class="panel panel-default">
-					<div class="panel-heading">Default</div>
-					<div class="panel-body">Body</div>
-				</div>
-				<div class="panel panel-primary">
-					<div class="panel-heading">Primary</div>
-					<div class="panel-body">Body</div>
-				</div>
-				<div class="panel panel-success">
-					<div class="panel-heading">Success</div>
-					<div class="panel-body">Body</div>
-				</div>
-				<div class="panel panel-info">
-					<div class="panel-heading">Info</div>
-					<div class="panel-body">Body</div>
-				</div>
-				<div class="panel panel-warning">
-					<div class="panel-heading">Warning</div>
-					<div class="panel-body">Body</div>
-				</div>
-				<div class="panel panel-danger">
-					<div class="panel-heading">Danger</div>
-					<div class="panel-body">Body</div>
-				</div>
-			</div>
-		</p>
-	</div>
-	<div class="container">
-		<div class="jumbotron">
-			<h1>Collapse</h1>
-		</div>
-		<p>
-			<code>button[data-toggle=collapse][data-target=#id] + #id.collapse</code>
-			<button type="button" data-toggle="collapse" data-target="#collapseBtnDemo" class="btn btn-primary">Collapse</button>
-			<div id="collapseBtnDemo" class="collapse">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio nesciunt possimus, fuga eveniet consequatur assumenda. Eligendi reiciendis neque, explicabo nisi quas quisquam consequatur doloremque recusandae eaque nemo numquam ad impedit.</div>
-		</p>
-		<p>
-			<code>a[data-toggle=collapse][href=#id] + #id.collapse</code>
-			<a href="#collapseADemo" data-toggle="collapse" class="btn btn-success">Collapse</a>
-			<div id="collapseADemo" class="collapse">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio nesciunt possimus, fuga eveniet consequatur assumenda. Eligendi reiciendis neque, explicabo nisi quas quisquam consequatur doloremque recusandae eaque nemo numquam ad impedit.</div>
-		</p>
-		<p>
-			<code>a[data-toggle=collapse][href=#id] + #id.collapse .in</code>
-			<a href="#collapseInDemo" data-toggle="collapse" class="btn btn-info">Collapse</a>
-			<div id="collapseInDemo" class="collapse in">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio nesciunt possimus, fuga eveniet consequatur assumenda. Eligendi reiciendis neque, explicabo nisi quas quisquam consequatur doloremque recusandae eaque nemo numquam ad impedit.</div>
-		</p>
-		<p>
-			<code>.panel.panel-default > ((.panel-heading > h4.panel-title > a[href=#id][data-toggle=collapse]) + (div#id.collapse.panel-collapse) > (.panel-body + .panel-footer)</code>
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h4 class="panel-title"><a href="#collapsePanelDemo" data-toggle="collapse">Collapsible Panel</a></h4>
-				</div>
-				<div id="collapsePanelDemo" class="collapse panel-collapse">
-					<div class="panel-body">Body</div>
-					<div class="panel-footer">Footer</div>
-				</div>
-			</div>
-		</p>
-		<p>
-			<code>.panel.panel-default > ((.panel-heading > h4.panel-title > a[href=#id][data-toggle=collapse]) + (div#id.collapse.panel-collapse) > (<strong>.list-group</strong> + .panel-footer)</code>
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h4 class="panel-title"><a href="#collapseListGroupDemo" data-toggle="collapse">Collapsible List Group</a></h4>
-				</div>
-				<div id="collapseListGroupDemo" class="collapse panel-collapse">
-					<ul class="list-group">
-						<li class="list-group-item">First</li>
-						<li class="list-group-item">Second</li>
-						<li class="list-group-item">Third</li>
-					</ul>
-					<div class="panel-footer">Footer</div>
-				</div>
-			</div>
-		</p>
-		<p>
-			<code>.panel-group<strong>#accordin</strong> > (.panel.panel-default > ((.panel-heading > h4.panel-title > a[href=#id][data-toggle=collapse]<strong>[data-parent=#accordin]</strong>) + (div#id.collapse.panel-collapse) > (.panel-body + .panel-footer))</code>
-			<div class="panel-group" id="accordin">
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<h4 class="panel-title"><a href="#collapsePanelDemo1" data-parent="#accordin" data-toggle="collapse">Collapsible Panel</a></h4>
-					</div>
-					<div id="collapsePanelDemo1" class="collapse panel-collapse">
-						<div class="panel-body">Body</div>
-						<div class="panel-footer">Footer</div>
-					</div>
-				</div>
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<h4 class="panel-title"><a href="#collapsePanelDemo2" data-parent="#accordin" data-toggle="collapse">Collapsible Panel</a></h4>
-					</div>
-					<div id="collapsePanelDemo2" class="collapse panel-collapse">
-						<div class="panel-body">Body</div>
-						<div class="panel-footer">Footer</div>
-					</div>
-				</div>
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<h4 class="panel-title"><a href="#collapsePanelDemo3" data-parent="#accordin" data-toggle="collapse">Collapsible Panel</a></h4>
-					</div>
-					<div id="collapsePanelDemo3" class="collapse panel-collapse">
-						<div class="panel-body">Body</div>
-						<div class="panel-footer">Footer</div>
-					</div>
-				</div>
-			</div>
-		</p>
-	</div>
-	<div class="container">
-		<div class="jumbotron">
-			<h1>Navbar</h1>
-		</div>
-		<p>
-			<code>nav.navbar.navbar-default > div.container-fluid > ((div.navbar-header > a.navbar-brand) + (ul.nav.navbar-nav. > li.active))</code>
-		</p>
-		<nav class="navbar navbar-default">
-			<div class="container-fluid">
-				<div class="navbar-header">
-					<a href="javascript:;" class="navbar-brand">Dosin</a>
-				</div>
-				<ul class="navbar-nav nav">
-					<li class="active"><a href="javascript:;">Home</a></li>
-					<li><a href="javascript:;">Blog</a></li>
-					<li><a href="javascript:;">More</a></li>
-					<li><a href="javascript:;">About</a></li>
-				</ul>
-			</div>
-		</nav>
-		<p>
-			<code>nav.navbar.navbar-inverse</code>
-		</p>
-		<nav class="navbar navbar-inverse">
-			<div class="container-fluid">
-				<div class="navbar-header">
-					<a href="javascript:;" class="navbar-brand">Dosin</a>
-				</div>
-				<ul class="nav navbar-nav">
-					<li class="active"><a href="javascript:;">Home</a></li>
-					<li><a href="javascript:;">Blog</a></li>
-					<li><a href="javascript:;">More</a></li>
-					<li><a href="javascript:;">About</a></li>
-				</ul>
-			</div>
-		</nav>
-		<p>
-			<code>nav.navbar.navbar-fixed-top/bottom</code> makes the navigation bar fixed at the top/bottom
-		</p>
-		<p>
-			<code>ul.nav.navbar-nav.navbar-right</code>
-		</p>
-		<nav class="navbar navbar-default">
-			<div class="container-fluid">
-				<div class="navbar-header">
-					<a href="javascript:;" class="navbar-brand">Dosin</a>
-				</div>
-				<ul class="nav navbar-nav">
-					<li class="active"><a href="javascript:;">Home</a></li>
-					<li><a href="javascript:;">Blog</a></li>
-					<li><a href="javascript:;">More</a></li>
-					<li><a href="javascript:;">About</a></li>
-				</ul>
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="javascript:;">Sign Up</a></li>
-					<li><a href="javascript:;">Login</a></li>
-				</ul>
-			</div>
-		</nav>
-		<p>
-			<code>div.navbar-header > button.navbar-toggle[data-toggle=collapse][data-target=#id] > (span.icon-bar*3 + a.navbar-brand)</code>
-		</p>
-		<p>
-			<code>div#id.collapse.navbar-collapse</code>
-		</p>
-		<nav class="navbar navbar-default">
-			<div class="container-fluid">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a href="javascript:;" class="navbar-brand">Dosin</a>
-				</div>
-				<div id="navbarCollapse" class="collapse navbar-collapse">
-					<ul class="nav navbar-nav">
-						<li class="active"><a href="javascript:;">Home</a></li>
-						<li><a href="javascript:;">Blog</a></li>
-						<li><a href="javascript:;">More</a></li>
-						<li><a href="javascript:;">About</a></li>
-					</ul>
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="javascript:;">Sign Up</a></li>
-						<li><a href="javascript:;">Login</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-	</div>
-	<div class="container">
-		<div class="jumbotron">
-			<h1>Carousel</h1>
-		</div>
-		<div id="myCarousel" class="carousel slide" data-ride="carousel">
-			<!-- Indicators -->
-			<ol class="carousel-indicators">
-				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-				<li data-target="#myCarousel" data-slide-to="1"></li>
-				<li data-target="#myCarousel" data-slide-to="2"></li>
-				<li data-target="#myCarousel" data-slide-to="3"></li>
-			</ol>
-			<!-- Wrapper for slides -->
-			<div class="carousel-inner">
-				<div class="item active">
-					<img src="http://cn.bing.com/az/hprichbg/rb/BearGlacierLake_ZH-CN11648553737_1366x768.jpg" alt="">
-					<div class="carousel-caption">
-						<h3>Bear Glacier Lake</h3>
-					</div>
-				</div>
-				<div class="item">
-					<img src="http://cn.bing.com/az/hprichbg/rb/GapstowBridge_ZH-CN9569411106_1366x768.jpg" alt="">
-					<div class="carousel-caption">
-						<h3>Gapstow Bridge</h3>
-					</div>
-				</div>
-				<div class="item">
-					<img src="http://cn.bing.com/az/hprichbg/rb/IngolfshofdiBlackSand_EN-US9362134214_1366x768.jpg" alt="">
-					<div class="carousel-caption">
-						<h3>Ingolfshofdi Black Sand</h3>
-					</div>
-				</div>
-				<div class="item">
-					<img src="http://cn.bing.com/az/hprichbg/rb/PolandWinter_ZH-CN11003553401_1366x768.jpg" alt="">
-					<div class="carousel-caption">
-						<h3>Poland Winter</h3>
-					</div>
-				</div>
-			</div>
-			<!-- Left and right controls -->
-			<a class="carousel-control left" href="#myCarousel" data-slide="prev">
-				<span class="glyphicon glyphicon-chevron-left"></span>
-			</a>
-			<a class="carousel-control right" href="#myCarousel" data-slide="next">
-				<span class="glyphicon glyphicon-chevron-right"></span>
-			</a>
-		</div>
-	</div>
-	<div class="container">
-		<div class="jumbotron">
-			<h1>Modal</h1>
-		</div>
-		<button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-primary">Modal</button>
-		<div id="myModal" class="modal fade">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" data-dismiss="modal" class="close">&times;</button>
-						<h4>Header</h4>
-					</div>
-					<div class="modal-body">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis unde fugit dolor, temporibus nihil consectetur sed ducimus aperiam amet dicta. Nihil in delectus sed consequatur adipisci mollitia facilis inventore placeat!</p>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<button type="button" data-toggle="modal" data-target="#myModalSm" class="btn btn-success">modal-sm</button>
-		<div id="myModalSm" class="modal fade">
-			<div class="modal-dialog modal-sm">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" data-dismiss="modal" class="close">&times;</button>
-						<h4>Header</h4>
-					</div>
-					<div class="modal-body">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis unde fugit dolor, temporibus nihil consectetur sed ducimus aperiam amet dicta. Nihil in delectus sed consequatur adipisci mollitia facilis inventore placeat!</p>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<button type="button" data-toggle="modal" data-target="#myModalLg" class="btn btn-info">modal-lg</button>
-		<div id="myModalLg" class="modal fade">
-			<div class="modal-dialog modal-lg">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" data-dismiss="modal" class="close">&times;</button>
-						<h4>Header</h4>
-					</div>
-					<div class="modal-body">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis unde fugit dolor, temporibus nihil consectetur sed ducimus aperiam amet dicta. Nihil in delectus sed consequatur adipisci mollitia facilis inventore placeat!</p>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="container">
-		<div class="jumbotron">
-			<h1>Tooltip</h1>
-		</div>
-		<script>
-			$(function(){
-				$('[data-toggle=tooltip]').tooltip();
-			});
-		</script>
-		<p>Default: Top</p>
-		<a href="javascript:;" data-toggle="tooltip" title="What are you looking for?" class="btn btn-primary">Hover on me</a>
-		<a href="javascript:;" data-toggle="tooltip" data-placement="rignt" title="What are you looking for?" class="btn btn-success">Hover on me</a>
-		<a href="javascript:;" data-toggle="tooltip" data-placement="bottom" title="What are you looking for?" class="btn btn-info">Hover on me</a>
-		<a href="javascript:;" data-toggle="tooltip" data-placement="left" title="What are you looking for?" class="btn btn-warning">Hover on me</a>
-	</div>
-	<div class="container">
-		<div class="jumbotron">
-			<h1>Popover</h1>
-		</div>
-		<script>
-			$(function(){
-				$('[data-toggle=popover]').popover();
-			});
-		</script>
-		<p>Default: Right</p>
-		<a href="javascript:;" data-toggle="popover" class="btn btn-primary" title="Header in title" data-content="Content in data-content">Click me</a>
-		<a href="javascript:;" data-toggle="popover" data-placement="top" class="btn btn-success" title="Header in title" data-content="Content in data-content">Click me</a>
-		<a href="javascript:;" data-toggle="popover" data-placement="bottom" class="btn btn-info" title="Header in title" data-content="Content in data-content">Click me</a>
-		<a href="javascript:;" data-toggle="popover" data-placement="left" class="btn btn-warning" title="Header in title" data-content="Content in data-content">Click me</a>
-		<p>
-			<code>[data-trigger=focus] [data-trigger=hover]</code>
-		</p>
-		<a href="javascript:;" data-toggle="popover" data-trigger="focus" class="btn btn-danger" title="Header in title" data-content="Content in data-content">Click me</a>
-		<a href="javascript:;" data-toggle="popover" data-trigger="hover" class="btn btn-danger" title="Header in title" data-content="Content in data-content">Click me</a>
-	</div>
-	<div class="container">
-		<div class="jumbotron">
-			<h1>Scrollspy</h1>
-		</div>
-		<iframe src="scrollspy.html" frameborder="0" style="width: 100%; min-height: 360px;"></iframe>
-		<iframe src="scrollspy-vertical.html" frameborder="0" style="width: 100%; min-height: 360px;"></iframe>
-	</div>
-	<div class="container">
-		<iframe src="affix.html" frameborder="0" style="width: 100%; min-height: 360px;"></iframe>
-	</div>
+  <div class="jumbotron text-center">
+    <div class="container">
+      <h1>Bootstrap 3</h1>
+      <p class="small">
+        <a href="https://github.com/dosin/" target="_blank">Dosin</a>
+      </p>
+    </div>
+  </div>
+  <div class="container grid-system">
+    <div class="jumbotron">
+      <h1>Grid System</h1>
+    </div>
+    <p>
+      <code>.row > .col-xs/sm/md/lg-*</code>
+    </p>
+    <div class="row">
+      <div class="col-sm-1 bg-primary">span1</div>
+      <div class="col-sm-1 bg-primary">span1</div>
+      <div class="col-sm-1 bg-primary">span1</div>
+      <div class="col-sm-1 bg-primary">span1</div>
+      <div class="col-sm-1 bg-primary">span1</div>
+      <div class="col-sm-1 bg-primary">span1</div>
+      <div class="col-sm-1 bg-primary">span1</div>
+      <div class="col-sm-1 bg-primary">span1</div>
+      <div class="col-sm-1 bg-primary">span1</div>
+      <div class="col-sm-1 bg-primary">span1</div>
+      <div class="col-sm-1 bg-primary">span1</div>
+      <div class="col-sm-1 bg-primary">span1</div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2 bg-success">span2</div>
+      <div class="col-sm-2 bg-success">span2</div>
+      <div class="col-sm-2 bg-success">span2</div>
+      <div class="col-sm-2 bg-success">span2</div>
+      <div class="col-sm-2 bg-success">span2</div>
+      <div class="col-sm-2 bg-success">span2</div>
+      
+    </div>
+    <div class="row">
+      <div class="col-sm-3 bg-info">span3</div>
+      <div class="col-sm-3 bg-info">span3</div>
+      <div class="col-sm-3 bg-info">span3</div>
+      <div class="col-sm-3 bg-info">span3</div>
+      
+    </div>
+    <div class="row">
+      <div class="col-sm-4 bg-warning">span4</div>
+      <div class="col-sm-4 bg-warning">span4</div>
+      <div class="col-sm-4 bg-warning">span4</div>
+      
+    </div>
+    <div class="row">
+      <div class="col-sm-6 bg-danger">span6</div>
+      <div class="col-sm-6 bg-danger">span6</div>
+    </div>
+    <h2>Grid Classes</h2>
+    <ul>
+      <li>xs < 768px</li>
+      <li>sm >= 768px</li>
+      <li>md >= 992px</li>
+      <li>lg >= 1200px</li>
+    </ul>
+  </div>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Typography</h1>
+    </div>
+    <h2>Headings</h2>
+    <p>
+      <code>&lt;h1&gt;</code>
+      <code>&lt;h2&gt;</code>
+      <code>&lt;h3&gt;</code>
+      <code>&lt;h4&gt;</code>
+      <code>&lt;h5&gt;</code>
+      <code>&lt;h6&gt;</code>
+      <h1>h1 heading (36px) <small>secondary text</small></h1>
+      <h2>h2 heading (30px) <small>secondary text</small></h2>
+      <h3>h3 heading (24px) <small>secondary text</small></h3>
+      <h4>h4 heading (18px) <small>secondary text</small></h4>
+      <h5>h5 heading (14px) <small>secondary text</small></h5>
+      <h6>h6 heading (12px) <small>secondary text</small></h6>
+    </p>
+    <h2>Text</h2>
+    <p>
+      <code>&lt;small&gt;</code> creates a lighter, secondary text in any heading
+    </p>
+    <p>
+      <code>.small</code> indicates a <span class="small">small text</span>
+    </p>
+    <p>
+      <code>.lead</code> makes a text <span class="lead">stand out</span>
+    </p>
+    <p>
+      <code>&lt;mark&gt;</code> or <code>.mark</code> <mark>hightlights </mark><span class="mark">text</span>
+    </p>
+    <p>
+      <code>&lt;del&gt;</code> indicates <del>deleted text</del>
+    </p>
+    <p>
+      <code>&lt;s&gt;</code> indicates <s>no longer relevant text</s>
+    </p>
+    <p>
+      <code>&lt;ins&gt;</code> indicates <ins>inserted text</ins>
+    </p>
+    <p>
+      <code>&lt;u&gt;</code> indicates <u>underlined text</u>
+    </p>
+    <p>
+      <code>&lt;strong&gt;</code> indicates text you think it's <strong>important</strong>
+    </p>
+    <p>
+      <code>&lt;em&gt;</code> indicates text you want to <em>emphasize</em>
+    </p>
+    <p>
+    </p>
+    <p>
+      <code>.text-left</code>
+    </p>
+    <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    <p>
+      <code>.text-center</code>
+      <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </p>
+    <p>
+      <code>.text-right</code>
+      <p class="text-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </p>
+    <p>
+      <code>.text-justify</code>
+      <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </p>
+    <p>
+      <code>.text-nowrap</code>
+      <p class="text-nowrap">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </p>
+    <p>
+      <code>.text-lowercase</code>
+      <p class="text-lowercase">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </p>
+    <p>
+      <code class="text-lowercase">.text-uppercase</code>
+      <p class="text-uppercase">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </p>
+    <p>
+      <code class="text-lowercase">.text-capitalize</code>
+      <p class="text-capitalize">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </p>
+    <p>
+      <code>&lt;abbr&gt;</code>
+      <abbr title="Cascading Style Sheets">css</abbr>
+    </p>
+    <p>
+      <code>abbr.initialism</code>
+      <abbr title="Cascading Style Sheets" class="initialism">css</abbr>
+    </p>
+    <p>
+      <code>&lt;address&gt;</code>
+      <address>
+        <strong>Dosin</strong><br>
+        Shenzhen city<br>
+        Guangdong Province<br>
+        China
+      </address>
+    </p>
+    <p>
+      <code>&lt;blockquote&gt;</code>
+      <blockquote>
+        <p>A simple yes would've sufficed.</p>
+        <footer>Dosin</footer>
+      </blockquote>
+    </p>
+    <p>
+      <code>blockquote.blockquote-reverse</code>
+      <blockquote class="blockquote-reverse">
+        <p>A simple yes would've sufficed.</p>
+        <footer>Dosin</footer>
+      </blockquote>
+    </p>
+    <h2>Lists</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <p>
+          <code>&lt;ol&gt;</code>
+          <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+          </ul>
+        </p>
+      </div>
+      <div class="col-md-4">
+        <p>
+          <code>&lt;ul&gt;</code>
+          <ol>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+          </ol>
+        </p>
+      </div>
+      <div class="col-md-4">
+        <p>
+          <code>&lt;dl&gt;</code>
+          <dl>
+            <dt>1</dt>
+            <dd>2</dd>
+            <dt>3</dt>
+            <dd>4</dd>
+          </dl>
+        </p>
+      </div>
+    </div>
+    <p>
+      <code>.list-inline</code>
+      <ol class="list-inline">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+      </ol>
+    </p>
+    <p>
+      <code>.list-unstyled</code> only applies to immediate children list items
+      <ol class="list-unstyled">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+      </ol>
+    </p>
+    <p>
+      <code>.dl-horizontal</code>
+      <dl class="dl-horizontal">
+        <dt>1</dt>
+        <dd>2</dd>
+        <dt>3</dt>
+        <dd>4</dd>
+      </dl>
+    </p>
+    <h2>Code</h2>
+    <p>
+      <code>&lt;var&gt;</code>
+      <var>y = ax + b</var>
+    </p>
+    <p>
+      <code>&lt;kbd&gt;</code>
+      <kbd>Widows + R</kbd>
+    </p>
+    <p>
+      <code>&lt;samp&gt;</code>
+      <samp>Sample output</samp>
+    </p>
+    <p>
+      <code>&lt;code&gt;</code>
+      <code>&lt;!DOCTYPE html&gt;</code>
+    </p>
+    <p>
+      <code>&lt;pre&gt;</code>
+      <pre>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque voluptatum natus, rerum, commodi iusto praesentium! Facere, illum? Dolore accusamus quam provident blanditiis labore. Minus nostrum dolorem minima repellat assumenda animi.</pre>
+    </p>
+    <p>
+      <code>.pre-scrollable</code>
+      <pre class="pre-scrollable">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque voluptatum natus, rerum, commodi iusto praesentium! Facere, illum? Dolore accusamus quam provident blanditiis labore. Minus nostrum dolorem minima repellat assumenda animi.</pre>
+    </p>
+  </div>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Buttons</h1>
+    </div>
+    <p>
+      <code>.btn + .btn-default .btn-primary .btn-success .btn-info .btn-warning .btn-danger .btn-link</code>
+    </p>
+    <p>The button classes can be used on an <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, or <code>&lt;input&gt;</code> element</p>
+    <p>
+      <button type="button" class="btn btn-default">Default</button>
+      <button type="button" class="btn btn-primary">Primary</button>
+      <button type="button" class="btn btn-success">Success</button>
+      <button type="button" class="btn btn-info">Info</button>
+      <button type="button" class="btn btn-warning">Warning</button>
+      <button type="button" class="btn btn-danger">Danger</button>
+      <button type="button" class="btn btn-link">Link</button>
+    </p>
+    <p>
+      <code>.btn .btn-xs/sm/md/lg</code>
+    </p>
+    <p>
+      <button type="button" class="btn btn-default btn-xs">Extra Small</button>
+      <button type="button" class="btn btn-default btn-sm">Small</button>
+      <button type="button" class="btn btn-default btn-md">Medium</button>
+      <button type="button" class="btn btn-default btn-lg">Large</button>
+    </p>
+    <p>
+      <code>.btn .btn-block</code>
+    </p>
+    <p>
+      <button type="button" class="btn btn-default btn-block">Block</button>
+    </p>
+    <p>
+      <code>.active</code>
+      <code>.disabled</code>
+    </p>  
+    <p>
+      <button type="button" class="btn btn-default active">Active</button>
+      <button type="button" class="btn btn-default disabled">Disabled</button>
+    </p>
+    <h2>Button groups</h2>
+    <p>
+      <code>div.btn-group</code>
+    </p>
+    <div class="btn-group">
+      <button type="button" class="btn btn-default">Default</button>
+      <button type="button" class="btn btn-primary">Primary</button>
+      <button type="button" class="btn btn-success">Success</button>
+      <button type="button" class="btn btn-info">Info</button>
+      <button type="button" class="btn btn-warning">Warning</button>
+      <button type="button" class="btn btn-danger">danger</button>
+      <button type="button" class="btn btn-link">Link</button>
+    </div>
+    <p>
+      <code>div.btn-group-vertical</code>
+    </p>
+    <div class="btn-group-vertical">
+      <button type="button" class="btn btn-default">Default</button>
+      <button type="button" class="btn btn-primary">Primary</button>
+      <button type="button" class="btn btn-success">Success</button>
+      <button type="button" class="btn btn-info">Info</button>
+      <button type="button" class="btn btn-warning">Warning</button>
+      <button type="button" class="btn btn-danger">danger</button>
+      <button type="button" class="btn btn-link">Link</button>
+    </div>
+    <p>
+      <code>div.btn-group .btn-group-justified</code>
+    </p>
+    <p>Use <code>&lt;a&gt;</code> elements as buttons</p>
+    <div class="btn-group btn-group-justified">
+      <a href="javascript:;" class="btn btn-default">Default</a>
+      <a href="javascript:;" class="btn btn-primary">Primary</a>
+      <a href="javascript:;" class="btn btn-success">Success</a>
+      <a href="javascript:;" class="btn btn-info">Info</a>
+      <a href="javascript:;" class="btn btn-warning">Warning</a>
+      <a href="javascript:;" class="btn btn-danger">danger</a>
+      <a href="javascript:;" class="btn btn-link">Link</a>
+    </div>
+    <p>
+      <code>div.btn-group .btn-group-xs/sm/lg</code>
+    </p>
+    <div class="btn-group btn-group-xs">
+      <button type="button" class="btn btn-default">Default</button>
+      <button type="button" class="btn btn-primary">Primary</button>
+      <button type="button" class="btn btn-success">Success</button>
+      <button type="button" class="btn btn-info">Info</button>
+      <button type="button" class="btn btn-warning">Warning</button>
+      <button type="button" class="btn btn-danger">danger</button>
+      <button type="button" class="btn btn-link">Link</button>
+    </div>
+    <br>
+    <div class="btn-group btn-group-sm">
+      <button type="button" class="btn btn-default">Default</button>
+      <button type="button" class="btn btn-primary">Primary</button>
+      <button type="button" class="btn btn-success">Success</button>
+      <button type="button" class="btn btn-info">Info</button>
+      <button type="button" class="btn btn-warning">Warning</button>
+      <button type="button" class="btn btn-danger">danger</button>
+      <button type="button" class="btn btn-link">Link</button>
+    </div>
+    <br>
+    <div class="btn-group btn-group-lg">
+      <button type="button" class="btn btn-default">Default</button>
+      <button type="button" class="btn btn-primary">Primary</button>
+      <button type="button" class="btn btn-success">Success</button>
+      <button type="button" class="btn btn-info">Info</button>
+      <button type="button" class="btn btn-warning">Warning</button>
+      <button type="button" class="btn btn-danger">danger</button>
+      <button type="button" class="btn btn-link">Link</button>
+    </div>
+    <h2>Nesting button groups and dropdown menus</h2>
+    <p>
+      <code>div.btn-group > (button[data-toggle=dropdown] + ul.dropdown-menu)</code>
+    </p>
+    <div class="btn-group">
+      <button type="button" class="btn btn-default">A</button>
+      <button type="button" class="btn btn-default">B</button>
+      <div class="btn-group">
+        <button type="button" class="btn btn-default" data-toggle="dropdown">C <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="javascript:;">C1</a></li>
+          <li><a href="javascript:;">C2</a></li>
+        </ul>
+      </div>
+    </div>
+    <h2>Split button dropdown</h2>
+    <p>
+      <code>button[data-toggle=dropdown] + ul.dropdown-menu</code>
+    </p>
+    <div class="btn-group">
+      <button class="btn btn-primary" type="button">A</button>
+      <button class="btn btn-primary" type="button">B</button>
+      <button class="btn btn-primary" type="button">C</button>
+      <button class="btn btn-primary" type="button" data-toggle="dropdown"><span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><a href="javascript:;">C1</a></li>
+        <li><a href="javascript:;">C2</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Forms</h1>
+    </div>
+    <h2>Basic form</h2>
+    <p>All <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>, and <code>&lt;select&gt;</code> elements with class <code>.form-control</code> have a with of 100%</p>
+    <p>
+      <code>form > ((div.form-group > (label + input.form-control)) + (div.checkbox > label > input.checkbox))</code>
+    </p>
+    <form>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" class="form-control" placeholder="Enter email">
+      </div>
+      <div class="form-group">
+        <label for="pwd">Password:</label>
+        <input type="password" id="pwd" class="form-control" placeholder="Enter password">
+      </div>
+      <div class="checkbox">
+        <label><input type="checkbox">Remember me</label>
+      </div>
+      <button type="button" class="btn btn-default" type="submit">submit</button>
+    </form>
+    <h2>Inline form</h2>
+    <p>
+      <code>form.form-inline</code>
+    </p>
+    <p>Make the viewport larger than 768px wide to see that all of the form elements are inline, left aligned, and the labels are alongside</p>
+    <form class="form-inline">
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" class="form-control" placeholder="Enter email">
+      </div>
+      <div class="form-group">
+        <label for="pwd">Password:</label>
+        <input type="password" id="pwd" class="form-control" placeholder="Enter password">
+      </div>
+      <div class="checkbox">
+        <label><input type="checkbox">Remember me</label>
+      </div>
+      <button type="button" class="btn btn-default" type="submit">submit</button>
+    </form>
+    <h2>Horizontal form</h2>
+    <p>
+      <code>form.form-horizontal > div.form-group > (label.control-label.col-xs/sm/md/lg-* + (.col-xs/sm/md/lg-* > input))</code>
+    </p>
+    <p>Make the viewport larger than 768px wide to see that all of the form elements are inline, left aligned, and the labels are alongside</p>
+    <form class="form-horizontal">
+      <div class="form-group">
+        <label for="email" class="control-label col-sm-2">Email:</label>
+        <div class="col-sm-10">
+          <input type="email" id="email" class="form-control" placeholder="Enter email">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="pwd" class="control-label col-sm-2">Password:</label>
+        <div class="col-sm-10">
+          <input type="password" id="pwd" class="form-control" placeholder="Enter password">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <div class="checkbox">
+            <label><input type="checkbox">Remember me</label>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <button type="button" class="btn btn-default" type="submit">submit</button>
+        </div>
+      </div>
+    </form>
+    <p>
+      <code>label.checkbox-inline</code>
+      <form>
+        <label class="checkbox-inline"><input type="checkbox">Option1</label>
+        <label class="checkbox-inline"><input type="checkbox">Option2</label>
+        <label class="checkbox-inline"><input type="checkbox">Option3</label>
+      </form>
+    </p>
+    <p>
+      <code>label.radio-inline</code>
+      <form>
+        <label class="radio-inline"><input type="radio" name="radioInline">Option1</label>
+        <label class="radio-inline"><input type="radio" name="radioInline">Option2</label>
+        <label class="radio-inline"><input type="radio" name="radioInline">Option3</label>
+      </form>
+    </p>
+    <p>
+      Set the heights of input elements using classes like <code>.input-sm</code> and <code>.input-lg</code>
+      <form>
+        <input type="text" class="input-sm form-control" placeholder="input-sm">
+        <input type="text" class="form-control" placeholder="default">
+        <input type="text" class="input-lg form-control" placeholder="input-lg">
+      </form>
+    </p>
+    <p>
+      <code>.help-block</code>
+      <form>
+        <div class="form-group">
+          <input type="text" placeholder="Enter Email" class="form-control">
+          <span class="help-block">If you don't have an Email, get one.</span>
+        </div>
+      </form>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </p>
+  </div>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Helpers</h1>
+    </div>
+    <h2>Contextual Colors</h2>
+    <p>
+      <code>.text-muted</code>
+      <code>.text-primary</code>
+      <code>.text-success</code>
+      <code>.text-info</code>
+      <code>.text-warning</code>
+      <code>.text-danger</code>
+      <p class="text-muted">This text is muted</p>
+      <p class="text-primary">This text is important</p>
+      <p class="text-success">This text indicates success</p>
+      <p class="text-info">This text represents some information</p>
+      <p class="text-warning">This text represents a warning</p>
+      <p class="text-danger">This text represents danger</p>
+    </p>
+    <h2>Contextual Backgrounds</h2>
+    <p>
+      <code>.bg-primary</code>
+      <code>.bg-success</code>
+      <code>.bg-info</code>
+      <code>.bg-warning</code>
+      <code>.bg-danger</code>
+      <p class="bg-primary">This text is important</p>
+      <p class="bg-success">This text indicates success</p>
+      <p class="bg-info">This text represents some information</p>
+      <p class="bg-warning">This text represents a warning</p>
+      <p class="bg-danger">This text represents danger</p>
+    </p>
+    <h2>Others</h2>
+    <div class="clearfix">
+      <p class="pull-left">
+        <code>.pull-left</code> floats an element to the left
+      </p>
+      <p class="pull-right">
+        <code>.pull-right</code> floats an elment to the right
+      </p>
+    </div>
+    <p>
+      <code>.clearfix</code> clear floats
+    </p>
+    <p>
+      <code>.center-block</code> sets an element to display block and margin-left/right auto
+    </p>
+    <div class="center-block" style="width: 200px; text-align: center;">This <code>&lt;div&gt;</code> is centered</div>
+    <p>
+      <code>.show</code> forces an element to be show
+    </p>
+    <p>
+      <code>.hidden</code> forces an element to be hidden
+    </p>
+    <p>
+      <code>.sr-only</code> hides an element to all devices except screen readers
+    </p>
+    <p>
+      <code>.sr-only-focusable</code> combine with <code>.sr-only</code> to show the element again when it is focused
+    </p>
+    <p>
+      <code>.text-hide</code> helps replace an element's text content with a background image
+    </p>
+    <p>
+      <code>.close</code> indicates a close icon <button type="button" class="close">&times;</button>
+    </p>
+    <p>
+      <code>.caret</code> indicates dropdown functionality <button type="button" class="btn btn-default">Button <span class="caret"></span></button>
+    </p>
+    <h2>Responsive Utilities</h2>
+    <p>
+      <code>.visible-xs/sm/md/lg-block/inline/inline-block</code>
+      <p class="visible-xs-block">This text only shows on an EXTRA SMALL screen</p>
+      <p class="visible-sm-block">This text only shows on a SMALL screen</p>
+      <p class="visible-md-block">This text only shows on a MEDIUM screen</p>
+      <p class="visible-lg-block">This text only shows on a LARGE screen</p>
+    </p>
+    <p>
+      <code>.hidden-xs/sm/md/lg</code>
+      <p class="hidden-xs">This text won't show on an EXTRA SMALL screen</p>
+      <p class="hidden-sm">This text won't show on a SMALL screen</p>
+      <p class="hidden-md">This text won't show on a MEDIUM screen</p>
+      <p class="hidden-lg">This text won't show on a LARGE screen</p>
+    </p>
+  </div>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Images</h1>
+    </div>
+    <p>
+      <code>img.img-rounded</code>
+      <img src="http://dosin.github.io/website/images/logo.jpg" alt="" class="img-rounded">
+      <code>img.img-circle</code>
+      <img src="http://dosin.github.io/website/images/logo.jpg" alt="" class="img-circle">
+      <code>img.img-thumbnail</code>
+      <img src="http://dosin.github.io/website/images/logo.jpg" alt="" class="img-thumbnail">
+    </p>
+    <h2>Responsive Images</h2>
+    <p>
+      <code>img.img-responsive</code>
+      <img src="http://cn.bing.com/az/hprichbg/rb/CatumboLightning_ZH-CN12441529580_1920x1080.jpg" alt="" class="img-responsive">
+    </p>
+    <h2>Responsive Embed</h2>
+    <p>
+      <code>div.embed-responsive .embed-responsive-16by9/4by3 > iframe.embed-responsive-item</code>
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="http://player.youku.com/player.php/sid/XMTM1ODUyMzA0MA==/v.swf" allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></iframe>
+      </div>
+    </p>
+  </div>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Tables</h1>
+    </div>
+    <p>
+      <code>table.table</code>
+      <table class="table">
+        <thead>
+          <tr>
+            <td>A</td>
+            <td>B</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>6</td>
+          </tr>
+        </tbody>
+      </table>
+    </p>
+    <p>
+      <code>table.table .table-striped</code>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <td>A</td>
+            <td>B</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>6</td>
+          </tr>
+        </tbody>
+      </table>
+    </p>
+    <p>
+      <code>table.table .table-bordered</code>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <td>A</td>
+            <td>B</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>3</td>
+          </tr>
+        </tbody>
+      </table>
+    </p>
+    <p>
+      <code>table.table .table-hover</code>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <td>A</td>
+            <td>B</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>3</td>
+          </tr>
+        </tbody>
+      </table>
+    </p>
+    <p>
+      <code>table.table .table-condensed</code>
+      <table class="table table-condensed">
+        <thead>
+          <tr>
+            <td>A</td>
+            <td>B</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>3</td>
+          </tr>
+        </tbody>
+      </table>
+    </p>
+    <p>
+      <code>table.table .table-striped .table-bordered .table-hover .table-condensed</code>
+      <table class="table table-striped table-bordered table-hover table-condensed">
+        <thead>
+          <tr>
+            <td>A</td>
+            <td>B</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>3</td>
+          </tr>
+        </tbody>
+      </table>
+    </p>
+    <p>
+      <code>tr.active tr.success tr.info tr.warning tr.danger</code>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <td>A</td>
+            <td>B</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>1</td>
+          </tr>
+          <tr class="active">
+            <td>2</td>
+            <td>2</td>
+          </tr>
+          <tr class="success">
+            <td>3</td>
+            <td>3</td>
+          </tr>
+          <tr class="info">
+            <td>4</td>
+            <td>4</td>
+          </tr>
+          <tr class="warning">
+            <td>5</td>
+            <td>5</td>
+          </tr>
+          <tr class="danger">
+            <td>6</td>
+            <td>6</td>
+          </tr>
+        </tbody>
+      </table>
+    </p>
+    <p>
+      <code>div.table-responsive > table</code>
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <td>A</td>
+              <td>B</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>6</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </p>
+  </div>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Dropdowns</h1>
+    </div>
+    <p>
+      <code>div.dropdown > (button[data-toggle=dropdown] + ul.dropdown-menu) > li.dropdown-header + li.divider + li.disabled</code>
+      <div class="dropdown">
+        <button type="button" data-toggle="dropdown">Boot <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li class="dropdown-header">The rest letters</li>
+          <li><a href="javascript:;">s</a></li>
+          <li><a href="javascript:;">t</a></li>
+          <li><a href="javascript:;">r</a></li>
+          <li><a href="javascript:;">a</a></li>
+          <li class="divider"></li>
+          <li class="disabled"><a href="javascript:;">p</a></li>
+        </ul>
+      </div>
+    </p>
+    <p>
+      <code>div.dropdown > (button[data-toggle=dropdown] + ul.dropdown-menu .dropdown-menu-right)</code>
+      <div class="dropdown">
+        <button type="button" data-toggle="dropdown">Boot <span class="caret"></span></button>
+        <ul class="dropdown-menu dropdown-menu-right">
+          <li class="dropdown-header">The rest letters</li>
+          <li><a href="javascript:;">s</a></li>
+          <li><a href="javascript:;">t</a></li>
+          <li><a href="javascript:;">r</a></li>
+          <li><a href="javascript:;">a</a></li>
+          <li class="divider"></li>
+          <li class="disabled"><a href="javascript:;">p</a></li>
+        </ul>
+      </div>
+    </p>
+    <p>
+      <code>div.dropup > (button[data-toggle=dropdown] + ul.dropdown-menu)</code>
+      <div class="dropup">
+        <button type="button" data-toggle="dropdown">Boot <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li class="dropdown-header">The rest letters</li>
+          <li><a href="javascript:;">s</a></li>
+          <li><a href="javascript:;">t</a></li>
+          <li><a href="javascript:;">r</a></li>
+          <li><a href="javascript:;">a</a></li>
+          <li class="divider"></li>
+          <li class="disabled"><a href="javascript:;">p</a></li>
+        </ul>
+      </div>
+    </p>
+  </div>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Navs</h1>
+    </div>
+    <h2>Tabs and Pills</h2>
+    <p>
+      <code>ul.nav .nav-tabs</code>
+      <ul class="nav nav-tabs">
+        <li class="active"><a href="javascript:;">A</a></li>
+        <li><a href="javascript:;">B</a></li>
+        <li><a href="javascript:;">C</a></li>
+        <li><a href="javascript:;">D</a></li>
+      </ul>
+    </p>
+    <p>
+      <code>ul.nav .nav-tabs .nav-justified</code>
+      <ul class="nav nav-tabs nav-justified">
+        <li class="active"><a href="javascript:;">A</a></li>
+        <li><a href="javascript:;">B</a></li>
+        <li><a href="javascript:;">C</a></li>
+        <li><a href="javascript:;">D</a></li>
+      </ul>
+    </p>
+    <p>
+      <code>ul.nav .nav-pills</code>
+      <ul class="nav nav-pills">
+        <li class="active"><a href="javascript:;">A</a></li>
+        <li><a href="javascript:;">B</a></li>
+        <li><a href="javascript:;">C</a></li>
+        <li><a href="javascript:;">D</a></li>
+      </ul>
+    </p>
+    <p>
+      <code>ul.nav .nav-pills .nav-stacked</code>
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="javascript:;">A</a></li>
+        <li><a href="javascript:;">B</a></li>
+        <li><a href="javascript:;">C</a></li>
+        <li><a href="javascript:;">D</a></li>
+      </ul>
+    </p>
+    <p>
+      <code>li.active li.disabled</code>
+      <ul class="nav nav-tabs">
+        <li class="active"><a href="javascript:;">A</a></li>
+        <li class="disabled"><a href="javascript:;">B</a></li>
+        <li><a href="javascript:;">C</a></li>
+        <li><a href="javascript:;">D</a></li>
+      </ul>
+    </p>
+    <h2>Dynamic Tabs</h2>
+    <p>
+      <code>(ul.nav-tabs > li > a[data-toggle=tab,href=#id]) + (div.tab-content > div.tab-pane .fade .in .active )</code>
+      <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#tabsA">A</a></li>
+        <li><a data-toggle="tab" href="#tabsB">B</a></li>
+        <li><a data-toggle="tab" href="#tabsC">C</a></li>
+        <li><a data-toggle="tab" href="#tabsD">D</a></li>
+      </ul>
+      <div class="tab-content">
+        <div id="tabsA" class="tab-pane fade in active">
+          <p>The A pane</p>
+        </div>
+        <div id="tabsB" class="tab-pane fade">
+          <p>The B pane</p>
+        </div>
+        <div id="tabsC" class="tab-pane fade">
+          <p>The C pane</p>
+        </div>
+        <div id="tabsD" class="tab-pane fade">
+          <p>The D pane</p>
+        </div>
+      </div>
+    </p>
+    <h2>Dynamic Pills</h2>
+    <p>
+      <code>(ul.nav-pills > li > a[data-toggle=tab,href=#id]) + (div.tab-content > div.tab-pane .fade .in .active )</code>
+      <ul class="nav nav-pills">
+        <li class="active"><a data-toggle="tab" href="#pillsA">A</a></li>
+        <li><a data-toggle="tab" href="#pillsB">B</a></li>
+        <li><a data-toggle="tab" href="#pillsC">C</a></li>
+        <li><a data-toggle="tab" href="#pillsD">D</a></li>
+      </ul>
+      <div class="tab-content">
+        <div id="pillsA" class="tab-pane fade in active">
+          <p>The A pane</p>
+        </div>
+        <div id="pillsB" class="tab-pane fade">
+          <p>The B pane</p>
+        </div>
+        <div id="pillsC" class="tab-pane fade">
+          <p>The C pane</p>
+        </div>
+        <div id="pillsD" class="tab-pane fade">
+          <p>The D pane</p>
+        </div>
+      </div>
+    </p>
+    <h2>Breadcrumb and Pagination</h2>
+    <p>
+      <code>ol.breadcrumb > li.active</code>
+      <ol class="breadcrumb">
+        <li><a href="javascript:;">1</a></li>
+        <li><a href="javascript:;">2</a></li>
+        <li><a href="javascript:;">3</a></li>
+        <li class="active">4</li>
+      </ol>
+    </p>
+    <p>
+      <code>ul.pager</code>
+      <ul class="pager">
+        <li><a href="javascript:;">Previous</a></li>
+        <li><a href="javascript:;">Next</a></li>
+      </ul>
+    </p>
+    <p>
+      <code>ul.pager > li.previous li.next</code>
+      <ul class="pager">
+        <li class="previous"><a href="javascript:;">Previous</a></li>
+        <li class="next"><a href="javascript:;">Next</a></li>
+      </ul>
+    </p>
+    <p>
+      <code>li.disabled</code>
+      <ul class="pager">
+        <li class="previous disabled"><a href="javascript:;">Previous</a></li>
+        <li class="next"><a href="javascript:;">Next</a></li>
+      </ul>
+    </p>
+    <p>
+      <code>ul.pagination</code>
+      <ul class="pagination">
+        <li><a href="javascript:;">«</a></li>
+        <li><a href="javascript:;">1</a></li>
+        <li><a href="javascript:;">2</a></li>
+        <li><a href="javascript:;">3</a></li>
+        <li><a href="javascript:;">4</a></li>
+        <li><a href="javascript:;">»</a></li>
+      </ul>
+    </p>
+    <p>
+      <code>ul.pagination .pagination-sm/lg</code>
+      <ul class="pagination pagination-sm">
+        <li><a href="javascript:;">«</a></li>
+        <li><a href="javascript:;">1</a></li>
+        <li><a href="javascript:;">2</a></li>
+        <li><a href="javascript:;">3</a></li>
+        <li><a href="javascript:;">4</a></li>
+        <li><a href="javascript:;">»</a></li>
+      </ul>
+      <br>
+      <ul class="pagination pagination-lg">
+        <li><a href="javascript:;">«</a></li>
+        <li><a href="javascript:;">1</a></li>
+        <li><a href="javascript:;">2</a></li>
+        <li><a href="javascript:;">3</a></li>
+        <li><a href="javascript:;">4</a></li>
+        <li><a href="javascript:;">»</a></li>
+      </ul>
+    </p>
+    <p>
+      <code>ul.pagination > li.active + li.disabled</code>
+      <ul class="pagination">
+        <li><a href="javascript:;">«</a></li>
+        <li><a href="javascript:;">1</a></li>
+        <li class="active"><a href="javascript:;">2</a></li>
+        <li class="disabled"><a href="javascript:;">3</a></li>
+        <li><a href="javascript:;">4</a></li>
+        <li><a href="javascript:;">»</a></li>
+      </ul>
+    </p>
+    <p>
+      <code>.label + .label-default .label-primary .label-success .label-info .label-warning .label-danger</code>
+      <p>
+        <span class="label label-default">What the Hell</span>
+        <span class="label label-primary">What the Hell</span>
+        <span class="label label-success">What the Hell</span>
+        <span class="label label-info">What the Hell</span>
+        <span class="label label-warning">What the Hell</span>
+        <span class="label label-danger">What the Hell</span>
+      </p>
+    </p>
+    <p>
+      <code>.badge</code>
+      <p>
+        New <span class="badge">23</span>
+      </p>
+    </p>
+  </div>
+  <div class="jumbotron">
+    <div class="container">
+      <h1>hello world</h1>
+      <p>
+        <code>.jumbotron > .container</code>
+      </p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>hello world</h1>
+      <p>
+        <code>.container > .jumbotron</code>
+      </p>
+    </div>
+  </div>
+  <div class="container">
+    <p>
+      <code>.pager-header</code>
+      <div class="page-header">
+        <h1>hello world</h1>
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse dolorum pariatur dolores repudiandae consectetur iste eos voluptates, libero voluptatem fugiat, incidunt id quibusdam quis odit, expedita molestiae dolorem animi. Provident.</p>
+    </p>
+  </div>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Glyphicons</h1>
+    </div>
+    <p>
+      <code>.glyphicon .glyphicon-*</code>
+    </p>
+    <table class="table table-striped table-hover">
+      <tbody>
+        <tr>
+          <td><span class="glyphicon glyphicon-asterisk"></span></td>
+          <td>asterisk</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-plus"></span></td>
+          <td>plus</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-minus"></span></td>
+          <td>minus</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-euro"></span></td>
+          <td>euro</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-usd"></span></td>
+          <td>usd</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-gbp"></span></td>
+          <td>gbp</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-yen"></span></td>
+          <td>yen</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-ruble"></span></td>
+          <td>ruble</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-cloud"></span></td>
+          <td>cloud</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-envelope"></span></td>
+          <td>envelope</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-pencil"></span></td>
+          <td>pencil</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-erase"></span></td>
+          <td>erase</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-glass"></span></td>
+          <td>glass</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-music"></span></td>
+          <td>music</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-search"></span></td>
+          <td>search</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-heart"></span></td>
+          <td>heart</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-heart-empty"></span></td>
+          <td>heart-empty</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-star"></span></td>
+          <td>star</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-star-empty"></span></td>
+          <td>star-empty</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-user"></span></td>
+          <td>user</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-th"></span></td>
+          <td>th</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-th-large"></span></td>
+          <td>th-large</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-th-list"></span></td>
+          <td>th-list</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-ok"></span></td>
+          <td>ok</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-remove"></span></td>
+          <td>remove</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-zoom-in"></span></td>
+          <td>zoom-in</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-zoom-out"></span></td>
+          <td>zoom-out</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-off"></span></td>
+          <td>off</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-signal"></span></td>
+          <td>signal</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-cog"></span></td>
+          <td>cog</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-trash"></span></td>
+          <td>trash</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-home"></span></td>
+          <td>home</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-file"></span></td>
+          <td>file</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-time"></span></td>
+          <td>time</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-road"></span></td>
+          <td>road</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-download"></span></td>
+          <td>download</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-upload"></span></td>
+          <td>upload</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-download-alt"></span></td>
+          <td>download-alt</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-inbox"></span></td>
+          <td>inbox</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-repeat"></span></td>
+          <td>repeat</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-refresh"></span></td>
+          <td>refresh</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-list"></span></td>
+          <td>list</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-list-alt"></span></td>
+          <td>list-alt</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-lock"></span></td>
+          <td>lock</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-flag"></span></td>
+          <td>flag</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-headphones"></span></td>
+          <td>headphones</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-earphone"></span></td>
+          <td>earphone</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-volume-off"></span></td>
+          <td>volume-off</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-volume-down"></span></td>
+          <td>volume-down</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-volume-up"></span></td>
+          <td>volume-up</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-qrcode"></span></td>
+          <td>qrcode</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-barcode"></span></td>
+          <td>barcode</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-tag"></span></td>
+          <td>tag</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-tags"></span></td>
+          <td>tags</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-book"></span></td>
+          <td>book</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-bookmark"></span></td>
+          <td>bookmark</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-print"></span></td>
+          <td>print</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-camera"></span></td>
+          <td>camera</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-facetime-video"></span></td>
+          <td>facetime-video</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-picture"></span></td>
+          <td>picture</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-font"></span></td>
+          <td>font</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-bold"></span></td>
+          <td>bold</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-italic"></span></td>
+          <td>italic</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-text-height"></span></td>
+          <td>text-height</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-text-width"></span></td>
+          <td>text-width</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-text-size"></span></td>
+          <td>text-size</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-text-color"></span></td>
+          <td>text-color</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-text-background"></span></td>
+          <td>text-background</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-superscript"></span></td>
+          <td>superscript</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-subscript"></span></td>
+          <td>subscript</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-align-left"></span></td>
+          <td>align-left</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-align-center"></span></td>
+          <td>align-center</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-align-right"></span></td>
+          <td>align-right</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-align-justify"></span></td>
+          <td>align-justify</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-indent-left"></span></td>
+          <td>indent-left</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-indent-right"></span></td>
+          <td>indent-right</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-object-align-left"></span></td>
+          <td>object-align-left</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-object-align-horizontal"></span></td>
+          <td>object-align-horizontal</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-object-align-right"></span></td>
+          <td>object-align-right</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-object-align-top"></span></td>
+          <td>object-align-top</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-object-align-vertical"></span></td>
+          <td>object-align-vertical</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-object-align-bottom"></span></td>
+          <td>object-align-bottom</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-map-marker"></span></td>
+          <td>map-marker</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-adjust"></span></td>
+          <td>adjust</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-tint"></span></td>
+          <td>tint</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-edit"></span></td>
+          <td>edit</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-share"></span></td>
+          <td>share</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-check"></span></td>
+          <td>check</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-unchecked"></span></td>
+          <td>unchecked</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-move"></span></td>
+          <td>move</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-backward"></span></td>
+          <td>backward</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-step-backward"></span></td>
+          <td>step-backward</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-fast-backward"></span></td>
+          <td>fast-backward</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-play"></span></td>
+          <td>play</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-play-circle"></span></td>x
+          <td>play-circle</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-pause"></span></td>
+          <td>pause</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-stop"></span></td>
+          <td>stop</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-forward"></span></td>
+          <td>forward</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-step-forward"></span></td>
+          <td>step-forward</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-fast-forward"></span></td>
+          <td>fast-forward</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-eject"></span></td>
+          <td>eject</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-chevron-left"></span></td>
+          <td>chevron-left</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-chevron-right"></span></td>
+          <td>chevron-right</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-chevron-up"></span></td>
+          <td>chevron-up</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-chevron-down"></span></td>
+          <td>chevron-down</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-plus-sign"></span></td>
+          <td>plus-sign</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-minus-sign"></span></td>
+          <td>minus-sign</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-ok-sign"></span></td>
+          <td>ok-sign</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-remove-sign"></span></td>
+          <td>remove-sign</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-question-sign"></span></td>
+          <td>question-sign</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-exclamation-sign"></span></td>
+          <td>exclamation-sign</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-info-sign"></span></td>
+          <td>info-sign</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-warning-sign"></span></td>
+          <td>warning-sign</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-screenshot"></span></td>
+          <td>screenshot</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-ok-circle"></span></td>
+          <td>ok-circle</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-remove-circle"></span></td>
+          <td>remove-circle</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-ban-circle"></span></td>
+          <td>ban-circle</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-arrow-left"></span></td>
+          <td>arrow-left</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-arrow-right"></span></td>
+          <td>arrow-right</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-arrow-up"></span></td>
+          <td>arrow-up</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-arrow-down"></span></td>
+          <td>arrow-down</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-circle-arrow-left"></span></td>
+          <td>circle-arrow-left</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-circle-arrow-right"></span></td>
+          <td>circle-arrow-right</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-circle-arrow-up"></span></td>
+          <td>circle-arrow-up</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-circle-arrow-down"></span></td>
+          <td>circle-arrow-down</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-share-alt"></span></td>
+          <td>share-alt</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-resize-full"></span></td>
+          <td>resize-full</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-resize-small"></span></td>
+          <td>resize-small</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-resize-vertical"></span></td>
+          <td>resize-vertical</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-resize-horizontal"></span></td>
+          <td>resize-horizontal</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-gift"></span></td>
+          <td>gift</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-leaf"></span></td>
+          <td>leaf</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-fire"></span></td>
+          <td>fire</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-eye-open"></span></td>
+          <td>eye-open</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-eye-close"></span></td>
+          <td>eye-close</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-plane"></span></td>
+          <td>plane</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-calendar"></span></td>
+          <td>calendar</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-random"></span></td>
+          <td>random</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-comment"></span></td>
+          <td>comment</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-retweet"></span></td>
+          <td>retweet</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-magnet"></span></td>
+          <td>magnet</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-shopping-cart"></span></td>
+          <td>shopping-cart</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-folder-close"></span></td>
+          <td>folder-close</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-folder-open"></span></td>
+          <td>folder-open</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-hdd"></span></td>
+          <td>hdd</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-bullhorn"></span></td>
+          <td>bullhorn</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-bell"></span></td>
+          <td>bell</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-certificate"></span></td>
+          <td>certificate</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-thumbs-up"></span></td>
+          <td>thumbs-up</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-thumbs-down"></span></td>
+          <td>thumbs-down</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-hand-left"></span></td>
+          <td>hand-left</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-hand-right"></span></td>
+          <td>hand-right</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-hand-up"></span></td>
+          <td>hand-up</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-hand-down"></span></td>
+          <td>hand-down</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-globe"></span></td>
+          <td>globe</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-wrench"></span></td>
+          <td>wrench</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-tasks"></span></td>
+          <td>tasks</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-filter"></span></td>
+          <td>filter</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-briefcase"></span></td>
+          <td>briefcase</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-fullscreen"></span></td>
+          <td>fullscreen</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-dashboard"></span></td>
+          <td>dashboard</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-paperclip"></span></td>
+          <td>paperclip</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-link"></span></td>
+          <td>link</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-phone"></span></td>
+          <td>phone</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-phone-alt"></span></td>
+          <td>phone-alt</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-pushpin"></span></td>
+          <td>pushpin</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-sort"></span></td>
+          <td>sort</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-sort-by-alphabet"></span></td>
+          <td>sort-by-alphabet</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-sort-by-alphabet-alt"></span></td>
+          <td>sort-by-alphabet-alt</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-sort-by-order"></span></td>
+          <td>sort-by-order</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-sort-by-order-alt"></span></td>
+          <td>sort-by-order-alt</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-sort-by-attributes"></span></td>
+          <td>sort-by-attributes</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-sort-by-attributes-alt"></span></td>
+          <td>sort-by-attributes-alt</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-expand"></span></td>
+          <td>expand</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-collapse-down"></span></td>
+          <td>collapse-down</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-collapse-up"></span></td>
+          <td>collapse-up</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-log-in"></span></td>
+          <td>log-in</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-log-out"></span></td>
+          <td>log-out</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-new-window"></span></td>
+          <td>new-window</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-flash"></span></td>
+          <td>flash</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-save"></span></td>
+          <td>save</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-open"></span></td>
+          <td>open</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-saved"></span></td>
+          <td>saved</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-import"></span></td>
+          <td>import</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-export"></span></td>
+          <td>export</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-send"></span></td>
+          <td>send</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-floppy-disk"></span></td>
+          <td>floppy-disk</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-floppy-save"></span></td>
+          <td>floppy-save</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-floppy-open"></span></td>
+          <td>floppy-open</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-floppy-saved"></span></td>
+          <td>floppy-saved</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-floppy-remove"></span></td>
+          <td>floppy-remove</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-credit-card"></span></td>
+          <td>credit-card</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-transfer"></span></td>
+          <td>transfer</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-cutlery"></span></td>
+          <td>cutlery</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-header"></span></td>
+          <td>header</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-compressed"></span></td>
+          <td>compressed</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-stats"></span></td>
+          <td>stats</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-tower"></span></td>
+          <td>tower</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-sd-video"></span></td>
+          <td>sd-video</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-hd-video"></span></td>
+          <td>hd-video</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-subtitles"></span></td>
+          <td>subtitles</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-sound-stereo"></span></td>
+          <td>sound-stereo</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-sound-dolby"></span></td>
+          <td>sound-dolby</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-sound-5-1"></span></td>
+          <td>sound-5-1</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-sound-6-1"></span></td>
+          <td>sound-6-1</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-sound-7-1"></span></td>
+          <td>sound-7-1</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-copyright-mark"></span></td>
+          <td>copyright-mark</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-registration-mark"></span></td>
+          <td>registration-mark</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-cloud-download"></span></td>
+          <td>cloud-download</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-cloud-upload"></span></td>
+          <td>cloud-upload</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-tree-conifer"></span></td>
+          <td>tree-conifer</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-tree-deciduous"></span></td>
+          <td>tree-deciduous</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-save-file"></span></td>
+          <td>save-file</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-open-file"></span></td>
+          <td>open-file</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-level-up"></span></td>
+          <td>level-up</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-cd"></span></td>
+          <td>cd</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-copy"></span></td>
+          <td>copy</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-paste"></span></td>
+          <td>paste</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-alert"></span></td>
+          <td>alert</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-king"></span></td>
+          <td>king</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-queen"></span></td>
+          <td>queen</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-pawn"></span></td>
+          <td>pawn</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-bishop"></span></td>
+          <td>bishop</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-knight"></span></td>
+          <td>knight</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-baby-formula"></span></td>
+          <td>baby-formula</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-tent"></span></td>
+          <td>tent</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-blackboard"></span></td>
+          <td>blackboard</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-bed"></span></td>
+          <td>bed</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-apple"></span></td>
+          <td>apple</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-hourglass"></span></td>
+          <td>hourglass</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-lamp"></span></td>
+          <td>lamp</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-duplicate"></span></td>
+          <td>duplicate</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-piggy-bank"></span></td>
+          <td>piggy-bank</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-scissors"></span></td>
+          <td>scissors</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-bitcoin"></span></td>
+          <td>bitcoin</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-scale"></span></td>
+          <td>scale</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-ice-lolly"></span></td>
+          <td>ice-lolly</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-ice-lolly-tasted"></span></td>
+          <td>ice-lolly-tasted</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-education"></span></td>
+          <td>education</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-option-horizontal"></span></td>
+          <td>option-horizontal</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-option-vertical"></span></td>
+          <td>option-vertical</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-menu-hamburger"></span></td>
+          <td>menu-hamburger</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-modal-window"></span></td>
+          <td>modal-window</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-oil"></span></td>
+          <td>oil</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-grain"></span></td>
+          <td>grain</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-sunglasses"></span></td>
+          <td>sunglasses</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-triangle-top"></span></td>
+          <td>triangle-top</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-triangle-right"></span></td>
+          <td>triangle-right</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-triangle-bottom"></span></td>
+          <td>triangle-bottom</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-triangle-left"></span></td>
+          <td>triangle-left</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-menu-left"></span></td>
+          <td>menu-left</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-menu-right"></span></td>
+          <td>menu-right</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-menu-up"></span></td>
+          <td>menu-up</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-menu-down"></span></td>
+          <td>menu-down</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Wells</h1>
+    </div>
+    <p>
+      <code>.well</code>
+      <p class="well">Lorem ipsum dolor sit amet.</p>
+    </p>
+    <p>
+      <code>.well .well-sm/lg</code>
+      <p class="well well-sm">Lorem ipsum dolor sit amet.</p>
+      <p class="well well-lg">Lorem ipsum dolor sit amet.</p>
+    </p>
+  </div>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Alerts</h1>
+    </div>
+    <p>
+      <code>.alert + .alert-success .alert-info .alert-warning .alert-danger</code>
+      <p class="alert alert-success">Lorem ipsum dolor sit amet.</p>
+      <p class="alert alert-info">Lorem ipsum dolor sit amet.</p>
+      <p class="alert alert-warning">Lorem ipsum dolor sit amet.</p>
+      <p class="alert alert-danger">Lorem ipsum dolor sit amet.</p>
+    </p>
+    <p>
+      <code>div.alert .alert-success > a.close [data-dismiss=alert]</code>
+      <div class="alert alert-success">
+        <a class="close" data-dismiss="alert" href="#">&times;</a>
+        Lorem ipsum dolor sit amet.
+      </div>
+    </p>
+    <p>
+      <code>div.alert .alert-success <strong>.fade .in</strong> > a.close [data-dismiss=alert]</code>
+      <div class="alert alert-success fade in">
+        <a class="close" data-dismiss="alert" href="#">&times;</a>
+        Lorem ipsum dolor sit amet.
+      </div>
+    </p>
+  </div>
+  <div class="container"> 
+    <div class="jumbotron">
+      <h1>Progress Bars</h1>
+    </div>
+    <p>
+      <code>div.progress > div.progress-bar</code>
+      <div class="progress">
+        <div class="progress-bar" style="width: 68%;">68%</div>
+      </div>
+    </p>
+    <p>
+      <code>div.progress-bar + .progress-bar-success/.progress-bar-info/.progress-bar-warning/.progress-bar-danger</code>
+      <div class="progress">
+        <div class="progress-bar progress-bar-success" style="width: 58%">Success</div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-info" style="width: 68%">Info</div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-warning" style="width: 78%">Warning</div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-danger" style="width: 88%">Danger</div>
+      </div>
+    </p>
+    <p>
+      <code>div.progress-bar .progress-bar-striped</code>
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped" style="width: 68%">68%</div>
+      </div>
+    </p>
+    <p>
+      <code>div.progress-bar .progress-bar-striped .active</code>
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped active" style="width: 68%">68%</div>
+      </div>
+    </p>
+    <p>
+      <code>div.progress > div.progress-bar*3</code>
+      <div class="progress">
+        <div class="progress-bar progress-bar-info" style="width:48%">Info</div>
+        <div class="progress-bar progress-bar-warning" style="width:24%">Warning</div>
+        <div class="progress-bar progress-bar-danger" style="width:12%">Danger</div>
+      </div>
+    </p>
+  </div>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>List Groups</h1>
+    </div>
+    <p>
+      <code>ul.list-group > li.list-group-item</code>
+      <ul class="list-group">
+        <li class="list-group-item">First</li>
+        <li class="list-group-item">Second</li>
+        <li class="list-group-item">Third</li>
+      </ul>
+    </p>
+    <p>
+      <code>ul.list-group > (li.list-group-item + .badge)</code>
+      <ul class="list-group">
+        <li class="list-group-item">First <span class="badge">23</span></li>
+        <li class="list-group-item">Second <span class="badge">12</span></li>
+        <li class="list-group-item">Third <span class="badge">2</span></li>
+      </ul>
+    </p>
+    <p>
+      <code>div.list-group > a.list-group-item</code>
+      <div class="list-group">
+        <a href="javascript:;" class="list-group-item">First</a>
+        <a href="javascript:;" class="list-group-item">Second</a>
+        <a href="javascript:;" class="list-group-item">Third</a>
+      </div>
+    </p>
+    <p>
+      <code>.active .disabled</code>
+      <div class="list-group">
+        <a href="javascript:;" class="list-group-item active">First</a>
+        <a href="javascript:;" class="list-group-item disabled">Second</a>
+        <a href="javascript:;" class="list-group-item">Third</a>
+      </div>
+    </p>
+    <p>
+      <code>.list-group-item + .list-group-item-success/.list-group-item-info/.list-group-item-warning/.list-group-item-danger</code>
+      <div class="list-group">
+        <a href="javascript:;" class="list-group-item list-group-item-success">Success</a>
+        <a href="javascript:;" class="list-group-item list-group-item-info">Info</a>
+        <a href="javascript:;" class="list-group-item list-group-item-warning">Warning</a>
+        <a href="javascript:;" class="list-group-item list-group-item-danger">Danger</a>
+      </div>
+    </p>
+    <p>
+      <code>div.list-group > a.list-group-item > (h4.list-group-item-heading + p.list-group-item-text)</code>
+      <div class="list-group">
+        <a href="javascript:;" class="list-group-item">
+          <h4 class="list-group-item-heading">Heading</h4>
+          <p class="list-group-item-text">Lorem ipsum dolor sit amet.</p>
+        </a>
+        <a href="javascript:;" class="list-group-item">
+          <h4 class="list-group-item-heading">Heading</h4>
+          <p class="list-group-item-text">Lorem ipsum dolor sit amet.</p>
+        </a>
+        <a href="javascript:;" class="list-group-item">
+          <h4 class="list-group-item-heading">Heading</h4>
+          <p class="list-group-item-text">Lorem ipsum dolor sit amet.</p>
+        </a>
+      </div>
+    </p>
+  </div>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Panels</h1>
+    </div>
+    <p>
+      <code>div.panel .panel-default > (div.panel-heading + div.panel-body + div.panel-footer)</code>
+      <div class="panel panel-default">
+        <div class="panel-heading">Heading</div>
+        <div class="panel-body">Body</div>
+        <div class="panel-footer">Footer</div>
+      </div>
+    </p>
+    <p>
+      <code>div.panel-group > (div.panel .panel-default)*2</code>
+      <div class="panel-group">
+        <div class="panel panel-default">
+          <div class="panel-heading">Heading</div>
+          <div class="panel-body">Body</div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">Heading</div>
+          <div class="panel-body">Body</div>
+        </div>
+      </div>
+    </p>
+    <p>
+      <code>div.panel + .panel-default/.panel-primary/.panel-success/.panel-info/.panel-warning/.panel-danger</code>
+      <div class="panel-group">
+        <div class="panel panel-default">
+          <div class="panel-heading">Default</div>
+          <div class="panel-body">Body</div>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">Primary</div>
+          <div class="panel-body">Body</div>
+        </div>
+        <div class="panel panel-success">
+          <div class="panel-heading">Success</div>
+          <div class="panel-body">Body</div>
+        </div>
+        <div class="panel panel-info">
+          <div class="panel-heading">Info</div>
+          <div class="panel-body">Body</div>
+        </div>
+        <div class="panel panel-warning">
+          <div class="panel-heading">Warning</div>
+          <div class="panel-body">Body</div>
+        </div>
+        <div class="panel panel-danger">
+          <div class="panel-heading">Danger</div>
+          <div class="panel-body">Body</div>
+        </div>
+      </div>
+    </p>
+  </div>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Collapse</h1>
+    </div>
+    <p>
+      <code>button[data-toggle=collapse][data-target=#id] + #id.collapse</code>
+      <button type="button" data-toggle="collapse" data-target="#collapseBtnDemo" class="btn btn-primary">Collapse</button>
+      <div id="collapseBtnDemo" class="collapse">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio nesciunt possimus, fuga eveniet consequatur assumenda. Eligendi reiciendis neque, explicabo nisi quas quisquam consequatur doloremque recusandae eaque nemo numquam ad impedit.</div>
+    </p>
+    <p>
+      <code>a[data-toggle=collapse][href=#id] + #id.collapse</code>
+      <a href="#collapseADemo" data-toggle="collapse" class="btn btn-success">Collapse</a>
+      <div id="collapseADemo" class="collapse">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio nesciunt possimus, fuga eveniet consequatur assumenda. Eligendi reiciendis neque, explicabo nisi quas quisquam consequatur doloremque recusandae eaque nemo numquam ad impedit.</div>
+    </p>
+    <p>
+      <code>a[data-toggle=collapse][href=#id] + #id.collapse .in</code>
+      <a href="#collapseInDemo" data-toggle="collapse" class="btn btn-info">Collapse</a>
+      <div id="collapseInDemo" class="collapse in">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio nesciunt possimus, fuga eveniet consequatur assumenda. Eligendi reiciendis neque, explicabo nisi quas quisquam consequatur doloremque recusandae eaque nemo numquam ad impedit.</div>
+    </p>
+    <p>
+      <code>.panel.panel-default > ((.panel-heading > h4.panel-title > a[href=#id][data-toggle=collapse]) + (div#id.collapse.panel-collapse) > (.panel-body + .panel-footer)</code>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title"><a href="#collapsePanelDemo" data-toggle="collapse">Collapsible Panel</a></h4>
+        </div>
+        <div id="collapsePanelDemo" class="collapse panel-collapse">
+          <div class="panel-body">Body</div>
+          <div class="panel-footer">Footer</div>
+        </div>
+      </div>
+    </p>
+    <p>
+      <code>.panel.panel-default > ((.panel-heading > h4.panel-title > a[href=#id][data-toggle=collapse]) + (div#id.collapse.panel-collapse) > (<strong>.list-group</strong> + .panel-footer)</code>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title"><a href="#collapseListGroupDemo" data-toggle="collapse">Collapsible List Group</a></h4>
+        </div>
+        <div id="collapseListGroupDemo" class="collapse panel-collapse">
+          <ul class="list-group">
+            <li class="list-group-item">First</li>
+            <li class="list-group-item">Second</li>
+            <li class="list-group-item">Third</li>
+          </ul>
+          <div class="panel-footer">Footer</div>
+        </div>
+      </div>
+    </p>
+    <p>
+      <code>.panel-group<strong>#accordin</strong> > (.panel.panel-default > ((.panel-heading > h4.panel-title > a[href=#id][data-toggle=collapse]<strong>[data-parent=#accordin]</strong>) + (div#id.collapse.panel-collapse) > (.panel-body + .panel-footer))</code>
+      <div class="panel-group" id="accordin">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title"><a href="#collapsePanelDemo1" data-parent="#accordin" data-toggle="collapse">Collapsible Panel</a></h4>
+          </div>
+          <div id="collapsePanelDemo1" class="collapse panel-collapse">
+            <div class="panel-body">Body</div>
+            <div class="panel-footer">Footer</div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title"><a href="#collapsePanelDemo2" data-parent="#accordin" data-toggle="collapse">Collapsible Panel</a></h4>
+          </div>
+          <div id="collapsePanelDemo2" class="collapse panel-collapse">
+            <div class="panel-body">Body</div>
+            <div class="panel-footer">Footer</div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title"><a href="#collapsePanelDemo3" data-parent="#accordin" data-toggle="collapse">Collapsible Panel</a></h4>
+          </div>
+          <div id="collapsePanelDemo3" class="collapse panel-collapse">
+            <div class="panel-body">Body</div>
+            <div class="panel-footer">Footer</div>
+          </div>
+        </div>
+      </div>
+    </p>
+  </div>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Navbar</h1>
+    </div>
+    <p>
+      <code>nav.navbar.navbar-default > div.container-fluid > ((div.navbar-header > a.navbar-brand) + (ul.nav.navbar-nav. > li.active))</code>
+    </p>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a href="javascript:;" class="navbar-brand">Dosin</a>
+        </div>
+        <ul class="navbar-nav nav">
+          <li class="active"><a href="javascript:;">Home</a></li>
+          <li><a href="javascript:;">Blog</a></li>
+          <li><a href="javascript:;">More</a></li>
+          <li><a href="javascript:;">About</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>
+      <code>nav.navbar.navbar-inverse</code>
+    </p>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a href="javascript:;" class="navbar-brand">Dosin</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="javascript:;">Home</a></li>
+          <li><a href="javascript:;">Blog</a></li>
+          <li><a href="javascript:;">More</a></li>
+          <li><a href="javascript:;">About</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>
+      <code>nav.navbar.navbar-fixed-top/bottom</code> makes the navigation bar fixed at the top/bottom
+    </p>
+    <p>
+      <code>ul.nav.navbar-nav.navbar-right</code>
+    </p>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a href="javascript:;" class="navbar-brand">Dosin</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="javascript:;">Home</a></li>
+          <li><a href="javascript:;">Blog</a></li>
+          <li><a href="javascript:;">More</a></li>
+          <li><a href="javascript:;">About</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="javascript:;">Sign Up</a></li>
+          <li><a href="javascript:;">Login</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>
+      <code>div.navbar-header > button.navbar-toggle[data-toggle=collapse][data-target=#id] > (span.icon-bar*3 + a.navbar-brand)</code>
+    </p>
+    <p>
+      <code>div#id.collapse.navbar-collapse</code>
+    </p>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="javascript:;" class="navbar-brand">Dosin</a>
+        </div>
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="javascript:;">Home</a></li>
+            <li><a href="javascript:;">Blog</a></li>
+            <li><a href="javascript:;">More</a></li>
+            <li><a href="javascript:;">About</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="javascript:;">Sign Up</a></li>
+            <li><a href="javascript:;">Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Carousel</h1>
+    </div>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="http://cn.bing.com/az/hprichbg/rb/BearGlacierLake_ZH-CN11648553737_1366x768.jpg" alt="">
+          <div class="carousel-caption">
+            <h3>Bear Glacier Lake</h3>
+          </div>
+        </div>
+        <div class="item">
+          <img src="http://cn.bing.com/az/hprichbg/rb/GapstowBridge_ZH-CN9569411106_1366x768.jpg" alt="">
+          <div class="carousel-caption">
+            <h3>Gapstow Bridge</h3>
+          </div>
+        </div>
+        <div class="item">
+          <img src="http://cn.bing.com/az/hprichbg/rb/IngolfshofdiBlackSand_EN-US9362134214_1366x768.jpg" alt="">
+          <div class="carousel-caption">
+            <h3>Ingolfshofdi Black Sand</h3>
+          </div>
+        </div>
+        <div class="item">
+          <img src="http://cn.bing.com/az/hprichbg/rb/PolandWinter_ZH-CN11003553401_1366x768.jpg" alt="">
+          <div class="carousel-caption">
+            <h3>Poland Winter</h3>
+          </div>
+        </div>
+      </div>
+      <!-- Left and right controls -->
+      <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="carousel-control right" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+    </div>
+  </div>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Modal</h1>
+    </div>
+    <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-primary">Modal</button>
+    <div id="myModal" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-dismiss="modal" class="close">&times;</button>
+            <h4>Header</h4>
+          </div>
+          <div class="modal-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis unde fugit dolor, temporibus nihil consectetur sed ducimus aperiam amet dicta. Nihil in delectus sed consequatur adipisci mollitia facilis inventore placeat!</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button type="button" data-toggle="modal" data-target="#myModalSm" class="btn btn-success">modal-sm</button>
+    <div id="myModalSm" class="modal fade">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-dismiss="modal" class="close">&times;</button>
+            <h4>Header</h4>
+          </div>
+          <div class="modal-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis unde fugit dolor, temporibus nihil consectetur sed ducimus aperiam amet dicta. Nihil in delectus sed consequatur adipisci mollitia facilis inventore placeat!</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button type="button" data-toggle="modal" data-target="#myModalLg" class="btn btn-info">modal-lg</button>
+    <div id="myModalLg" class="modal fade">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-dismiss="modal" class="close">&times;</button>
+            <h4>Header</h4>
+          </div>
+          <div class="modal-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis unde fugit dolor, temporibus nihil consectetur sed ducimus aperiam amet dicta. Nihil in delectus sed consequatur adipisci mollitia facilis inventore placeat!</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Tooltip</h1>
+    </div>
+    <script>
+      $(function(){
+        $('[data-toggle=tooltip]').tooltip();
+      });
+    </script>
+    <p>Default: Top</p>
+    <a href="javascript:;" data-toggle="tooltip" title="What are you looking for?" class="btn btn-primary">Hover on me</a>
+    <a href="javascript:;" data-toggle="tooltip" data-placement="rignt" title="What are you looking for?" class="btn btn-success">Hover on me</a>
+    <a href="javascript:;" data-toggle="tooltip" data-placement="bottom" title="What are you looking for?" class="btn btn-info">Hover on me</a>
+    <a href="javascript:;" data-toggle="tooltip" data-placement="left" title="What are you looking for?" class="btn btn-warning">Hover on me</a>
+  </div>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Popover</h1>
+    </div>
+    <script>
+      $(function(){
+        $('[data-toggle=popover]').popover();
+      });
+    </script>
+    <p>Default: Right</p>
+    <a href="javascript:;" data-toggle="popover" class="btn btn-primary" title="Header in title" data-content="Content in data-content">Click me</a>
+    <a href="javascript:;" data-toggle="popover" data-placement="top" class="btn btn-success" title="Header in title" data-content="Content in data-content">Click me</a>
+    <a href="javascript:;" data-toggle="popover" data-placement="bottom" class="btn btn-info" title="Header in title" data-content="Content in data-content">Click me</a>
+    <a href="javascript:;" data-toggle="popover" data-placement="left" class="btn btn-warning" title="Header in title" data-content="Content in data-content">Click me</a>
+    <p>
+      <code>[data-trigger=focus] [data-trigger=hover]</code>
+    </p>
+    <a href="javascript:;" data-toggle="popover" data-trigger="focus" class="btn btn-danger" title="Header in title" data-content="Content in data-content">Click me</a>
+    <a href="javascript:;" data-toggle="popover" data-trigger="hover" class="btn btn-danger" title="Header in title" data-content="Content in data-content">Click me</a>
+  </div>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Scrollspy</h1>
+    </div>
+    <iframe src="scrollspy.html" frameborder="0" style="width: 100%; min-height: 360px;"></iframe>
+    <iframe src="scrollspy-vertical.html" frameborder="0" style="width: 100%; min-height: 360px;"></iframe>
+  </div>
+  <div class="container">
+    <iframe src="affix.html" frameborder="0" style="width: 100%; min-height: 360px;"></iframe>
+  </div>
 </body>
 </html>

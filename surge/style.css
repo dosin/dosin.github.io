@@ -4,70 +4,84 @@ h2,
 p,
 ul,
 a {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
+
 a {
-	display: inline-block;
-	color: #000;
+  display: inline-block;
+  color: #000;
 }
+
 a:hover {
-	color: #000;
+  color: #000;
 }
+
 body {
-	font-family: "Microsoft Yahei";
-	font-weight: 100;
-	line-height: 2;
-	background: #eee;
+  font-family: "Microsoft Yahei";
+  font-weight: 100;
+  line-height: 2;
+  background: #eee;
 }
+
 .english,
 .chinese {
-	width: 600px;
-	margin: 0 auto;
+  width: 600px;
+  margin: 0 auto;
 }
+
 .chinese {
-	display: none;
+  display: none;
 }
+
 h1,
 h2 {
-	font-weight: 400;
+  font-weight: 400;
 }
+
 h1 {
-	color: #f00;
+  color: #f00;
 }
+
 ul {
-	font-size: 14px;
-	list-style: none;
+  font-size: 14px;
+  list-style: none;
 }
+
 .cn,
 .en {
-	color: #fff;
-	background: #f00;
-	padding: 2px 4px;
-	font-size: 14px;
-	border-radius: 5px;
-	text-align: center;
-	cursor: pointer;
+  color: #fff;
+  background: #f00;
+  padding: 2px 4px;
+  font-size: 14px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
 }
+
 code {
-	display: block;
-	color: #333;
-	background: #ccc;
-	padding: 20px;
-	margin: 10px 0;
+  display: block;
+  color: #333;
+  background: #ccc;
+  padding: 20px;
+  margin: 10px 0;
 }
+
 footer {
-	display: block;
-	text-align: center;
-	margin: 10px 0;
+  display: block;
+  text-align: center;
+  margin: 10px 0;
 }
+
 footer a {
-	text-decoration: none;
+  text-decoration: none;
 }
-@media screen and (max-width: 600px) {
-	.english,
-	.chinese {
-		width: 90%;
-		padding: 5%;
-	}
+
+@media screen and (max-width:600px) {
+  .english,
+  .chinese {
+    width: 90%;
+    padding: 5%;
+  }
+
 }
