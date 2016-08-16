@@ -1,10 +1,6 @@
-/*
- * Dosin
- * https://github.com/dosin/website/
- */
 
 var wallpaper = {
-	res : function () {
+	rez : function () {
 		var w = window.screen.width,
 			h = window.screen.height;
 		var rez;
@@ -84,7 +80,7 @@ var wallpaper = {
 		"BigHornSheep_ZH-CN6358178150"
 	],
 	url : function () {
-		return "url(wallpaper/"+this.filename[Math.round(Math.random() * (this.filename.length - 1))] + "_" + this.res() + ".jpg)";
+		return "url(images/wallpaper/"+this.filename[Math.round(Math.random() * (this.filename.length - 1))] + "_" + this.rez() + ".jpg)";
 	},
 	set : function () {
 		var today = Date().slice(0, 15);

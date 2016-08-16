@@ -1,8 +1,3 @@
-/*
- * Dosin
- * https://github.com/dosin/website/
- */
-
 // 初始设定
 var init={
 	num:24,                         //初始加载图片数量
@@ -10,7 +5,7 @@ var init={
 	cols:null,                      //由width和浏览器窗口可见宽度决定
 }
 // Bing图片数组
-document.write('<script type="text/javascript" src="http://dosin.github.io/website/scripts/wallpaper.js"></script>');
+document.write('<script type="text/javascript" src="http://dosin.github.io/scripts/wallpaper.js"></script>');
 var resolution=[
 	"360x480",
 	"480x640",
@@ -35,7 +30,7 @@ function loadImages(num){
 	}
 	var imgs=document.getElementsByTagName("img");
 	for(j=0,jLen=imgs.length;j<jLen;j++){
-		imgs[j].src="http://dosin.github.io/website/wallpaper/"+getRandom(wallpaper.filename)+"_"+getRandom(resolution)+".jpg";
+		imgs[j].src="http://dosin.github.io/images/wallpaper/"+getRandom(wallpaper.filename)+"_"+getRandom(resolution)+".jpg";
 		imgs[j].width=init.width;
 	}
 }
