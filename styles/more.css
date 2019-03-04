@@ -38,5 +38,5 @@ main figure > ul ul ul {
 }
 
 .tt2 {
-  with:480px !important;
+  width:480px;
 }
