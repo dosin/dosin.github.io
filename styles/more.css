@@ -37,6 +37,6 @@ main figure > ul ul ul {
   text-indent: 4rem;
 }
 
-main figure.tt2 {
+.tt2 {
   with:480px;
 }
